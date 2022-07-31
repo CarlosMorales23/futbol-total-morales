@@ -1,0 +1,792 @@
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**..............ESTILOS PARA TODAS LAS PAGINAS.........*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+* {
+    margin: 0px auto;
+    padding: 0px;
+    background-color: midnightblue;
+    color: #f1ffff;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 16px;
+}
+
+body {
+    width: 95%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Titulo Principal*/
+.titulo-principal {
+    text-decoration: underline;
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.1rem;
+    margin-top: 0.25rem;
+}
+
+/*Menu (nav)*/
+.menu {
+    display: flex; /**Posiciona la caja del menú*/
+    justify-content: center;
+    align-items: center;
+}
+
+/*---Caja de Lista (ul)---*/
+.lista-del-menu {
+    border: 0.25rem solid #f1ffff;
+    border-radius: 0.625rem;
+    padding: 0.5rem;
+    height: 1rem;
+    list-style: none;
+    display: flex; /**Posiciona los li, las cajistas del menú*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Hipervinculos de lista (ul (li(a)))*/
+.lista-del-menu li a {
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: 0.1875rem solid black;
+    border-radius: 0.625rem;
+    padding: 0.225rem;
+    background-color: #2bcac8;
+    color: black;
+    font-weight: bold;
+}
+
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**.......................INDEX.........................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/**.............INDEX..............*/
+/**.............HEADER..............*/
+/**.................................*/
+
+/*Caja-caja del menu interno*/
+.enlaces-internos {
+    display: flex;
+    justify-content: center;
+}
+
+/*Caja del menu interno*/
+.lista-secciones {
+    margin-top: 0.0625rem;
+    border: 0.1875rem solid #f1ffff;
+    border-radius: 0.625rem;
+    padding: 0.12rem;
+    width: 14.0625rem;
+    height: 1.6rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Estilo a los hipervinculos del menú interno*/
+.lista-secciones li a {
+    font-size: 0.8125rem;
+    text-decoration: none;
+    border: 0.1875rem solid black;
+    border-radius: 0.650rem;
+    padding: 0.2rem;
+    background-color: #2bcac8;
+    color: black;
+    font-weight: bold;
+}
+
+/**.............INDEX..............*/
+/**............SECCIÓN 1...........*/
+/**................................*/
+
+.caja-subtitulo-seccion-presentacion,
+.caja-subtitulo-principal-ofertas,
+.caja-subtitulo-principal-notitcias {
+    margin: 0rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.section-1{
+    margin-top: 1.5rem; /**Espacio entre secciones*/
+}
+
+/*Titulo de las secciónes del index (de las 3)*/
+.subtitulo-principal-presentacion,
+.subtitulo-principal-ofertas,
+.subtitulo-principal-notitcias {
+    font-size: 2.2rem;
+    text-decoration: none;
+    border: 0.5rem solid black;
+    border-radius: 0.650rem;
+    padding: 0.2rem; /*Padding adicional para texto*/
+    background-color: #2bcac8;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0.65rem; /**Margen estre el Subtitulo-Principal de la sección y su contenido*/
+}
+
+.caja-presentacion-parrafo-1-y-blockquote {
+    width: 95%; /**Este % es de la caja en funcion del 100% del body*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0rem auto;
+    text-align: justify;
+}
+
+/*Primer Parrafo de la sección presentación*/
+.parrafo-1-de-la-seccion-presentacion {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin: 0rem 0rem 1rem 0rem; /*Margen de Parrafo a cita*/
+}
+
+/*Cita*/
+.presentacion-blockquote {
+    /*Margen de cita a video*/
+    width: 92.5%;
+    margin: 0rem auto;
+    margin-bottom: 1.4rem;
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    text-align: justify;
+    padding: 0.8rem;
+    border: 0.25rem solid rgb(113, 208, 252);
+    border-radius: 0.650rem;
+}
+
+/*Estilos a la Cita*/
+.presentacion strong {
+    font-size: 1rem;
+}
+
+
+/*Caja del video de youtube de la sección Prsentación*/
+.caja-del-video-y-texto-de-la-seccion-presentacion{
+    width: 95%; /**Este % es de la caja en funcion del 100% del body*/
+    background-image: url(../img/campo-vista-aerea.jpg);
+    /**La imagen de fondo esta ocupando el 100% (95%) de la caja contendora */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.650rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Video de iframe - Youtube*/
+iframe {
+    border: 0.3125rem solid #f1ffff;
+    border-radius: 0.625rem;
+    width:19.5rem;
+    height: 13rem;
+}
+
+/*Parrafo al lado del video*/
+.presentacion-parrafo-2 {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4em;
+    padding: .5rem;
+    border: 0.375rem solid #f1ffff;
+    border-radius: 0.650rem;
+}
+
+/**.............INDEX..............*/
+/**............SECCIÓN 2...........*/
+/**................................*/
+
+/**Caja cpompleta de la sección 2, centrada*/
+.section-2{
+    width: 95%;
+    margin: 2rem auto;
+}
+
+/*Separación del Subtitulo de "Ofertas de nuetsra tienda" al hipervinculo "ir a tienda"*/
+.subtitulo-principal-ofertas {
+    margin-bottom: 0.45rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Parrafo del Link para ir a la pagina de la tienda*/
+.ofertas-link-tienda {
+    text-align: center;
+}
+
+.ofertas-link-tienda a {
+    font-size: 0.85rem;
+    text-decoration: none;
+    background-color: #2bcac8;
+    color: black;
+    padding: 0.225rem;
+    border: 0.1875rem solid #f1ffff;
+    border-radius: 0.650rem;
+    font-weight: bold;
+}
+
+/**Caja desde el subitulo remeras-balones hasta cubrir sus productos*/
+.caja-ofertas-remeras,
+.caja-ofertas-balones,
+.contenedor-remeras /**Pagina Tienda*/{
+    margin: 0rem auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /*Si decido colocar mas imagenes debera cambiar a around o evenly*/
+    flex-wrap: wrap;
+}
+
+.caja-ofertas-remeras-titulo,
+.caja-ofertas-balones-titulo {
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilos a Titulos de Remeras, Balones, novedades y fichajes*/
+.ofertas-remeras-titulo,
+.ofertas-balones-titulo,
+.novedades-titulo,
+.ultimos-fichajes-titulo,
+.titulo-tienda-remeras /*Pag Tienda*/ {
+    font-size: 1.5rem;
+    border: 0.35rem solid black;
+    background-color: #2bcac8;
+    border-radius: 0.650rem;
+    color: black;
+    padding: 0.5rem;
+}
+
+/*Imagenes de las Remeras y Balones en oferta*/
+.caja-ofertas-remeras div img,
+.caja-ofertas-balones div img,
+.tienda-img /**Pagina tienda*/ {
+    width: 11.25rem;
+    height: 10rem;
+    border-radius: 0.125rem 0.125rem 0rem 0rem;
+}
+
+/*Caja de cada producto en oferta*/
+.caja-ofertas-remeras div,
+.caja-ofertas-balones div,
+.tienda-producto {
+    text-align: center;
+    width: 11.20rem;
+    height: 15.75rem;
+    border: 0.3125rem solid rgb(113, 208, 252);
+    border-radius: 0.3125rem;
+}
+
+/*titulo general de cada producto y precio*/
+.titulo-producto,
+.tienda-remera-descripcion, /**Descripción de cada producto de Remeras en pagina tienda*/
+.tienda-balon-descripcion /**Descripción de cada producto de Balones en pagina tienda*/
+.precio-index {
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    font-size: 0.9375rem;
+}
+
+/*Palabra Comprar de las cajas de los productos en la pag Index*/
+.comprar-index {
+    margin-top: 0.75em;
+}
+
+/*Enlace de "Comprar"*/
+.comprar-index a,
+.contenedor-remeras div p a /**pagina Tienda*/ {
+    text-decoration: none;
+    background-color: greenyellow;
+    color: black;
+    padding: 0.125rem;
+    border: 0.1875rem solid white;
+    border-radius: 0.3125rem;
+}
+
+/**.............INDEX..............*/
+/**............SECCIÓN 3...........*/
+/**................................*/
+
+.section-3{
+    margin: 0rem auto;
+    width: 95%;
+}
+
+/*Centrado de titulos y subtitulos de la sección Noticias*/
+.caja-novedades-titulo,
+.caja-fichajes-titulo {
+    margin: 0rem auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/*Centrado de titulos y subtitulos de la sección Noticias*/
+.novedades-titulo,
+.ultimos-fichajes-titulo {
+    text-align: center;
+}
+
+/*Caja de la Imagen de la nueva camisa de la selección de Argentina*/
+.caja-imagen-y-parrafo-seleccion-argentina-nueva-camisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto;
+}
+
+/*Imagen de la nueva camisa de la selección de Argentina*/
+.seleccion-argentina-nueva-camisa {
+    width: 22rem;
+    height: 11.25rem;
+    border: 0.3125rem solid rgb(113, 208, 252);
+    border-radius: 0.3125rem;
+}
+
+/*Parrafo al lado de la Imagen de la nueva camisa de la selección de Argentina*/
+.parrafo-seleccion-argentina-nueva-camisa {
+    text-align: justify;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    padding: 1rem; 
+}
+
+
+/*Estilos a la frase "la selección Argentina"*/
+.strong-la-seleccion-argentina-nueva-camisa {
+    font-size: 1.2rem;
+    border: 0.0625rem solid white;
+    border-radius: 0.650rem;
+    padding: 0.3rem;
+}
+
+.caja-tabla-de-fichajes-index{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilos a la Caja y a la tabla de Fichajes*/
+.caja-ultimos-fichajes-titulo {
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*caja de la tabla fichaje*/
+.caja-tabla-de-fichajes-index {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.9375rem auto;
+}
+
+/*Tabla de fichajes*/
+.tabla-de-fichajes-index,
+.tabla-de-fichajes-index th,
+.tabla-de-fichajes-index thead tr,
+.tabla-de-fichajes-index thead tr td,
+.tabla-de-fichajes-index tbody tr td {
+    border: 0.2rem solid rgb(113, 208, 252);
+    padding: 0.2rem;
+}
+
+.tabla-de-fichajes-index th {
+    background-color: #002d41;
+}
+
+.tabla-de-fichajes-index {
+    border-spacing: 0.45rem;
+}
+
+/*Caja de recomendacion e Imagen ESPN*/
+.caja-links-externo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.25rem;
+    line-height: 1.25rem;
+}
+
+/*Imagen ESPN*/
+.espn {
+    margin-top: 0.75rem;
+    width: 10rem;
+    border: 0.3125rem solid greenyellow;
+    border-radius: 0.650rem;
+}
+
+/**.............INDEX..............*/
+/**.............FOOTER.............*/
+/**................................*/
+
+/*Caja del Footer*/
+.footer {
+    width: 100%;
+    border: 0.0625rem solid white;
+    padding-top: 0.3125rem;
+    margin: 1.25rem auto;
+    text-align: center;
+    border-radius: 0.625rem;
+    height: 4.6875rem;
+    font-size: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Texto en el Footer*/
+.parrafo-footer {
+    margin-bottom: 0.625rem;
+    font-size: 1.25rem;
+}
+
+/*Imagenes del Footer*/
+.footer img {
+    border: 0.1875rem solid greenyellow;
+    border-radius: 50%;
+    background-color: white;
+    width: 1.875rem;
+    height: 1.875rem;
+    padding: 0rem;
+    margin-bottom: 0.9375rem;
+}
+
+.caja-parrafo-texto {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-img {
+    margin-left: 1.75rem;
+    display: flex;
+    justify-content: center;
+}
+
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**..................MEDIA QUERIES......................*/
+/**.......................INDEX.........................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width: 708px) {
+    *{
+        font-size: 14px;
+
+    }
+}
+
+@media screen and (max-width: 619px) {
+    *{
+        font-size: 12px;
+
+    }
+}
+
+@media screen and (max-width: 619px) {
+    *{
+        font-size: 10px;
+
+    }
+}
+
+@media screen and (max-width: 442px) {
+    *{
+        font-size: 9px;
+
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .caja-imagen-y-parrafo-seleccion-argentina-nueva-camisa{
+        flex-direction: column;
+    }
+    *{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 354px) {
+    *{
+        font-size: 7px;
+
+    }
+}
+
+@media screen and (max-width: 354px) {
+    *{
+        font-size: 6px;
+
+    }
+}
+
+/**+++++++++++++++++++++....FIN....+++++++++++++++++++++*/
+/**..................MEDIA QUERIES......................*/
+/**.......................INDEX.........................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/**++++++++++++++.....TIENDA.......+++++++++++++++++++++*/
+/**..............DECLARACIONES DE GRILLAS...............*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*Imagenes de las Remeras y Balones en oferta*/
+.ofertas-remeras div img,
+.ofertas-balones div img,
+.tienda-img /**Pagina tienda*/ {
+width: 180px;
+height: 160px;
+border-radius: 2px 2px 0px 0px;
+}
+
+/*Caja de cada producto en oferta*/
+.ofertas-remeras div,
+.ofertas-balones div,
+.tienda-producto {
+text-align: center;
+width: 180px;
+height: 270px;
+border: 5px solid rgb(113, 208, 252);
+border-radius: 5px;
+}
+
+.caja-tienda-remeras-titulo {
+padding-top: 20px;
+}
+
+.contenedor-tienda {
+padding-top: 20px;
+
+display: grid;
+grid-gap: 25px;
+grid-template-columns: repeat (4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-template-areas:
+    "mad-blanca     mad-azul    chel-azul       chel-amari"
+    "mil-clasica    mil-blanca  manch-negra     manch-roja";
+}
+
+.remera-real-madrid-blanca {
+grid-area: mad-blanca;
+}
+
+.remera-real-madrid-azul {
+grid-area: mad-azul;
+}
+
+.remera-chealsea-azul {
+grid-area: chel-azul;
+}
+
+.remera-chealsea-amarilla {
+grid-area: chel-amari;
+}
+
+.remera-milan-clasica {
+grid-area: mil-clasica;
+}
+
+.remera-milan-blanca {
+grid-area: mil-blanca;
+}
+
+.remera-manchester-negra {
+grid-area: manch-negra;
+}
+
+.remera-manchester-roja {
+grid-area: manch-roja;
+}
+
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**..................MEDIA QUERIES......................*/
+/**......................TIENDA.........................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width: 874px) {
+.contenedor-tienda {
+    padding-top: 20px;
+
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-areas:
+    "mad-blanca     mad-azul"
+    "chel-azul       chel-amari"
+    "mil-clasica    mil-blanca"
+    "manch-negra     manch-roja";
+}
+}
+
+@media screen and (max-width: 458px) {
+.footer {
+    width: 90%;
+}
+}
+
+@media screen and (max-width: 440px) {
+.contenedor-tienda {
+    padding-top: 20px;
+
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat (8, 1fr);
+    grid-template-areas:
+    "mad-blanca"
+    "mad-azul"
+    "chel-azul "
+    "chel-amari"
+    "mil-clasica"
+    "mil-blanca"
+    "manch-negra"
+    "manch-roja";
+}
+}
+
+.contenedor-tienda {
+    padding-top: 20px;
+
+    display: grid;
+    grid-gap: 5px 0px;
+}
+}
+
+/**++++++++++++++.....TORNEOS.......+++++++++++++++++++++*/
+/**......................................................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.caja-subtitulo-principal {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.subtitulo-principal {
+    font-size: 40px;
+}
+
+.champions {
+    background-color: white;
+}
+
+.contenido {
+    margin: 0px auto;
+    width: 430px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenido article a img {
+    width: 200px;
+    height: 200px;
+}
+
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**..................MEDIA QUERIES......................*/
+/**.....................TORNEOS.........................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/**++++++++++++++.....Registro.......+++++++++++++++++++++*/
+/**......................................................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.main-registro{
+    height: 100vh;
+}
+
+.set-formulario {
+    margin: 0px auto;
+    border: 5px solid white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.set-formulario div {
+    margin: 15px;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.set-formulario div input, option{
+    border: 2px solid greenyellow;
+}
+
+.set-formulario div option {
+    border: 5px;
+}
+
+.footer-img-registro {
+    padding-bottom: 0px;
+}
+
+/**++++++++++++++.....TORNEOS.......+++++++++++++++++++++*/
+/**..............DECLARACIONES DE GRILLAS...............*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/**++++++++++++++.....HISTORIA.......+++++++++++++++++++++*/
+/**..............DECLARACIONES DE GRILLAS...............*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.caja-subtitulo-principal {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.subtitulo-principal {
+    font-size: 35px;
+}
+
+.contenedor-historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px auto;
+}
+
+.contenedor-historia .francia,
+.contenedor-historia .alemania,
+.contenedor-historia .españa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    margin: 0px auto;
+}
+
+.contenedor-historia .francia img,
+.contenedor-historia .alemania img,
+.contenedor-historia .españa img {
+    width: 250px;
+    height: 140px;
+}
+
+.contenedor-historia .francia h2,
+.contenedor-historia .alemania h2,
+.contenedor-historia .españa h2 {
+    font-size: 15px;
+    padding: 0px 9px 0px 9px;
+}
+
+.contenedor-historia .francia h2{
+    padding: 0px 20px 0px 20px;
+}

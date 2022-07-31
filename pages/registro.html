@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-principal">Futbol Total</h1>
+        <div class="caja-del-menu">
+            <nav class="menu">
+                <ul class="lista-del-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./tienda.html">Tienda</a></li>
+                    <li><a href="./torneos.html">Torneos</a></li>
+                    <li><a href="./registro.html">Registro</a></li>
+                    <li><a href="./historia-del-futbol.html">Historia del Futbol</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main-registro">
+        <div class="caja-subtitulo-principal">
+            <h2 class="subtitulo-principal">Registrate</h2>
+        </div>
+
+        <form class="set-formulario">
+            <div class="form caja-nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="form caja-apellido">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido">
+            </div>
+
+            <div class="form caja-edad">
+                <h3>Eres mayor de Edad?</h3>
+                <label> Menor de Edad
+                    <input type="checkbox" name="edad" id="menor" value="Menor de Edad">
+                </label>
+                <br>
+                <label> Mayor de Edad
+                    <input type="checkbox" name="edad" id="mayor" value="Mayor de Edad">
+                </label>
+            </div>
+
+            <div class="form caja-email">
+                <label for="correo">Correo</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form equipo-favorito">
+                <label for="equipo">Equipo Favorito</label>
+                <input type="text">
+            </div>
+
+            <div class="form jugador-favorito">
+                Jugador Favorito
+                <Select>
+                    <option value="messi">Messi</option>
+                    <option value="cristiano">Cristiano Ronaldo</option>
+                    <option value="indefinido">Otro</option>
+                </Select>
+            </div>
+            <div class="form botones">
+                <div class="form reset">
+                    <input type="reset">
+                </div>
+
+                <div class="form enviar-datos">
+                    <input type="submit" value="Enviar datos">
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="caja-parrafo-texto">
+            <p class="parrafo-footer">Futbol Total - Carlos Morales - 2022 &copy;</p>
+        </div>
+        <div class="footer-img-registro">
+            <a href="#" target="_blank"><img src="../img/instagram.svg" alt="icono-de-instagram">Instagram</a>
+            <a href="#" target="_blank"><img src="../img/facebook.svg" alt="icono-de-facebook">Facebook</a>
+            <a href="#" target="_blank"><img src="../img/correo.svg" alt="icono-de-correo">Correo</a>
+        </div>
+    </footer>
+</body>
+</html>
