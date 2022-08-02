@@ -62,6 +62,8 @@ header {
     font-weight: bold;
 }
 
+
+
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /**.......................INDEX.........................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -141,6 +143,7 @@ header {
     justify-content: space-around;
     margin: 0rem auto;
     text-align: justify;
+    
 }
 
 /*Primer Parrafo de la sección presentación*/
@@ -160,8 +163,8 @@ header {
     line-height: 1.4rem;
     text-align: justify;
     padding: 0.8rem;
-    border: 0.25rem solid rgb(113, 208, 252);
-    border-radius: 0.650rem;
+    background-image: linear-gradient(to right, rgb(45, 45, 117), blue, rgb(45, 45, 117));
+    
 }
 
 /*Estilos a la Cita*/
@@ -188,8 +191,15 @@ header {
 iframe {
     border: 0.3125rem solid #f1ffff;
     border-radius: 0.625rem;
-    width:19.5rem;
-    height: 13rem;
+    width:18.5rem;
+    height: 12rem;
+
+    /**Especifica la propiedad que se aplicara en el hover, en la transformación*/
+    transition: 2.5s
+}
+
+iframe:hover{  /**transformacion*/
+    transform: scale(1.2);
 }
 
 /*Parrafo al lado del video*/
@@ -202,11 +212,13 @@ iframe {
     border-radius: 0.650rem;
 }
 
+
+
 /**.............INDEX..............*/
 /**............SECCIÓN 2...........*/
 /**................................*/
 
-/**Caja cpompleta de la sección 2, centrada*/
+/**Caja completa de la sección 2, centrada*/
 .section-2{
     width: 95%;
     margin: 2rem auto;
@@ -233,7 +245,22 @@ iframe {
     border: 0.1875rem solid #f1ffff;
     border-radius: 0.650rem;
     font-weight: bold;
+
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-timing-function: steps(3, end);
+
+
+    transition-property: background-color;
+    transition-duration: 1s;
+
 }
+
+.ofertas-link-tienda a:hover{
+    font-size: 1.1rem;
+    background-color: greenyellow;
+}
+
 
 /**Caja desde el subitulo remeras-balones hasta cubrir sus productos*/
 .caja-ofertas-remeras,
@@ -259,13 +286,17 @@ iframe {
 .ofertas-balones-titulo,
 .novedades-titulo,
 .ultimos-fichajes-titulo,
-.titulo-tienda-remeras /*Pag Tienda*/ {
+.titulo-tienda-remeras, /*Pag Tienda*/ 
+.copas,
+.ligas,
+.titulo-mundial{
     font-size: 1.5rem;
     border: 0.35rem solid black;
     background-color: #2bcac8;
     border-radius: 0.650rem;
     color: black;
     padding: 0.5rem;
+    text-align: center;
 }
 
 /*Imagenes de las Remeras y Balones en oferta*/
@@ -286,6 +317,13 @@ iframe {
     height: 15.75rem;
     border: 0.3125rem solid rgb(113, 208, 252);
     border-radius: 0.3125rem;
+    transition: 2s;
+}
+
+.caja-ofertas-remeras div:hover,
+.caja-ofertas-balones div:hover,
+.tienda-producto:hover{
+    transform: scale(1.15);
 }
 
 /*titulo general de cada producto y precio*/
@@ -312,7 +350,19 @@ iframe {
     padding: 0.125rem;
     border: 0.1875rem solid white;
     border-radius: 0.3125rem;
+
+    transition-property: background-color;
+    transition: 1s;
 }
+
+.comprar-index a:hover,
+.contenedor-remeras div p a:hover{
+    background-color: skyblue;
+}
+
+
+
+
 
 /**.............INDEX..............*/
 /**............SECCIÓN 3...........*/
@@ -352,6 +402,12 @@ iframe {
     height: 11.25rem;
     border: 0.3125rem solid rgb(113, 208, 252);
     border-radius: 0.3125rem;
+
+    transition: 2s;
+}
+
+.seleccion-argentina-nueva-camisa:hover{
+    transform: scale(1.2);
 }
 
 /*Parrafo al lado de la Imagen de la nueva camisa de la selección de Argentina*/
@@ -427,7 +483,17 @@ iframe {
     width: 10rem;
     border: 0.3125rem solid greenyellow;
     border-radius: 0.650rem;
+
+    transition: 1s;
 }
+
+.espn:hover{
+    transform: scale(1.2);
+}
+
+
+
+
 
 /**.............INDEX..............*/
 /**.............FOOTER.............*/
@@ -476,6 +542,11 @@ iframe {
     display: flex;
     justify-content: center;
 }
+
+
+
+
+
 
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /**..................MEDIA QUERIES......................*/
@@ -538,6 +609,11 @@ iframe {
 /**.......................INDEX.........................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+
+
+
+
+
 /**++++++++++++++.....TIENDA.......+++++++++++++++++++++*/
 /**..............DECLARACIONES DE GRILLAS...............*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -546,9 +622,9 @@ iframe {
 .ofertas-remeras div img,
 .ofertas-balones div img,
 .tienda-img /**Pagina tienda*/ {
-width: 180px;
-height: 160px;
-border-radius: 2px 2px 0px 0px;
+width: 11.25rem;
+height: 10rem;
+border-radius: 0.125rem 0.125rem 0rem 0rem;
 }
 
 /*Caja de cada producto en oferta*/
@@ -556,26 +632,29 @@ border-radius: 2px 2px 0px 0px;
 .ofertas-balones div,
 .tienda-producto {
 text-align: center;
-width: 180px;
-height: 270px;
-border: 5px solid rgb(113, 208, 252);
-border-radius: 5px;
+width: 11.25rem;
+height: 16.875rem;
+border: 0.3125rem solid rgb(113, 208, 252);
+border-radius: 0.3125rem;
 }
 
 .caja-tienda-remeras-titulo {
-padding-top: 20px;
+padding-top: 1.25rem;
+display: flex;
+justify-content: center;
 }
 
 .contenedor-tienda {
-padding-top: 20px;
+padding-top: 1.25rem;
 
 display: grid;
-grid-gap: 25px;
+grid-gap: 1.5625rem;
 grid-template-columns: repeat (4, 1fr);
-grid-template-rows: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
 grid-template-areas:
-    "mad-blanca     mad-azul    chel-azul       chel-amari"
-    "mil-clasica    mil-blanca  manch-negra     manch-roja";
+    "mad-blanca     mad-azul       chel-azul       chel-amari"
+    "mil-clasica    mil-blanca     manch-negra     manch-roja"
+    "mad-dragon     chel-clasica   mil-negra       manch-blanca";
 }
 
 .remera-real-madrid-blanca {
@@ -610,6 +689,22 @@ grid-area: manch-negra;
 grid-area: manch-roja;
 }
 
+.remera-real-madrid-dragon{
+    grid-area: mad-dragon;
+}
+
+.remera-chealsea-clasica{
+    grid-area: chel-clasica;
+}
+
+.remera-milan-negra{
+    grid-area: mil-negra;
+}
+
+.remera-manchester-blanca{
+    grid-area: manch-blanca;
+}
+
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /**..................MEDIA QUERIES......................*/
 /**......................TIENDA.........................*/
@@ -617,52 +712,46 @@ grid-area: manch-roja;
 
 @media screen and (max-width: 874px) {
 .contenedor-tienda {
-    padding-top: 20px;
+    padding-top: 1.25rem;
 
     display: grid;
-    grid-gap: 25px;
+    grid-gap: 1.5625rem;
     grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: repeat (4, 1fr);
+    grid-template-rows: repeat (6, 1fr);
     grid-template-areas:
     "mad-blanca     mad-azul"
     "chel-azul       chel-amari"
     "mil-clasica    mil-blanca"
-    "manch-negra     manch-roja";
+    "manch-negra     manch-roja"
+    "mad-dragon     chel-clasica"
+    "mil-negra       manch-blanca";
 }
 }
 
-@media screen and (max-width: 458px) {
-.footer {
-    width: 90%;
-}
-}
 
 @media screen and (max-width: 440px) {
 .contenedor-tienda {
-    padding-top: 20px;
+    padding-top: 1.25rem;
 
     display: grid;
-    grid-gap: 25px;
+    grid-gap: 1.5625rem;
     grid-template-columns: repeat (1, 1fr);
-    grid-template-rows: repeat (8, 1fr);
+    grid-template-rows: repeat (6, 1fr);
     grid-template-areas:
-    "mad-blanca"
-    "mad-azul"
-    "chel-azul "
-    "chel-amari"
-    "mil-clasica"
-    "mil-blanca"
-    "manch-negra"
-    "manch-roja";
+    "mad-blanca mad-azul"
+    "chel-azul chel-amari"
+    "mil-clasica mil-blanca"
+    "manch-negra manch-roja"
+    "mad-dragon  chel-clasica"
+    "mil-negra   manch-blanca";
 }
 }
 
-.contenedor-tienda {
-    padding-top: 20px;
-
-    display: grid;
-    grid-gap: 5px 0px;
-}
+@media screen and (max-width: 354px) {
+    body {
+        max-height: 500vh ;
+        
+    }
 }
 
 /**++++++++++++++.....TORNEOS.......+++++++++++++++++++++*/
@@ -672,12 +761,12 @@ grid-area: manch-roja;
 .caja-subtitulo-principal {
     display: flex;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .subtitulo-principal {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .champions {
@@ -685,16 +774,31 @@ grid-area: manch-roja;
 }
 
 .contenido {
-    margin: 0px auto;
-    width: 430px;
-    height: 430px;
+    margin: 0rem auto;
+    width: 90%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.caja-copas,
+.caja-ligas{
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+}
+
 .contenido article a img {
-    width: 200px;
-    height: 200px;
+    width: 14.5rem;
+    height: 14.5rem;
+    margin: 1rem;
+
+    transition: 1s;
+}
+
+.contenido article a img:hover{
+    border: 3px solid yellowgreen;
+    border-radius: 10px;
+    transform: scale(1.2);
 }
 
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -702,44 +806,25 @@ grid-area: manch-roja;
 /**.....................TORNEOS.........................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+
+
+
+
+
+
 /**++++++++++++++.....Registro.......+++++++++++++++++++++*/
 /**......................................................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-.main-registro{
-    height: 100vh;
+.set-formulario div{
+    padding-top: 3rem;
 }
 
-.set-formulario {
-    margin: 0px auto;
-    border: 5px solid white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+@media screen and (max-width:500px) {
+    .set-formulario div{
+        padding-top: 3.5rem;
+    }
+    
 }
-
-.set-formulario div {
-    margin: 15px;
-    font-size: 15px;
-    line-height: 15px;
-}
-
-.set-formulario div input, option{
-    border: 2px solid greenyellow;
-}
-
-.set-formulario div option {
-    border: 5px;
-}
-
-.footer-img-registro {
-    padding-bottom: 0px;
-}
-
-/**++++++++++++++.....TORNEOS.......+++++++++++++++++++++*/
-/**..............DECLARACIONES DE GRILLAS...............*/
-/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /**++++++++++++++.....HISTORIA.......+++++++++++++++++++++*/
 /**..............DECLARACIONES DE GRILLAS...............*/
@@ -748,45 +833,69 @@ grid-area: manch-roja;
 .caja-subtitulo-principal {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
-
-.subtitulo-principal {
-    font-size: 35px;
-}
-
-.contenedor-historia {
+.contenido-historia {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0px auto;
 }
 
-.contenedor-historia .francia,
-.contenedor-historia .alemania,
-.contenedor-historia .españa {
+.contenido-historia img{
+    width: 18.5rem;
+    height: 14.5rem;
+    border-radius: 10%;
+
+    transition: 1s;
+}
+
+.contenido-historia img:hover{
+    transform: scale(1.2);
+}
+
+.mundial{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.titulo-mundial h2{
+    font-size: 2rem;
+
+}
+.contenido-historia div{
+    display: flex;
+}
+
+.resumen-del-mundial{
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 15px;
-    margin: 0px auto;
+    text-align: center;
 }
 
-.contenedor-historia .francia img,
-.contenedor-historia .alemania img,
-.contenedor-historia .españa img {
-    width: 250px;
-    height: 140px;
+.resumen-del-mundial h2{
+    padding: 0.5rem;
+    background-image: linear-gradient(to right, rgb(45, 45, 117), blue, rgb(45, 45, 117));
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
-.contenedor-historia .francia h2,
-.contenedor-historia .alemania h2,
-.contenedor-historia .españa h2 {
-    font-size: 15px;
-    padding: 0px 9px 0px 9px;
+
+
+@media screen and (max-width:900px){
+    .contenido-historia img{
+        width: 16.5rem;
+        height: 12.5rem;
+    }
 }
 
-.contenedor-historia .francia h2{
-    padding: 0px 20px 0px 20px;
+@media screen and (max-width:900px){
+    .contenido-historia img{
+        width: 14.5rem;
+        height: 10.5rem;
+    }
 }
+
