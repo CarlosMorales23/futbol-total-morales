@@ -3,24 +3,28 @@
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px auto;
+    padding: 0px;
     color: #f1f3ff;
     font-family: sans-serif, Arial, Helvetica;
     font-size: 16px;
-    
+    background-color: #0DACFD;
 }
 
 body {
     margin: 0px auto;
-    background-color: #0D81FD;
 }
 
 /**.........HEADER..........*/
-.contenedor-futbol-total-titulo{
-    margin-left: 1rem;
-    align-items: center;
+
+header nav img{
+    width: 4rem;
+    height: 4rem;
 }
+
+
+
+
 
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /**.......................INDEX.........................*/
@@ -30,7 +34,37 @@ body {
 /**.............HEADER..............*/
 /**.................................*/
 
-/*Sus estilos estan hechos con clases bootstrap*/
+/*Caja-caja del menu interno*/
+.enlaces-internos {
+    display: flex;
+    justify-content: center;
+}
+
+/*Caja del menu interno*/
+.lista-secciones {
+    margin-top: 0.0625rem;
+    border: 0.1875rem solid #f1ffff;
+    border-radius: 0.625rem;
+    padding: 0.12rem;
+    width: 14.0625rem;
+    height: 1.6rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Estilo a los hipervinculos del menú interno*/
+.lista-secciones li a {
+    font-size: 0.8125rem;
+    text-decoration: none;
+    border: 0.1875rem solid black;
+    border-radius: 0.650rem;
+    padding: 0.2rem;
+    background-color: #2bcac8;
+    color: black;
+    font-weight: bold;
+}
 
 /**.............INDEX..............*/
 /**............SECCIÓN 1...........*/
@@ -44,6 +78,7 @@ body {
     justify-content: center;
 }
 
+
 .section-1{
     margin-top: 1.5rem; /**Espacio entre secciones*/
 }
@@ -56,9 +91,9 @@ body {
     text-decoration: none;
     border: 0.5rem solid black;
     border-radius: 0.650rem;
-    padding: 0.3rem; /*Padding adicional para texto*/
-    background-color: #0D81FD;
-    color: white;
+    padding: 0.2rem; /*Padding adicional para texto*/
+    background-color: #2bcac8;
+    color: black;
     font-weight: bold;
     margin-bottom: 0.65rem; /**Margen estre el Subtitulo-Principal de la sección y su contenido*/
 }
@@ -75,7 +110,7 @@ body {
 
 /*Primer Parrafo de la sección presentación*/
 .parrafo-1-de-la-seccion-presentacion {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.4rem;
     margin: 0rem 0rem 1rem 0rem; /*Margen de Parrafo a cita*/
 }
@@ -86,7 +121,7 @@ body {
     width: 92.5%;
     margin: 0rem auto;
     margin-bottom: 1.4rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 1.4rem;
     text-align: justify;
     padding: 0.8rem;
@@ -103,7 +138,6 @@ body {
 /*Caja del video de youtube de la sección Prsentación*/
 .caja-del-video-y-texto-de-la-seccion-presentacion{
     width: 95%; /**Este % es de la caja en funcion del 100% del body*/
-    margin: 0rem auto;
     background-image: url(../img/campo-vista-aerea.jpg);
     /**La imagen de fondo esta ocupando el 100% (95%) de la caja contendora */
     background-position: center;
@@ -167,7 +201,7 @@ iframe:hover{  /**transformacion*/
 .ofertas-link-tienda a {
     font-size: 0.85rem;
     text-decoration: none;
-    background-color: #0D81FD;
+    background-color: #2bcac8;
     color: black;
     padding: 0.225rem;
     border: 0.1875rem solid #f1ffff;
@@ -195,7 +229,7 @@ iframe:hover{  /**transformacion*/
 .caja-ofertas-balones,
 .contenedor-remeras /**Pagina Tienda*/{
     margin: 0rem auto;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
     align-items: center; /*Si decido colocar mas imagenes debera cambiar a around o evenly*/
@@ -214,12 +248,13 @@ iframe:hover{  /**transformacion*/
 .ofertas-balones-titulo,
 .novedades-titulo,
 .ultimos-fichajes-titulo,
+.titulo-tienda-remeras, /*Pag Tienda*/ 
 .copas,
 .ligas,
 .titulo-mundial{
     font-size: 1.5rem;
     border: 0.35rem solid black;
-    background-color: #0D81FD;
+    background-color: #2bcac8;
     border-radius: 0.650rem;
     color: black;
     padding: 0.5rem;
@@ -230,7 +265,7 @@ iframe:hover{  /**transformacion*/
 .caja-ofertas-remeras div img,
 .caja-ofertas-balones div img,
 .tienda-img /**Pagina tienda*/ {
-    width: 11.20rem;
+    width: 11.25rem;
     height: 10rem;
     border-radius: 0.125rem 0.125rem 0rem 0rem;
 }
@@ -240,8 +275,8 @@ iframe:hover{  /**transformacion*/
 .caja-ofertas-balones div,
 .tienda-producto {
     text-align: center;
-    width: 11.9rem;
-    height: 16.75rem;
+    width: 11.20rem;
+    height: 15.75rem;
     border: 0.3125rem solid rgb(113, 208, 252);
     border-radius: 0.3125rem;
     transition: 2s;
@@ -429,9 +464,9 @@ iframe:hover{  /**transformacion*/
 /*Caja del Footer*/
 .footer {
     width: 100%;
-    border: 0.2rem solid white;
+    border: 0.0625rem solid white;
     padding-top: 0.3125rem;
-    margin: 1.25rem auto 0.01rem auto;
+    margin: 1.25rem auto;
     text-align: center;
     border-radius: 0.625rem;
     height: 4.6875rem;
@@ -439,7 +474,6 @@ iframe:hover{  /**transformacion*/
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #002d41;
 }
 
 
@@ -469,10 +503,6 @@ iframe:hover{  /**transformacion*/
     margin-left: 1.75rem;
     display: flex;
     justify-content: center;
-}
-
-.footer-img a {
-    margin-right: 0.4rem;
 }
 
 
@@ -550,11 +580,6 @@ iframe:hover{  /**transformacion*/
 /**..............DECLARACIONES DE GRILLAS...............*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
-.carrusel div div img{
-    height: 12.5rem;
-}
-
 /*Imagenes de las Remeras y Balones en oferta*/
 .ofertas-remeras div img,
 .ofertas-balones div img,
@@ -569,8 +594,8 @@ border-radius: 0.125rem 0.125rem 0rem 0rem;
 .ofertas-balones div,
 .tienda-producto {
 text-align: center;
-width: 11.85rem;
-height: 17.875rem;
+width: 11.25rem;
+height: 16.875rem;
 border: 0.3125rem solid rgb(113, 208, 252);
 border-radius: 0.3125rem;
 }
@@ -582,12 +607,7 @@ justify-content: center;
 }
 
 .contenedor-tienda {
-padding-top: 0rem;
-margin: 3rem auto;
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-
+padding-top: 1.25rem;
 
 display: grid;
 grid-gap: 1.5625rem;
@@ -700,27 +720,47 @@ grid-area: manch-roja;
 /**......................................................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.torneos-y-ligas{
-    margin-top: 3rem;
+.caja-subtitulo-principal {
     display: flex;
-    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.subtitulo-principal {
+    font-size: 2.5rem;
+}
+
+.champions {
+    background-color: white;
+}
+
+.contenido {
+    margin: 0rem auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .caja-copas,
 .caja-ligas{
     display: flex;
     flex-direction: column;
+    flex: wrap;
 }
 
-.caja-copas img,
-.caja-ligas img{
-    width: 10rem;
-    height: 10rem;
+.contenido article a img {
+    width: 14.5rem;
+    height: 14.5rem;
+    margin: 1rem;
+
+    transition: 1s;
 }
 
-.caja-copas article,
-.caja-ligas article{
-    margin-top: 1rem;
+.contenido article a img:hover{
+    border: 3px solid yellowgreen;
+    border-radius: 10px;
+    transform: scale(1.2);
 }
 
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -732,25 +772,14 @@ grid-area: manch-roja;
 
 
 
+
+
 /**++++++++++++++.....Registro.......+++++++++++++++++++++*/
 /**......................................................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-.form-select option{
-    color: black;
+.set-formulario div{
+    padding-top: 3rem;
 }
-
-.form-botones{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.form-botones div input{
-    color: black;
-    padding: 0.5rem;
-    
-}
-
 
 @media screen and (max-width:500px) {
     .set-formulario div{
@@ -763,20 +792,23 @@ grid-area: manch-roja;
 /**..............DECLARACIONES DE GRILLAS...............*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
-
-
-.card-text,
-.card-body p{
-    color: black;
+.caja-subtitulo-principal {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
 }
-
-.container-fluid{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+.contenido-historia {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px auto;
 }
 
 .contenido-historia img{
+    width: 18.5rem;
+    height: 14.5rem;
+    border-radius: 10%;
 
     transition: 1s;
 }
@@ -785,16 +817,47 @@ grid-area: manch-roja;
     transform: scale(1.2);
 }
 
-@media screen and (max-width:800px){
-    .contenido-historia div div {
-        margin: 0.4rem;
+.mundial{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.titulo-mundial h2{
+    font-size: 2rem;
+
+}
+.contenido-historia div{
+    display: flex;
+}
+
+.resumen-del-mundial{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.resumen-del-mundial h2{
+    padding: 0.5rem;
+    background-image: linear-gradient(to right, rgb(45, 45, 117), blue, rgb(45, 45, 117));
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+
+
+@media screen and (max-width:900px){
+    .contenido-historia img{
+        width: 16.5rem;
+        height: 12.5rem;
     }
 }
 
-/*@media screen and (max-width:650px){
+@media screen and (max-width:900px){
     .contenido-historia img{
-        width: 11.5rem;
+        width: 14.5rem;
         height: 10.5rem;
     }
-}*/
+}
 

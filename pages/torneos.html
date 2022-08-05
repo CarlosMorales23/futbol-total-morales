@@ -5,134 +5,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---Bootstrap-->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!---CSS-->
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
-    <title>Torneos de Futbol</title>
+    <title>Futbol Total</title>
 </head>
+
 
 <body>
     <header>
-        <h1 class="titulo-principal">Futbol Total</h1>
-        <div class="caja-del-menu">
-            <nav class="menu">
-                <ul class="lista-del-menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./tienda.html">Tienda</a></li>
-                    <li><a href="./torneos.html">Torneos</a></li>
-                    <li><a href="./registro.html">Registro</a></li>
-                    <li><a href="./historia-del-futbol.html">Historia del Futbol</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!--- Agregue un Complemento NAV de bootstrap, luego realice modificaciones, coloque clases: d-flex alineacion horizontal, colores, y agregue div. -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-center">
+            <div class="contenedor-futbol-total-titulo cl-6 text-center align-items-center">
+                <h1 class="navbar-brand fs-1" href="#">Futbol Total</h1>
+            </div>
+            <div class="container-fluid col-6">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="./tienda.html">Tienda</a>
+                        <a class="nav-link" href="./torneos.html">Torneos</a>
+                        <a class="nav-link" href="./registro.html">Registro</a>
+                        <a class="nav-link" href="./historia-del-futbol.html">Historia</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <div class="caja-subtitulo-principal">
-            <h2 class="subtitulo-principal">Torneos</h2>
+
+        <div class="container-fluid d-flex flex-column">
+            <div class="caja-subtitulo-principal bg-dark text-white text-center">
+                <h2>Torneos</h2>
+            </div>
+
+            <!---Inicio de Carrusel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/Torneos/torneos-europeos-carrusel-1-1.jpg" class="d-block w-100"
+                            alt="Torneos Europeos" width="100%" height="325px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/Torneos/ligas-europeas-carrusel.jpg" class="d-block w-100" alt="Ligas Europeas"
+                            width="100%" height="325px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/Torneos/ligas-sudamericanas-carrusel.jpg" class="d-block w-100"
+                            alt="Ligas Sudamericanas" width="100%" height="325px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/Torneos/ligas-norteamericanas-carrusel.jpg" class="d-block w-100"
+                            alt="Ligas Norteamericanas" width="100%" height="325px">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!---Fin de Carrusel-->
+
+
+            <div class="torneos-y-ligas">
+                <div class="caja-copas">
+                    <h2 class="copas">COPAS</h2>
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/qatar-2022.jpg"
+                                alt="Copa del Mundo Qatar 2022"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank"
+                            href="https://www.espn.com.ar/futbol/posiciones/_/league/uefa.champions/uefa-champions-league"><img
+                                class="champions" src="../img/Torneos/champions-league.png" alt="Champions League"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/copa-libertadores-da-americajpg.jpg"
+                                alt="Copa Libertadores de America"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/CONMEBOL_Sudamericana_logo_(2017).svg.png"
+                                alt="Copa Sudamericana"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/concacaf.jpg" alt="Copa Concacaf"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/Copa-America.png" alt="Copa America"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/copa-oro-concacaf.jpg"
+                                alt="Copa ORO Concacaf"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/CAF.jpg" alt="Copa CAF"></a>
+                    </article>
+                </div>
+
+
+                <div class="caja-ligas">
+
+                    <h2 class="ligas">LIGAS</h2>
+
+                    <article>
+                        <a target="_blank" href="https://www.laliga.com/laliga-santander/clasificacion"><img
+                                src="../img/Torneos/liga-española.png" alt="Liga Española"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="https://www.espn.com.ar/futbol/posiciones/_/liga/eng.1"><img
+                                src="../img/Torneos/Liga-inglesa.jpg" alt="Liga Inglesa"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank"
+                            href="https://www.espn.com.ar/futbol/posiciones/_/league/ita.1/serie-a-de-italia"><img
+                                src="../img/Torneos/liga-italiana.jpg" alt="Liga Italiana"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/liga-holanda.jpg" alt="Liga Holandesa"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/liga-portugal.png" alt="Liga Portugal"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/liga-brasil.png" alt="Liga de Brasil"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/liga-argentina.jpg"
+                                alt="Liga Argentina"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/liga-francia.png" alt="Liga Francesa"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/liga-alemania.png" alt="Liga Alemana"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/liga-mexico.jpg" alt="Liga Mexicana"></a>
+                    </article>
+
+                    <article>
+                        <a target="_blank" href="#"><img src="../img/Torneos/liga-usa.jpg" alt="Liga USA"></a>
+                    </article>
+                </div>
+            </div>
         </div>
-
-        <section class="contenido">
-
-
-
-
-            <div class="caja-copas">
-
-                <h2 class="copas">COPAS</h2>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/qatar-2022.jpg" alt="Copa del Mundo Qatar 2022"></a>
-                </article>
-
-                <article>
-                    <a target="_blank"
-                        href="https://www.espn.com.ar/futbol/posiciones/_/league/uefa.champions/uefa-champions-league"><img
-                            class="champions" src="../img/Torneos/champions-league.png" alt="Champions League"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/copa-libertadores-da-americajpg.jpg"
-                            alt="Copa Libertadores de America"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/CONMEBOL_Sudamericana_logo_(2017).svg.png"
-                            alt="Copa Sudamericana"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/concacaf.jpg" alt="Copa Concacaf"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/Copa-America.png" alt="Copa America"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/copa-oro-concacaf.jpg" alt="Copa ORO Concacaf"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/CAF.jpg" alt="Copa CAF"></a>
-                </article>
-            </div>
-
-
-
-
-
-            <div class="caja-ligas">
-
-                <h2 class="ligas">LIGAS</h2>
-
-                <article>
-                    <a target="_blank" href="https://www.laliga.com/laliga-santander/clasificacion"><img
-                            src="../img/Torneos/liga-española.png" alt="Liga Española"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="https://www.espn.com.ar/futbol/posiciones/_/liga/eng.1"><img
-                            src="../img/Torneos/Liga-inglesa.jpg" alt="Liga Inglesa"></a>
-                </article>
-
-                <article>
-                    <a target="_blank"
-                        href="https://www.espn.com.ar/futbol/posiciones/_/league/ita.1/serie-a-de-italia"><img
-                            src="../img/Torneos/liga-italiana.jpg" alt="Liga Italiana"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/liga-holanda.jpg" alt="Liga Holandesa"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/liga-portugal.png" alt="Liga Portugal"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/liga-brasil.png" alt="Liga de Brasil"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/liga-argentina.jpg" alt="Liga Argentina"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/liga-francia.png" alt="Liga Francesa"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/liga-alemania.png" alt="Liga Alemana"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/liga-mexico.jpg" alt="Liga Mexicana"></a>
-                </article>
-
-                <article>
-                    <a target="_blank" href="#"><img src="../img/Torneos/liga-usa.jpg" alt="Liga USA"></a>
-                </article>
-            </div>
-        </section>
     </main>
 
     <footer class="footer" id="footer">
@@ -140,12 +196,17 @@
             <p class="parrafo-footer">Futbol Total - Carlos Morales - 2022 &copy;</p>
         </div>
         <div class="footer-img">
-            <a href="#" target="_blank"><img src="../img/instagram.svg" alt="icono-de-instagram">Instagram</a>
-            <a href="#" target="_blank"><img src="../img/facebook.svg" alt="icono-de-facebook">Facebook</a>
-            <a href="#" target="_blank"><img src="../img/correo.svg" alt="icono-de-correo">Correo</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/instagram.svg"
+                    alt="icono-de-instagram">Instagram</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/facebook.svg"
+                    alt="icono-de-facebook">Facebook</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/correo.svg" alt="icono-de-correo">Correo</a>
         </div>
     </footer>
-
+    <!-- <script src="./js/bootstrap.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

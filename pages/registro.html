@@ -5,139 +5,224 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---Bootstrap-->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!---CSS-->
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
-    <title>Registro</title>
+    <title>Futbol Total</title>
 </head>
+
 
 <body>
     <header>
-        <h1 class="titulo-principal">Futbol Total</h1>
-        <div class="caja-del-menu">
-            <nav class="menu">
-                <ul class="lista-del-menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./tienda.html">Tienda</a></li>
-                    <li><a href="./torneos.html">Torneos</a></li>
-                    <li><a href="./registro.html">Registro</a></li>
-                    <li><a href="./historia-del-futbol.html">Historia del Futbol</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!--- Agregue un Complemento NAV de bootstrap, luego realice modificaciones, coloque clases: d-flex alineacion horizontal, colores, y agregue div. -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-center">
+            <div class="contenedor-futbol-total-titulo cl-6 text-center align-items-center">
+                <h1 class="navbar-brand fs-1" href="#">Futbol Total</h1>
+            </div>
+            <div class="container-fluid col-6">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="./tienda.html">Tienda</a>
+                        <a class="nav-link" href="./torneos.html">Torneos</a>
+                        <a class="nav-link" href="./registro.html">Registro</a>
+                        <a class="nav-link" href="./historia-del-futbol.html">Historia</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
 
-    <main class="main-registro">
-        <div class="caja-subtitulo-principal">
-            <h2 class="subtitulo-principal">Registrate</h2>
-        </div>
-
-        <form class="set-formulario">
-            <div class="form caja-nombre">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+    <main>
+        <div class="container-fluid">
+            <div class="row col caja-subtitulo-principal bg-dark text-white h-25 text-center">
+                <h2 class="subtitulo-principal">Registro</h2>
             </div>
 
-            <div class="form caja-apellido">
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido">
+
+            <div class="input-group mb-2 mt-2">
+                <span class="input-group-text">Nombre y Apellido</span>
+                <input type="text" aria-label="Nombre" class="form-control">
+                <input type="text" aria-label="Apellido" class="form-control">
             </div>
 
-            <div class="form caja-edad">
-                <h3>Eres mayor de Edad?</h3>
-                <label> Menor de Edad
-                    <input type="checkbox" name="edad" id="menor" value="Menor de Edad">
-                </label>
-                <br>
-                <label> Mayor de Edad
-                    <input type="checkbox" name="edad" id="mayor" value="Mayor de Edad">
+            <br>
+
+            <div class="form-check">
+                <h4>Eres mayor de Edad?</h4>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Menor de Edad
                 </label>
             </div>
 
-            <div class="form caja-email">
-                <label for="correo">Correo</label>
-                <input type="email" name="email" id="email">
+
+
+
+            <div class="container row d-flex">
+
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Mayor de Edad
+                </label>
             </div>
 
-            <div class="form equipo-favorito">
-                <label for="equipo">Equipo Favorito</label>
-                <input type="text">
+            <br>
+
+            <div class="mb-2">
+                <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
 
-            <div class="form liga-favorita">
-                <label for="equipo">Liga Favorita</label>
-                <input type="text">
+            <br>
+
+            <div class="mb-2">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejanos algun comentario</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
-            <div class="form copa-favorita">
-                <label for="equipo">Copa Favorita</label>
-                <input type="text">
-            </div>
+            <br>
 
-            <div class="form mundial-favorito">
-                <label for="equipo">Mundial Favorito</label>
-                <input type="text">
-            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Jugador Favorito</option>
+                <option value="1">Messi</option>
+                <option value="2">Cristiano</option>
+                <option value="3">Otro</option>
+            </select>
 
-            <div class="form defensa-favorito">
-                <label for="equipo">Defensa Favorito</label>
-                <input type="text">
-            </div>
+            <br>
 
-            <div class="form centro-favorito">
-                <label for="equipo">Centro Favorito</label>
-                <input type="text">
-            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Equipo Favorito</option>
+                <option value="1">Real Madrid</option>
+                <option value="2">Barcelona</option>
+                <option value="3">Otro</option>
+            </select>
 
-            <div class="form portero-favorito">
-                <label for="equipo">Portero Favorito</label>
-                <input type="text">
-            </div>
+            <br>
 
-            <div class="form delantero-favorito">
-                <label for="equipo">Delantero Favorito</label>
-                <input type="text">
-            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Liga Favorita</option>
+                <option value="1">Española</option>
+                <option value="2">Inglaterra</option>
+                <option value="3">Otra</option>
+            </select>
 
-            <div class="form estadio-favorito">
-                <label for="equipo">Estadio Favorito</label>
-                <input type="text">
-            </div>
+            <br>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Copa Favorita</option>
+                <option value="1">Eurocopa</option>
+                <option value="2">Copa America</option>
+                <option value="3">Otra</option>
+            </select>
 
-            <div class="form seleccion-favorita">
-                <label for="equipo">Selección Favorito</label>
-                <input type="text">
-            </div>
+            <br>
 
-            <div class="form jugador-favorito">
-                Jugador Favorito
-                <Select>
-                    <option value="messi">Messi</option>
-                    <option value="cristiano">Cristiano Ronaldo</option>
-                    <option value="indefinido">Otro</option>
-                </Select>
-            </div>
-            <div class="form botones">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Mundial Favorito</option>
+                <option value="1">Sudafrica 2010</option>
+                <option value="2">Alemania 2006</option>
+                <option value="3">Brasil 2014</option>
+            </select>
+
+            <br>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Defensor Favorito</option>
+                <option value="1">Sergio Ramos</option>
+                <option value="2">Gerar Pique</option>
+                <option value="3">Puyol</option>
+            </select>
+
+            <br>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>centro campista Favorito</option>
+                <option value="1">Kaka</option>
+                <option value="2">Modric</option>
+                <option value="3">Kross</option>
+            </select>
+            <br>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Portero Favorito</option>
+                <option value="1">Khan</option>
+                <option value="2">Courtuis</option>
+                <option value="3">Keylor Navas</option>
+            </select>
+
+            <br>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Delantero Favorito</option>
+                <option value="1">Ronaldo Nazario</option>
+                <option value="2">Carlos Tevez</option>
+                <option value="3">Drogba</option>
+            </select>
+
+            <br>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>centro campista Favorito</option>
+                <option value="1">Bernabeu</option>
+                <option value="2">SanSiro</option>
+                <option value="3">Maracana</option>
+            </select>
+
+            <br>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>centro campista Favorito</option>
+                <option value="1">Brasil</option>
+                <option value="2">Alemania</option>
+                <option value="3">Argentina</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="form-botones">
                 <div class="form reset">
                     <input type="reset">
                 </div>
-
+                <br>
                 <div class="form enviar-datos">
                     <input type="submit" value="Enviar datos">
                 </div>
             </div>
-        </form>
 
+        </div>
     </main>
 
     <footer class="footer" id="footer">
         <div class="caja-parrafo-texto">
             <p class="parrafo-footer">Futbol Total - Carlos Morales - 2022 &copy;</p>
         </div>
-        <div class="footer-img-registro">
-            <a href="#" target="_blank"><img src="../img/instagram.svg" alt="icono-de-instagram">Instagram</a>
-            <a href="#" target="_blank"><img src="../img/facebook.svg" alt="icono-de-facebook">Facebook</a>
-            <a href="#" target="_blank"><img src="../img/correo.svg" alt="icono-de-correo">Correo</a>
+        <div class="footer-img">
+            <a class="text-light" href="#" target="_blank"><img src="../img/instagram.svg"
+                    alt="icono-de-instagram">Instagram</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/facebook.svg"
+                    alt="icono-de-facebook">Facebook</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/correo.svg" alt="icono-de-correo">Correo</a>
         </div>
     </footer>
+    <!-- <script src="./js/bootstrap.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -5,97 +5,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---Bootstrap-->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!---CSS-->
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
-    <title>Historia del Futbol</title>
+    <title>Futbol Total</title>
 </head>
 
 <body>
     <header>
-        <h1 class="titulo-principal">Futbol Total</h1>
-        <div class="caja-del-menu">
-            <nav class="menu">
-                <ul class="lista-del-menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./tienda.html">Tienda</a></li>
-                    <li><a href="./torneos.html">Torneos</a></li>
-                    <li><a href="./registro.html">Registro</a></li>
-                    <li><a href="./historia-del-futbol.html">Historia del Futbol</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!--- Agregue un Complemento NAV de bootstrap, luego realice modificaciones, coloque clases: d-flex alineacion horizontal, colores, y agregue div. -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-center">
+            <div class="contenedor-futbol-total-titulo cl-6 text-center align-items-center">
+                <h1 class="navbar-brand fs-1" href="#">Futbol Total</h1>
+            </div>
+            <div class="container-fluid col-6">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="./tienda.html">Tienda</a>
+                        <a class="nav-link" href="./torneos.html">Torneos</a>
+                        <a class="nav-link" href="./registro.html">Registro</a>
+                        <a class="nav-link" href="./historia-del-futbol.html">Historia</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <div class="caja-subtitulo-principal">
-            <h2 class="subtitulo-principal">Historia de los mundiales</h2>
-        </div>
+        <div class="container-fluid">
+            <div class="caja-subtitulo-principal bg-dark text-white h-25 text-center">
+                <h2 class="subtitulo-principal">Historia de los mundiales</h2>
+            </div>
 
-        <div class="contenido-historia">
+            <div class="contenido-historia mt-3">
+                <div class="mundial container-fluid d-flex justify-content-around">
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/bandera-francia.jpg" class="card-img-top" alt="bandera-francia">
+                        <div class="card-body">
+                            <p class="card-text">Francia</p>
+                        </div>
+                    </div>
 
-            <div class="mundial">
-                <div class="titulo-mundial">
-                    <h2>Rusia 2018</h2>
-                </div>
-                <div class="resumen-del-mundial">
-                    <img class="bandera-francia" src="../img/Campeones/bandera-francia.jpg">
-                    <h2>Francia jugo y gano la final del Mundial Rusia-2018 contra el equipo de Croacia.</h2>
-                    <img src="../img/Campeones/francia-2018.jpg">
+                    <div class="titulo-mundial col-4">
+                        <h2 class="text-center">Rusia 2018</h2>
+                        <p class="text-center">Francia jugo y gano la final del Mundial Rusia-2018 contra el equipo de Croacia.</p>
+                    </div>
+
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/francia-2018.jpg" class="card-img-top" alt="Jugadores-de-francia">
+                        <div class="card-body">
+                            <p class="card-text">Jugadores del equipo de Alemania en la final</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="mundial">
-                <div class="titulo-mundial">
-                    <h2>Brasil 2014</h2>
-                </div>
-                <div class="resumen-del-mundial">
-                    <img src="../img/Campeones/bandera-alemania.jpg" alt="">
-                    <h2>Alemania jugo y gano la final del mundial Brasil-2014 contra el equipo de Argentina.</h2>
-                    <img src="../img/Campeones/alemania-2014.jpg">
+
+            <div class="contenido-historia mt-5">
+                <div class="mundial container-fluid d-flex justify-content-around">
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/bandera-alemania.jpg" class="card-img-top" alt="bandera-de Alemania">
+                        <div class="card-body">
+                            <p class="card-text">Alemania</p>
+                        </div>
+                    </div>
+
+                    <div class="titulo-mundial col-4">
+                        <h2 class="text-center">Brasil 2014</h2>
+                        <p class="text-center">Alemania jugo y gano la final del mundial Brasil-2014 contra el equipo de Argentina.</p>
+                    </div>
+
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/alemania-2014.jpg" class="card-img-top" alt="Jugadores-de-Alemania">
+                        <div class="card-body">
+                            <p class="card-text">Jugadores del equipo de Francia en la final</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="mundial">
-                <div class="titulo-mundial">
-                    <h2>Sudafrica 2010</h2>
-                </div>
-                <div class="resumen-del-mundial">
-                    <img src="../img/Campeones/bandera-de-españa.jpg" alt="">
-                    <h2>España jugo y gano la final del mundial Sudafrica-2010 contra el equipo de Holanda.</h2>
-                    <img src="../img/Campeones/españa-2010.jpg" alt="">
+            <div class="contenido-historia mt-5">
+                <div class="mundial container-fluid d-flex justify-content-around">
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/bandera-de-españa.jpg" class="card-img-top" alt="bandera de España">
+                        <div class="card-body">
+                            <p class="card-text">España</p>
+                        </div>
+                    </div>
+
+                    <div class="titulo-mundial col-4">
+                        <h2 class="text-center">Sudafrica 2010</h2>
+                        <p class="text-center">España jugo y gano la final del mundial Sudafrica-2010 contra el equipo de Holanda.</p>
+                    </div>
+
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/españa-2010.jpg" class="card-img-top" alt="Jugadores-de-España">
+                        <div class="card-body">
+                            <p class="card-text">Jugadores del equipo de Alemania en la final</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="mundial">
-                <div class="titulo-mundial">
-                    <h2>Alemania 2006</h2>
-                </div>
-                <div class="resumen-del-mundial">
-                    <img src="../img/Campeones/bandera-italia.jpg" alt="">
-                    <h2>Italia jugo y gano la final del mundial Alemania 2006 contra el equipo de Francia.</h2>
-                    <img src="../img/Campeones/italia-2006.jpg" alt="">
+
+
+            <div class="contenido-historia mt-5">
+                <div class="mundial container-fluid d-flex justify-content-around">
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/bandera-italia.jpg" class="card-img-top" alt="bandera de Italia">
+                        <div class="card-body">
+                            <p class="card-text">Italia</p>
+                        </div>
+                    </div>
+
+                    <div class="titulo-mundial col-4">
+                        <h2 class="text-center">Alemania 2006</h2>
+                        <p class="text-center">Italia jugo y gano la final del mundial Alemania 2006 contra el equipo de Francia.</p>
+                    </div>
+
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/italia-2006.jpg" class="card-img-top" alt="Jugadores-de-España">
+                        <div class="card-body">
+                            <p class="card-text">Jugadores del equipo de Italia en la final</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="mundial">
-                <div class="titulo-mundial">
-                    <h2>Corea-Japon 2002</h2>
-                </div>
-                <div class="resumen-del-mundial">
-                    <img src="../img/Campeones/bandera-brasil.jpg" alt="">
-                    <h2>Brasil jugo y gano la final del mundial Corea-Japon 2022 contra el equipo de Alemania.</h2>
-                    <img src="../img/Campeones/brasil-2002.jpg" alt="">
+
+            <div class="contenido-historia mt-5">
+                <div class="mundial container-fluid d-flex justify-content-around">
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/bandera-brasil.jpg" class="card-img-top" alt="bandera de Italia">
+                        <div class="card-body">
+                            <p class="card-text">Brazil</p>
+                        </div>
+                    </div>
+
+                    <div class="titulo-mundial col-4">
+                        <h2 class="text-center">Corea-Japon 2002</h2>
+                        <p class="text-center">Brasil jugo y gano la final del mundial Corea-Japon 2022 contra el equipo de Alemania.</p>
+                    </div>
+
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/brasil-2002.jpg" class="card-img-top" alt="Jugadores-de-España">
+                        <div class="card-body">
+                            <p class="card-text">Jugadores del equipo de Brasil en la final</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="mundial">
-                <div class="titulo-mundial">
-                    <h2>Francia 1998</h2>
-                </div>
-                <div class="resumen-del-mundial">
-                    <img src="../img/Campeones/bandera-francia.jpg" alt="">
-                    <h2>Francia jugo y gano la final del mundial Francia 1998 contra el equipo de Brasil.</h2>
-                    <img src="../img/Campeones/francia-1998.jpg" alt="">
+            <div class="contenido-historia mt-5">
+                <div class="mundial container-fluid d-flex justify-content-around">
+                    <div class="card col-3" style="width: 15rem;">
+                        <img src="../img/Campeones/bandera-francia.jpg" class="card-img-top" alt="bandera de Italia">
+                        <div class="card-body">
+                            <p class="card-text">Francia</p>
+                        </div>
+                    </div>
+
+                    <div class="titulo-mundial col-4">
+                        <h2 class="text-center">Corea-Japon 2002</h2>
+                        <p class="text-center">Francia jugo y gano la final del mundial Francia 1998 contra el equipo de Brasil.</p>
+                    </div>
+
+                    <div class="card col-2" style="width: 15rem;">
+                        <img src="../img/Campeones/francia-1998.jpg" class="card-img-top" alt="Jugadores de Francia">
+                        <div class="card-body">
+                            <p class="card-text">Jugadores del equipo de Brasil en la final</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,11 +197,18 @@
             <p class="parrafo-footer">Futbol Total - Carlos Morales - 2022 &copy;</p>
         </div>
         <div class="footer-img">
-            <a href="#" target="_blank"><img src="../img/instagram.svg" alt="icono-de-instagram">Instagram</a>
-            <a href="#" target="_blank"><img src="../img/facebook.svg" alt="icono-de-facebook">Facebook</a>
-            <a href="#" target="_blank"><img src="../img/correo.svg" alt="icono-de-correo">Correo</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/instagram.svg"
+                    alt="icono-de-instagram">Instagram</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/facebook.svg"
+                    alt="icono-de-facebook">Facebook</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/correo.svg"
+                    alt="icono-de-correo">Correo</a>
         </div>
     </footer>
+    <!-- <script src="./js/bootstrap.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
