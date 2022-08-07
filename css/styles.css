@@ -872,6 +872,17 @@ main .caja-ligas img{
 /**.............REGISTRO...........*/
 /**................................*/
 
+.section-2 .subtitulo-seccion-ofertas{
+    font-size: var(--tamaño-de-letra-subtitulo);
+    border: var(--borde-subtitulo);
+    border-radius: var(--borde-radius);
+    padding: 0.3rem;
+    background-color: var(--fondo-subtitulo);
+    color: var(--color-letra);
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+}
+
 main .form-select option{
     color: black;
 }
@@ -903,25 +914,23 @@ main .form-select option{
 /**..............DECLARACIONES DE GRILLAS...............*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
-
-
-.card-text,
-.card-body p{
+main .card-text,
+main .card-body p{
     color: black;
+    text-align: center;
 }
 
-.container-fluid{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+main .container-fluid{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
-.contenido-historia img{
+.container-fluid .contenido-historia img{
 
     transition: 1s;
 }
 
-.contenido-historia img:hover{
+.container-fluid .contenido-historia img:hover{
     transform: scale(1.2);
 }
 
@@ -931,10 +940,10 @@ main .form-select option{
     }
 }
 
-/*@media screen and (max-width:650px){
-    .contenido-historia img{
-        width: 11.5rem;
-        height: 10.5rem;
+@media screen and (max-width:716px){
+    .contenido-historia{
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
-} */
+} 
 
