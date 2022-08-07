@@ -1,69 +1,130 @@
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**.....................VARIABLES.......................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.color4 {color: #08beff;}
+
+.color3 {color: #0054d2;}
+.color4 {color: #0097f4;}
+
+.color4 {color: #078dff;}
+.color5 {color: #0efff9;}
+
+
+:root{
+    --fondo-oscuro: #0921aa;
+    --fondo-claro: #3b98fc;
+    --fondo-titulo-footer: #140f07;
+    --fondo-nav-interno: #212529;
+    --fondo-subtitulo: #0D81FD;
+
+    --borde-productos: 0.25rem solid #0efff9;
+    --borde-subtitulo: 0.55rem solid #140f07;
+    --borde-radius: 0.6rem;
+    --borde-radius-img:0.125rem 0.125rem 0rem 0rem;
+    
+    
+    --animacion-boton: yellow;
+
+    --tamaño-letra:16px;
+    --fuente-primaria: sans-serif, Arial, Helvetica;
+    --color-letra: white;
+    --tamaño-de-letra-subtitulo: 2.2rem;
+    --borde-de-imagen-video-y-texto: 0.25rem solid #0efff9;
+    --borde-caja-producto: 0.3125rem solid rgb(113, 208, 252);
+
+}
+
+
+
+
+
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /**..............ESTILOS PARA TODAS LAS PAGINAS.........*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 * {
     margin: 0;
     padding: 0;
-    color: #f1f3ff;
-    font-family: sans-serif, Arial, Helvetica;
-    font-size: 16px;
-    
+    color: var(--color-letra);
+    font-family: var(--fuente-primaria);
+    font-size: var(--tamaño-letra);
+    box-sizing: border-box;    
 }
+
 
 body {
     margin: 0px auto;
-    background-color: #0D81FD;
+    background-color: var(--fondo-oscuro);
 }
+
 
 /**.........HEADER..........*/
-.contenedor-futbol-total-titulo{
-    margin-left: 1rem;
-    align-items: center;
+header .bg-primary{
+    background-color: var(--fondo-titulo-footer) !important; 
 }
 
-/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/**.......................INDEX.........................*/
-/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+header nav div h1{
+    margin-left: 1rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
 
+header nav div div div a{
+    font-size: 1rem;
+    color: var(--color-letra);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/**................................*/
 /**.............INDEX..............*/
-/**.............HEADER..............*/
-/**.................................*/
-
-/*Sus estilos estan hechos con clases bootstrap*/
-
-/**.............INDEX..............*/
-/**............SECCIÓN 1...........*/
 /**................................*/
 
-.caja-subtitulo-seccion-presentacion,
-.caja-subtitulo-principal-ofertas,
-.caja-subtitulo-principal-notitcias {
+
+/**............NAV INTENRO...........*/
+main ul{
+    background-color: var(--fondo-nav-interno);
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/**.......INICIO SECCIÓN 1 -INDEX.....................................................................*/
+main .section-1{
+    margin: 0rem auto;
+    margin-top: 1rem;
+}
+
+.section-1 .caja-subtitulo-seccion-presentacion{
     margin: 0rem auto;
     display: flex;
     justify-content: center;
 }
 
-.section-1{
-    margin-top: 1.5rem; /**Espacio entre secciones*/
-}
-
-/*Titulo de las secciónes del index (de las 3)*/
-.subtitulo-principal-presentacion,
-.subtitulo-principal-ofertas,
-.subtitulo-principal-notitcias {
-    font-size: 2.2rem;
+.section-1 .subtitulo-principal-presentacion{
+    font-size: var(--tamaño-de-letra-subtitulo);
     text-decoration: none;
-    border: 0.5rem solid black;
-    border-radius: 0.650rem;
-    padding: 0.3rem; /*Padding adicional para texto*/
-    background-color: #0D81FD;
-    color: white;
+    border: var(--borde-subtitulo);
+    border-radius: var(--borde-radius);
+    padding: 0.3rem;
+    background-color: var(--fondo-subtitulo);
+    color: var(--color-letra);
     font-weight: bold;
-    margin-bottom: 0.65rem; /**Margen estre el Subtitulo-Principal de la sección y su contenido*/
+    margin-bottom: 0.65rem;
 }
 
-.caja-presentacion-parrafo-1-y-blockquote {
+
+.section-1 .caja-presentacion-parrafo-1-y-blockquote {
     width: 95%; /**Este % es de la caja en funcion del 100% del body*/
     display: flex;
     flex-direction: column;
@@ -74,34 +135,31 @@ body {
 }
 
 /*Primer Parrafo de la sección presentación*/
-.parrafo-1-de-la-seccion-presentacion {
-    font-size: 1.2rem;
+.section-1 div .parrafo-1-de-la-seccion-presentacion {
+    font-size: 1rem;
     line-height: 1.4rem;
-    margin: 0rem 0rem 1rem 0rem; /*Margen de Parrafo a cita*/
+    margin: 0rem 0rem 0.5rem 0rem; /*Margen de Parrafo a cita*/
 }
 
 /*Cita*/
-.presentacion-blockquote {
-    /*Margen de cita a video*/
+.section-1 div blockquote{
     width: 92.5%;
     margin: 0rem auto;
-    margin-bottom: 1.4rem;
-    font-size: 0.95rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.9rem;
     line-height: 1.4rem;
     text-align: justify;
     padding: 0.8rem;
-    background-image: linear-gradient(to right, rgb(45, 45, 117), blue, rgb(45, 45, 117));
-    
+    background-image: linear-gradient(to right, rgb(45, 45, 117), blue, rgb(45, 45, 117)); 
 }
 
 /*Estilos a la Cita*/
-.presentacion strong {
+main blockquote strong {
     font-size: 1rem;
 }
 
-
 /*Caja del video de youtube de la sección Prsentación*/
-.caja-del-video-y-texto-de-la-seccion-presentacion{
+.section-1 .caja-del-video-y-texto-de-la-seccion-presentacion{
     width: 95%; /**Este % es de la caja en funcion del 100% del body*/
     margin: 0rem auto;
     background-image: url(../img/campo-vista-aerea.jpg);
@@ -109,69 +167,82 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 0.650rem;
+    border-radius: var(--borde-radius);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 /*Video de iframe - Youtube*/
-iframe {
-    border: 0.3125rem solid #f1ffff;
-    border-radius: 0.625rem;
+.section-1 iframe {
+    border: var(--borde-de-imagen-video-y-texto);
+    border-radius: var(--borde-radius);
     width:18.5rem;
     height: 12rem;
+    margin-top: 0.4rem; /*Para centrar el video en vertical*/
 
     /**Especifica la propiedad que se aplicara en el hover, en la transformación*/
     transition: 2.5s
 }
 
 iframe:hover{  /**transformacion*/
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
+
 
 /*Parrafo al lado del video*/
-.presentacion-parrafo-2 {
+.section-1 div .presentacion-parrafo-2 {
     text-align: center;
-    font-size: 1rem;
+    font-size: var(--tamaño-letra);
     line-height: 1.4em;
-    padding: .5rem;
-    border: 0.375rem solid #f1ffff;
-    border-radius: 0.650rem;
+    padding: 0.5rem;
+    border: var(--borde-de-imagen-video-y-texto);
+    border-radius: var(--borde-radius);
 }
 
+/**.......FIN SECCIÓN 1 -INDEX........................................................................*/
 
 
-/**.............INDEX..............*/
-/**............SECCIÓN 2...........*/
-/**................................*/
+
+
+/**.......INICIO SECCIÓN 2 -INDEX.....................................................................*/
 
 /**Caja completa de la sección 2, centrada*/
 .section-2{
     width: 95%;
-    margin: 2rem auto;
+    margin: 4rem auto;
 }
 
-/*Separación del Subtitulo de "Ofertas de nuetsra tienda" al hipervinculo "ir a tienda"*/
-.subtitulo-principal-ofertas {
-    margin-bottom: 0.45rem;
-    margin-left: auto;
-    margin-right: auto;
+.section-2 .caja-subtitulo-seccion-ofertas{
+    margin: 0rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.section-2 .subtitulo-seccion-ofertas{
+    font-size: var(--tamaño-de-letra-subtitulo);
+    border: var(--borde-subtitulo);
+    border-radius: var(--borde-radius);
+    padding: 0.3rem;
+    background-color: var(--fondo-subtitulo);
+    color: var(--color-letra);
+    font-weight: bold;
+    margin-bottom: 0.1rem;
 }
 
 /*Parrafo del Link para ir a la pagina de la tienda*/
-.ofertas-link-tienda {
+.section-2 .ofertas-link-tienda {
     text-align: center;
 }
 
-.ofertas-link-tienda a {
-    font-size: 0.85rem;
+.section-2 .ofertas-link-tienda a {
+    font-size: 0.75rem;
     text-decoration: none;
-    background-color: #0D81FD;
+    background-color: var(--fondo-subtitulo);
     color: black;
     padding: 0.225rem;
     border: 0.1875rem solid #f1ffff;
-    border-radius: 0.650rem;
+    border-radius: var(--borde-radius);
     font-weight: bold;
 
     transition-property: font-size;
@@ -184,16 +255,15 @@ iframe:hover{  /**transformacion*/
 
 }
 
-.ofertas-link-tienda a:hover{
+.section-2 .ofertas-link-tienda a:hover{
     font-size: 1.1rem;
     background-color: greenyellow;
 }
 
 
 /**Caja desde el subitulo remeras-balones hasta cubrir sus productos*/
-.caja-ofertas-remeras,
-.caja-ofertas-balones,
-.contenedor-remeras /**Pagina Tienda*/{
+.section-2 .caja-ofertas-remeras,
+.section-2 .caja-ofertas-balones{
     margin: 0rem auto;
     width: 100%;
     display: flex;
@@ -202,75 +272,66 @@ iframe:hover{  /**transformacion*/
     flex-wrap: wrap;
 }
 
-.caja-ofertas-remeras-titulo,
-.caja-ofertas-balones-titulo {
+.section-2 .caja-ofertas-remeras-titulo,
+.section-2 .caja-ofertas-balones-titulo{
     margin: 1.5rem auto;
     display: flex;
     justify-content: center;
 }
 
 /*Estilos a Titulos de Remeras, Balones, novedades y fichajes*/
-.ofertas-remeras-titulo,
-.ofertas-balones-titulo,
-.novedades-titulo,
-.ultimos-fichajes-titulo,
-.copas,
-.ligas,
-.titulo-mundial{
+.section-2 .ofertas-remeras-titulo,
+.section-2 .ofertas-balones-titulo,
+.section-3 .novedades-titulo,
+.section-3 .ultimos-fichajes-titulo,
+.titulo-mundial /*esto pertenece pag historia*/{
     font-size: 1.5rem;
-    border: 0.35rem solid black;
-    background-color: #0D81FD;
-    border-radius: 0.650rem;
+    border: var(--borde-subtitulo);
+    background-color: var(--fondo-subtitulo);
+    border-radius: var(--borde-radius);
     color: black;
-    padding: 0.5rem;
+    padding: 0.5rem; 
     text-align: center;
 }
 
 /*Imagenes de las Remeras y Balones en oferta*/
-.caja-ofertas-remeras div img,
-.caja-ofertas-balones div img,
-.tienda-img /**Pagina tienda*/ {
-    width: 11.20rem;
+.section-2 .caja-ofertas-remeras div img,
+.section-2 .caja-ofertas-balones div img{
+    width: 11.3rem;
     height: 10rem;
-    border-radius: 0.125rem 0.125rem 0rem 0rem;
+    border-radius: var(--borde-radius-img);
 }
 
 /*Caja de cada producto en oferta*/
-.caja-ofertas-remeras div,
-.caja-ofertas-balones div,
-.tienda-producto {
+.section-2 .caja-ofertas-remeras div,
+.section-2 .caja-ofertas-balones div{
     text-align: center;
     width: 11.9rem;
-    height: 16.75rem;
-    border: 0.3125rem solid rgb(113, 208, 252);
-    border-radius: 0.3125rem;
+    height: 16.25rem;
+    border: var(--borde-caja-producto);
+    border-radius: var(--borde-radius);
     transition: 2s;
 }
 
-.caja-ofertas-remeras div:hover,
-.caja-ofertas-balones div:hover,
-.tienda-producto:hover{
+.section-2 .caja-ofertas-remeras div:hover,
+.section-2 .caja-ofertas-balones div:hover{
     transform: scale(1.15);
 }
 
 /*titulo general de cada producto y precio*/
-.titulo-producto,
-.tienda-remera-descripcion, /**Descripción de cada producto de Remeras en pagina tienda*/
-.tienda-balon-descripcion /**Descripción de cada producto de Balones en pagina tienda*/
-.precio-index {
-    margin-top: 0.3125rem;
-    margin-bottom: 0.3125rem;
+.section-2 .titulo-producto,
+.section-2 .precio-index{
+    margin: 0.25rem auto;
     font-size: 0.9375rem;
 }
 
 /*Palabra Comprar de las cajas de los productos en la pag Index*/
-.comprar-index {
+.section-2 .comprar-index {
     margin-top: 0.75em;
 }
 
 /*Enlace de "Comprar"*/
-.comprar-index a,
-.contenedor-remeras div p a /**pagina Tienda*/ {
+.section-2 .comprar-index a{
     text-decoration: none;
     background-color: greenyellow;
     color: black;
@@ -282,27 +343,43 @@ iframe:hover{  /**transformacion*/
     transition: 1s;
 }
 
-.comprar-index a:hover,
-.contenedor-remeras div p a:hover{
+.section-2 .comprar-index a:hover{
     background-color: skyblue;
 }
+/**.......FIN SECCIÓN 2 -INDEX.....................................................................*/
 
 
 
 
 
-/**.............INDEX..............*/
-/**............SECCIÓN 3...........*/
-/**................................*/
-
+/**.......INICIO SECCIÓN 3 -INDEX.....................................................................*/
 .section-3{
     margin: 0rem auto;
     width: 95%;
 }
 
+.section-3 .caja-subtitulo-principal-notitcias {
+    margin: 0rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*Titulo de las secciónes del index (de las 3)*/
+.section-3 .subtitulo-principal-notitcias {
+    font-size: var(--tamaño-de-letra-subtitulo);
+    text-decoration: none;
+    border: var(--borde-subtitulo);
+    border-radius: var(--borde-radius);
+    padding: 0.3rem; /*Padding adicional para texto*/
+    background-color: var(--fondo-subtitulo);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.65rem; /**Margen estre el Subtitulo-Principal de la sección y su contenido*/
+}
+
 /*Centrado de titulos y subtitulos de la sección Noticias*/
-.caja-novedades-titulo,
-.caja-fichajes-titulo {
+.section-3 .caja-novedades-titulo,
+.section-3 .caja-fichajes-titulo {
     margin: 0rem auto;
     display: flex;
     justify-content: center;
@@ -310,13 +387,13 @@ iframe:hover{  /**transformacion*/
 }
 
 /*Centrado de titulos y subtitulos de la sección Noticias*/
-.novedades-titulo,
-.ultimos-fichajes-titulo {
+.section-3 .novedades-titulo,
+.section-3 .ultimos-fichajes-titulo {
     text-align: center;
 }
 
 /*Caja de la Imagen de la nueva camisa de la selección de Argentina*/
-.caja-imagen-y-parrafo-seleccion-argentina-nueva-camisa {
+.section-3 .caja-imagen-y-parrafo-seleccion-argentina-nueva-camisa {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,21 +401,20 @@ iframe:hover{  /**transformacion*/
 }
 
 /*Imagen de la nueva camisa de la selección de Argentina*/
-.seleccion-argentina-nueva-camisa {
+.section-3 .seleccion-argentina-nueva-camisa {
     width: 22rem;
     height: 11.25rem;
-    border: 0.3125rem solid rgb(113, 208, 252);
-    border-radius: 0.3125rem;
+    border-radius: var(--borde-radius);
 
     transition: 2s;
 }
 
-.seleccion-argentina-nueva-camisa:hover{
+.section-3 .seleccion-argentina-nueva-camisa:hover{
     transform: scale(1.2);
 }
 
 /*Parrafo al lado de la Imagen de la nueva camisa de la selección de Argentina*/
-.parrafo-seleccion-argentina-nueva-camisa {
+.section-3 .parrafo-seleccion-argentina-nueva-camisa {
     text-align: justify;
     line-height: 1.6rem;
     font-size: 1rem;
@@ -347,21 +423,21 @@ iframe:hover{  /**transformacion*/
 
 
 /*Estilos a la frase "la selección Argentina"*/
-.strong-la-seleccion-argentina-nueva-camisa {
+.section-3 .strong-la-seleccion-argentina-nueva-camisa {
     font-size: 1.2rem;
     border: 0.0625rem solid white;
-    border-radius: 0.650rem;
+    border-radius: var(--borde-radius);
     padding: 0.3rem;
 }
 
-.caja-tabla-de-fichajes-index{
+.section-3 .caja-tabla-de-fichajes-index{
     width: 95%;
     display: flex;
     justify-content: center;
 }
 
 /*Estilos a la Caja y a la tabla de Fichajes*/
-.caja-ultimos-fichajes-titulo {
+.section-3 .caja-ultimos-fichajes-titulo {
     margin-top: 1.3rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -370,27 +446,28 @@ iframe:hover{  /**transformacion*/
 }
 
 /*caja de la tabla fichaje*/
-.caja-tabla-de-fichajes-index {
+.section-3 .caja-tabla-de-fichajes-index {
     display: flex;
     justify-content: center;
     margin-top: 0.9375rem auto;
+    text-align: center;
 }
 
 /*Tabla de fichajes*/
-.tabla-de-fichajes-index,
+.section-3 .tabla-de-fichajes-index,
 .tabla-de-fichajes-index th,
 .tabla-de-fichajes-index thead tr,
 .tabla-de-fichajes-index thead tr td,
 .tabla-de-fichajes-index tbody tr td {
-    border: 0.2rem solid rgb(113, 208, 252);
-    padding: 0.2rem;
+    border: var(--borde-caja-producto);
+    padding: 0.3rem;
 }
 
-.tabla-de-fichajes-index th {
+.section-3 .tabla-de-fichajes-index th {
     background-color: #002d41;
 }
 
-.tabla-de-fichajes-index {
+.section-3 .tabla-de-fichajes-index {
     border-spacing: 0.45rem;
 }
 
@@ -405,8 +482,8 @@ iframe:hover{  /**transformacion*/
 }
 
 /*Imagen ESPN*/
-.espn {
-    margin-top: 0.75rem;
+main div .espn {
+    margin-top: 0.5rem;
     width: 10rem;
     border: 0.3125rem solid greenyellow;
     border-radius: 0.650rem;
@@ -414,9 +491,11 @@ iframe:hover{  /**transformacion*/
     transition: 1s;
 }
 
-.espn:hover{
+.section-3 .espn:hover{
     transform: scale(1.2);
 }
+
+/**.......FIN SECCIÓN 3 -INDEX.....................................................................*/
 
 
 
@@ -444,13 +523,13 @@ iframe:hover{  /**transformacion*/
 
 
 /*Texto en el Footer*/
-.parrafo-footer {
+.footer .parrafo-footer {
     margin-bottom: 0.625rem;
     font-size: 1.25rem;
 }
 
 /*Imagenes del Footer*/
-.footer img {
+.footer div img {
     border: 0.1875rem solid greenyellow;
     border-radius: 50%;
     background-color: white;
@@ -460,21 +539,20 @@ iframe:hover{  /**transformacion*/
     margin-bottom: 0.9375rem;
 }
 
-.caja-parrafo-texto {
+footer .caja-parrafo-texto {
     display: flex;
     justify-content: center;
 }
 
-.footer-img {
+footer .footer-img {
     margin-left: 1.75rem;
     display: flex;
     justify-content: center;
 }
 
-.footer-img a {
-    margin-right: 0.4rem;
+footer .footer-img a {
+    margin-right: 1rem;
 }
-
 
 
 
@@ -546,44 +624,77 @@ iframe:hover{  /**transformacion*/
 
 
 
-/**++++++++++++++.....TIENDA.......+++++++++++++++++++++*/
-/**..............DECLARACIONES DE GRILLAS...............*/
-/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-.carrusel div div img{
-    height: 12.5rem;
+
+/**................................*/
+/**.............TIENDA..............*/
+/**................................*/
+
+.caja-subtitulo-remeras{
+    padding-top: 1.25rem;
+    display: flex;
+    justify-content: center;
 }
 
-/*Imagenes de las Remeras y Balones en oferta*/
-.ofertas-remeras div img,
-.ofertas-balones div img,
-.tienda-img /**Pagina tienda*/ {
+.subtitulo-remeras{
+    font-size: 1.5rem;
+    border: var(--borde-subtitulo);
+    background-color: var(--fondo-subtitulo);
+    border-radius: var(--borde-radius);
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem; 
+    text-align: center;
+}
+
+/**Imagenes de la cajita del producto*/
+.tienda div img{ 
 width: 11.25rem;
 height: 10rem;
 border-radius: 0.125rem 0.125rem 0rem 0rem;
 }
 
-/*Caja de cada producto en oferta*/
-.ofertas-remeras div,
-.ofertas-balones div,
-.tienda-producto {
+/**cajita del producto*/
+.tienda .tienda-producto{ 
 text-align: center;
 width: 11.85rem;
 height: 17.875rem;
-border: 0.3125rem solid rgb(113, 208, 252);
+border: var(--borde-caja-producto);
 border-radius: 0.3125rem;
+
+transition: 1s;
 }
 
-.caja-tienda-remeras-titulo {
-padding-top: 1.25rem;
-display: flex;
-justify-content: center;
+.tienda .tienda-producto:hover{
+    transform: scale(1.15);
 }
 
-.contenedor-tienda {
-padding-top: 0rem;
-margin: 3rem auto;
+.tienda div h3{
+    margin: 0.25rem auto;
+    font-size: 0.9375rem;
+}
+
+/**Enlace de "Comprar"*/
+.tienda div p a{
+    text-decoration: none;
+    background-color: greenyellow;
+    color: black;
+    padding: 0.125rem;
+    border: 0.1875rem solid white;
+    border-radius: 0.3125rem;
+
+    transition-property: background-color;
+    transition: 1s;
+}
+
+.tienda div p a:hover{
+    background-color: skyblue;
+}
+
+/**Caja-sección de productos*/
+.tienda {
+margin: 2rem auto;
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
@@ -653,7 +764,7 @@ grid-area: manch-roja;
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width: 874px) {
-.contenedor-tienda {
+.tienda {
     padding-top: 1.25rem;
 
     display: grid;
@@ -672,7 +783,7 @@ grid-area: manch-roja;
 
 
 @media screen and (max-width: 440px) {
-.contenedor-tienda {
+.tienda {
     padding-top: 1.25rem;
 
     display: grid;
@@ -696,32 +807,57 @@ grid-area: manch-roja;
     }
 }
 
-/**++++++++++++++.....TORNEOS.......+++++++++++++++++++++*/
-/**......................................................*/
+/**+++++++++++++++++++++...FIN...+++++++++++++++++++++++*/
+/**..................MEDIA QUERIES......................*/
+/**......................TIENDA.........................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.torneos-y-ligas{
+
+
+
+
+
+/**................................*/
+/**.............TORNEOS............*/
+/**................................*/
+
+main .copas-ligas{
     margin-top: 3rem;
     display: flex;
     justify-content: space-evenly;
 }
 
-.caja-copas,
-.caja-ligas{
+.copas-ligas .caja-copas,
+.copas-ligas .caja-ligas{
     display: flex;
     flex-direction: column;
 }
 
-.caja-copas img,
-.caja-ligas img{
-    width: 10rem;
-    height: 10rem;
+/*Estilos a Titulos de Remeras, Balones, novedades y fichajes*/
+.caja-copas .copas,
+.caja-ligas .ligas,
+.titulo-mundial /*esto pertenece pag historia*/{
+    font-size: 1.5rem;
+    border: var(--borde-subtitulo);
+    background-color: var(--fondo-subtitulo);
+    border-radius: var(--borde-radius);
+    color: white;
+    padding: 0.5rem; 
+    text-align: center;
 }
 
-.caja-copas article,
-.caja-ligas article{
+main .caja-copas article,
+main .caja-ligas article{
     margin-top: 1rem;
 }
+
+main .caja-copas img,
+main .caja-ligas img{
+    width: 12rem;
+    height: 12rem;
+}
+
+
 
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /**..................MEDIA QUERIES......................*/
@@ -732,11 +868,11 @@ grid-area: manch-roja;
 
 
 
-/**++++++++++++++.....Registro.......+++++++++++++++++++++*/
-/**......................................................*/
-/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**.................................*/
+/**.............REGISTRO...........*/
+/**................................*/
 
-.form-select option{
+main .form-select option{
     color: black;
 }
 
@@ -745,11 +881,15 @@ grid-area: manch-roja;
     justify-content: space-evenly;
 }
 
+/**Botones Reestablecer y Enviar*/
 .form-botones div input{
     color: black;
     padding: 0.5rem;
+    background-color: white;
     
 }
+
+
 
 
 @media screen and (max-width:500px) {
@@ -796,5 +936,5 @@ grid-area: manch-roja;
         width: 11.5rem;
         height: 10.5rem;
     }
-}*/
+} */
 
