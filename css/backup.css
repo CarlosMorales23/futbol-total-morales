@@ -2,14 +2,6 @@
 /**.....................VARIABLES.......................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.color4 {color: #08beff;}
-
-.color3 {color: #0054d2;}
-.color4 {color: #0097f4;}
-
-.color4 {color: #078dff;}
-.color5 {color: #0efff9;}
-
 
 :root{
     --fondo-oscuro: #0921aa;
@@ -34,10 +26,6 @@
     --borde-caja-producto: 0.3125rem solid rgb(113, 208, 252);
 
 }
-
-
-
-
 
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /**..............ESTILOS PARA TODAS LAS PAGINAS.........*/
@@ -64,12 +52,14 @@ header .bg-primary{
     background-color: var(--fondo-titulo-footer) !important; 
 }
 
+/*titulo "FUTBOL TOTAL*/
 header nav div h1{
     margin-left: 1rem;
     font-weight: bold;
     line-height: 3rem;
 }
 
+/*Hipervinculoos del nav*/
 header nav div div div a{
     font-size: 1rem;
     color: var(--color-letra);
@@ -631,12 +621,14 @@ footer .footer-img a {
 /**.............TIENDA..............*/
 /**................................*/
 
+/*Caja del SubTitulo remeras de la pagina tienda*/
 .caja-subtitulo-remeras{
     padding-top: 1.25rem;
     display: flex;
     justify-content: center;
 }
 
+/*SubTitulo remeras de la pagina tienda*/
 .subtitulo-remeras{
     font-size: 1.5rem;
     border: var(--borde-subtitulo);
@@ -821,12 +813,14 @@ grid-area: manch-roja;
 /**.............TORNEOS............*/
 /**................................*/
 
+/*Disposición de los elementos de copa y ligas.*/
 main .copas-ligas{
     margin-top: 3rem;
     display: flex;
     justify-content: space-evenly;
 }
 
+/*Disposición de las contenedoras copa y ligas.*/
 .copas-ligas .caja-copas,
 .copas-ligas .caja-ligas{
     display: flex;
@@ -846,11 +840,13 @@ main .copas-ligas{
     text-align: center;
 }
 
+/*Margen de las cajitas d elas imagnes*/
 main .caja-copas article,
 main .caja-ligas article{
     margin-top: 1rem;
 }
 
+/*tamaño de las imagenes toreneos y ligas*/
 main .caja-copas img,
 main .caja-ligas img{
     width: 12rem;
@@ -872,6 +868,7 @@ main .caja-ligas img{
 /**.............REGISTRO...........*/
 /**................................*/
 
+
 .section-2 .subtitulo-seccion-ofertas{
     font-size: var(--tamaño-de-letra-subtitulo);
     border: var(--borde-subtitulo);
@@ -883,10 +880,17 @@ main .caja-ligas img{
     margin-bottom: 0.1rem;
 }
 
+/*Contenedor de los form select importados de bootstrap, 
+hice eso para que no ocuparan toda la pantalla*/
+.contenedor-pack{
+    width: 50%;
+}
+
 main .form-select option{
     color: black;
 }
 
+/*Posicionamiento d elos botones reset y enviar*/
 .form-botones{
     display: flex;
     justify-content: space-evenly;
