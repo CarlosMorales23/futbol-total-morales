@@ -1,0 +1,379 @@
+@charset "UTF-8";
+/**Variables*/
+:root {
+  --fondo-oscuro: #0921aa;
+  --fondo-claro: #3b98fc;
+  --fondo-titulo-footer: #140f07;
+  --fondo-nav-interno: #212529;
+  --fondo-subtitulo: #0D81FD;
+  --borde-productos: 0.25rem solid #0efff9;
+  --borde-subtitulo: 0.55rem solid #140f07;
+  --borde-radius: 0.6rem;
+  --borde-radius-img:0.125rem 0.125rem 0rem 0rem;
+  --animacion-boton: yellow;
+  --tamaño-letra:16px;
+  --fuente-primaria: sans-serif, Arial, Helvetica;
+  --color-letra: white;
+  --tamaño-de-letra-subtitulo: 2.2rem;
+  --borde-de-imagen-video-y-texto: 0.25rem solid #0efff9;
+  --borde-caja-producto: 0.3125rem solid rgb(113, 208, 252); }
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--color-letra);
+  font-family: var(--fuente-primaria);
+  font-size: var(--tamaño-letra);
+  box-sizing: border-box; }
+
+body {
+  margin: 0px auto;
+  background-color: var(--fondo-oscuro); }
+
+.bg-primary {
+  background-color: var(--fondo-titulo-footer) !important; }
+
+header nav div h1 {
+  margin-left: 1rem;
+  font-weight: bold;
+  line-height: 3rem; }
+
+header nav div div div a {
+  font-size: 1rem;
+  color: var(--color-letra);
+  font-weight: bold; }
+
+/**................................*/
+/**.............INDEX..............*/
+/**................................*/
+/**............NAV INTENRO...........*/
+main ul {
+  background-color: var(--fondo-nav-interno);
+  display: flex;
+  justify-content: center; }
+
+main section {
+  width: 95%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem auto;
+  margin-top: 1rem; }
+  main section h2 {
+    font-size: var(--tamaño-de-letra-subtitulo);
+    text-decoration: none;
+    border: var(--borde-subtitulo);
+    border-radius: var(--borde-radius);
+    padding: 0.3rem;
+    background-color: var(--fondo-subtitulo);
+    color: var(--color-letra);
+    font-weight: bold;
+    margin-bottom: 0.65rem; }
+  main section .articulo-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    main section .articulo-1 p {
+      font-size: 1rem;
+      line-height: 1.4rem;
+      margin-bottom: 0.6rem;
+      /*Margen de Parrafo a cita*/ }
+      main section .articulo-1 p blockquote {
+        width: 92.5%;
+        margin: 0rem auto;
+        margin-bottom: 0.1rem;
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        text-align: justify;
+        padding: 0.8rem;
+        background-image: linear-gradient(to right, #2d2d75, blue, #2d2d75); }
+        main section .articulo-1 p blockquote strong {
+          font-size: 1rem; }
+
+.articulo-2 {
+  width: 95%;
+  /**Este % es de la caja en funcion del 100% del body*/
+  margin: 0rem auto;
+  background-image: url(../img/campo-vista-aerea.jpg);
+  /**La imagen de fondo esta ocupando el 100% (95%) de la caja contendora */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: var(--borde-radius);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .articulo-2 iframe {
+    border: var(--borde-de-imagen-video-y-texto);
+    border-radius: var(--borde-radius);
+    width: 18.5rem;
+    height: 12rem;
+    margin-top: 0.4rem;
+    /*Para centrar el video en vertical*/
+    /**Especifica la propiedad que se aplicara en el hover, en la transformación*/
+    transition: 2.5s; }
+  .articulo-2 p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 0.5rem;
+    border: var(--borde-de-imagen-video-y-texto);
+    border-radius: var(--borde-radius); }
+
+iframe:hover {
+  /**transformacion*/
+  transform: scale(1.3); }
+
+/**.......FIN SECCIÓN 1 -INDEX........................................................................*/
+/**.......INICIO SECCIÓN 2 -INDEX.....................................................................*/
+.ofertas {
+  width: 95%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .ofertas h2 {
+    font-size: var(--tamaño-de-letra-subtitulo);
+    border: var(--borde-subtitulo);
+    border-radius: var(--borde-radius);
+    padding: 0.3rem;
+    background-color: var(--fondo-subtitulo);
+    color: var(--color-letra);
+    font-weight: bold;
+    margin-bottom: 0.1rem; }
+  .ofertas a {
+    text-align: center;
+    font-size: 0.75rem;
+    text-decoration: none;
+    background-color: var(--fondo-subtitulo);
+    color: black;
+    padding: 0.225rem;
+    border: 0.1875rem solid #f1ffff;
+    border-radius: var(--borde-radius);
+    font-weight: bold;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-timing-function: steps(3, end);
+    transition-property: background-color;
+    transition-duration: 1s; }
+    .ofertas a:hover {
+      font-size: 1.1rem;
+      background-color: greenyellow; }
+  .ofertas h3 {
+    margin: 1.5rem auto;
+    font-size: var(--tamaño-de-letra-subtitulo);
+    border: var(--borde-subtitulo);
+    background-color: var(--fondo-subtitulo);
+    border-radius: var(--borde-radius);
+    padding: 0.3rem; }
+  .ofertas div {
+    margin: 0rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*Si decido colocar mas imagenes debera cambiar a around o evenly*/
+    flex-wrap: wrap; }
+    .ofertas div div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 11.9rem;
+      height: 16rem;
+      border: var(--borde-caja-producto);
+      border-radius: var(--borde-radius);
+      transition: 2s; }
+      .ofertas div div div:hover {
+        transform: scale(1.15); }
+      .ofertas div div img {
+        width: 11.3rem;
+        height: 10rem;
+        border-radius: var(--borde-radius-img); }
+      .ofertas div div h4 {
+        margin: 0.15rem auto;
+        font-size: 0.9375rem; }
+      .ofertas div div p {
+        margin: 0.15rem auto;
+        font-size: 0.9375rem; }
+      .ofertas div div a {
+        margin-top: 0.4rem;
+        text-decoration: none;
+        background-color: greenyellow;
+        color: black;
+        padding: 0.125rem;
+        border: 0.1875rem solid white;
+        border-radius: 0.3125rem;
+        transition-property: background-color;
+        transition: 1s; }
+        .ofertas div div a:hover {
+          background-color: skyblue; }
+
+/**.......FIN SECCIÓN 2 -INDEX.....................................................................*/
+/**.......INICIO SECCIÓN 3 -INDEX.....................................................................*/
+.noticias {
+  margin: 0rem auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .noticias h2 {
+    font-size: var(--tamaño-de-letra-subtitulo);
+    border: var(--borde-subtitulo);
+    border-radius: var(--borde-radius);
+    padding: 0.3rem;
+    background-color: var(--fondo-subtitulo);
+    color: var(--color-letra);
+    font-weight: bold;
+    margin-bottom: 0.1rem; }
+  .noticias h3 {
+    margin: 1.5rem auto;
+    font-size: var(--tamaño-de-letra-subtitulo);
+    border: var(--borde-subtitulo);
+    background-color: var(--fondo-subtitulo);
+    border-radius: var(--borde-radius);
+    padding: 0.3rem; }
+  .noticias div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto; }
+    .noticias div div {
+      transition: 1s; }
+      .noticias div div:hover {
+        transform: scale(1.2); }
+    .noticias div div p {
+      text-align: justify;
+      line-height: 1.6rem;
+      font-size: 1rem;
+      padding: 1rem; }
+      .noticias div div p strong {
+        font-size: 1.2rem;
+        border: 0.0625rem solid white;
+        border-radius: var(--borde-radius);
+        padding: 0.3rem; }
+  .noticias table {
+    border-spacing: 0.45rem;
+    border: var(--borde-caja-producto);
+    padding: 0.3rem; }
+    .noticias table thead tr {
+      border: var(--borde-caja-producto);
+      padding: 0.3rem; }
+      .noticias table thead tr th {
+        border: var(--borde-caja-producto);
+        padding: 0.3rem;
+        text-align: center;
+        background-color: #002d41; }
+    .noticias table tbody tr {
+      border: var(--borde-caja-producto);
+      padding: 0.3rem; }
+      .noticias table tbody tr td {
+        border: var(--borde-caja-producto);
+        padding: 0.3rem; }
+
+.espn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center; }
+  .espn img {
+    margin-top: 0.5rem;
+    width: 10rem;
+    border: 0.3125rem solid greenyellow;
+    border-radius: 0.650rem;
+    transition: 1s; }
+    .espn img:hover {
+      transform: scale(1.2); }
+
+/**.......FIN SECCIÓN 3 -INDEX.....................................................................*/
+footer {
+  width: 100%;
+  border: 0.2rem solid white;
+  padding-top: 0.3125rem;
+  margin: 1.25rem auto 0.01rem auto;
+  text-align: center;
+  border-radius: 0.625rem;
+  height: 4.6875rem;
+  font-size: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #002d41; }
+  footer h3 {
+    margin-bottom: 0.625rem;
+    font-size: 1.25rem; }
+  footer div a {
+    margin-right: 1rem; }
+    footer div a img {
+      border: 0.1875rem solid greenyellow;
+      border-radius: 50%;
+      background-color: white;
+      width: 1.875rem;
+      height: 1.875rem;
+      padding: 0rem;
+      margin-bottom: 0.9375rem;
+      margin-left: 1.75rem; }
+
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**..................MEDIA QUERIES......................*/
+/**.......................INDEX.........................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 713px) {
+  * {
+    font-size: 14px; } }
+
+@media screen and (max-width: 670px) {
+  footer h3,
+  footer div a {
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 623px) {
+  * {
+    font-size: 12px; } }
+
+@media screen and (max-width: 534px) {
+  * {
+    font-size: 10px; } }
+
+@media screen and (max-width: 447px) {
+  * {
+    font-size: 9px; } }
+
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 8px; }
+  main section h2 {
+    font-size: 1.8rem; }
+  main section .articulo-2 {
+    background-image: none;
+    flex-direction: column; }
+  main section .articulo-2 p {
+    margin-top: 1rem; }
+  main .ofertas div {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  main .ofertas div div {
+    margin-top: 1rem; }
+  main .noticias div {
+    flex-direction: column; }
+  main .noticias table {
+    border-spacing: 0.25rem; }
+  main .noticias table,
+  th,
+  tr,
+  td {
+    border: var(--borde-caja-producto);
+    padding: 0.15rem; }
+  footer h3,
+  footer div a {
+    font-size: 0.6rem; } }
+
+/**+++++++++++++++++++++....FIN....+++++++++++++++++++++*/
+/**..................MEDIA QUERIES......................*/
+/**.......................INDEX.........................*/
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/

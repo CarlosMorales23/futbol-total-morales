@@ -24,7 +24,6 @@
     --tamaño-de-letra-subtitulo: 2.2rem;
     --borde-de-imagen-video-y-texto: 0.25rem solid #0efff9;
     --borde-caja-producto: 0.3125rem solid rgb(113, 208, 252);
-
 }
 
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -82,7 +81,6 @@ header nav div div div a{
 /**............NAV INTENRO...........*/
 main ul{
     background-color: var(--fondo-nav-interno);
-    margin-top: 0rem;
     display: flex;
     justify-content: center;
 }
@@ -90,18 +88,22 @@ main ul{
 
 
 /**.......INICIO SECCIÓN 1 -INDEX.....................................................................*/
-main .section-1{
+
+main section{
+    width: 95%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section {
     margin: 0rem auto;
     margin-top: 1rem;
 }
 
-.section-1 .caja-subtitulo-seccion-presentacion{
-    margin: 0rem auto;
-    display: flex;
-    justify-content: center;
-}
-
-.section-1 .subtitulo-principal-presentacion{
+main section h2{
     font-size: var(--tamaño-de-letra-subtitulo);
     text-decoration: none;
     border: var(--borde-subtitulo);
@@ -113,30 +115,25 @@ main .section-1{
     margin-bottom: 0.65rem;
 }
 
-
-.section-1 .caja-presentacion-parrafo-1-y-blockquote {
-    width: 95%; /**Este % es de la caja en funcion del 100% del body*/
+main .articulo-1{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0rem auto;
-    text-align: justify;
-    
 }
 
 /*Primer Parrafo de la sección presentación*/
-.section-1 div .parrafo-1-de-la-seccion-presentacion {
+main .articulo-1 p{
     font-size: 1rem;
     line-height: 1.4rem;
-    margin: 0rem 0rem 0.5rem 0rem; /*Margen de Parrafo a cita*/
+    margin-bottom: 0.6rem; /*Margen de Parrafo a cita*/
 }
 
 /*Cita*/
-.section-1 div blockquote{
+main section .articulo-1 blockquote{
     width: 92.5%;
     margin: 0rem auto;
     margin-bottom: 0.1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.4rem;
     text-align: justify;
     padding: 0.8rem;
@@ -144,12 +141,12 @@ main .section-1{
 }
 
 /*Estilos a la Cita*/
-main blockquote strong {
+main section article blockquote strong {
     font-size: 1rem;
 }
 
 /*Caja del video de youtube de la sección Prsentación*/
-.section-1 .caja-del-video-y-texto-de-la-seccion-presentacion{
+main section .articulo-2{
     width: 95%; /**Este % es de la caja en funcion del 100% del body*/
     margin: 0rem auto;
     background-image: url(../img/campo-vista-aerea.jpg);
@@ -164,7 +161,7 @@ main blockquote strong {
 }
 
 /*Video de iframe - Youtube*/
-.section-1 iframe {
+main section .articulo-2 iframe {
     border: var(--borde-de-imagen-video-y-texto);
     border-radius: var(--borde-radius);
     width:18.5rem;
@@ -179,12 +176,11 @@ iframe:hover{  /**transformacion*/
     transform: scale(1.3);
 }
 
-
 /*Parrafo al lado del video*/
-.section-1 div .presentacion-parrafo-2 {
+main section .articulo-2 p{
     text-align: center;
-    font-size: var(--tamaño-letra);
-    line-height: 1.4em;
+    font-size: 1rem;
+    line-height: 1.4rem;
     padding: 0.5rem;
     border: var(--borde-de-imagen-video-y-texto);
     border-radius: var(--borde-radius);
@@ -198,18 +194,16 @@ iframe:hover{  /**transformacion*/
 /**.......INICIO SECCIÓN 2 -INDEX.....................................................................*/
 
 /**Caja completa de la sección 2, centrada*/
-.section-2{
+main .ofertas{
     width: 95%;
     margin: 4rem auto;
-}
-
-.section-2 .caja-subtitulo-seccion-ofertas{
-    margin: 0rem auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.section-2 .subtitulo-seccion-ofertas{
+main .ofertas h2{
     font-size: var(--tamaño-de-letra-subtitulo);
     border: var(--borde-subtitulo);
     border-radius: var(--borde-radius);
@@ -221,11 +215,8 @@ iframe:hover{  /**transformacion*/
 }
 
 /*Parrafo del Link para ir a la pagina de la tienda*/
-.section-2 .ofertas-link-tienda {
+main .ofertas a{
     text-align: center;
-}
-
-.section-2 .ofertas-link-tienda a {
     font-size: 0.75rem;
     text-decoration: none;
     background-color: var(--fondo-subtitulo);
@@ -245,15 +236,22 @@ iframe:hover{  /**transformacion*/
 
 }
 
-.section-2 .ofertas-link-tienda a:hover{
+main .ofertas a:hover{
     font-size: 1.1rem;
     background-color: greenyellow;
 }
 
+main .ofertas h3{
+    margin: 1.5rem auto;
+    font-size: var(--tamaño-de-letra-subtitulo);
+    border: var(--borde-subtitulo);
+    background-color: var(--fondo-subtitulo);
+    border-radius:var(--borde-radius);
+    padding: 0.3rem;
+}
 
 /**Caja desde el subitulo remeras-balones hasta cubrir sus productos*/
-.section-2 .caja-ofertas-remeras,
-.section-2 .caja-ofertas-balones{
+main .ofertas div{
     margin: 0rem auto;
     width: 100%;
     display: flex;
@@ -262,66 +260,43 @@ iframe:hover{  /**transformacion*/
     flex-wrap: wrap;
 }
 
-.section-2 .caja-ofertas-remeras-titulo,
-.section-2 .caja-ofertas-balones-titulo{
-    margin: 1.5rem auto;
-    display: flex;
-    justify-content: center;
-}
-
-/*Estilos a Titulos de Remeras, Balones, novedades y fichajes*/
-.section-2 .ofertas-remeras-titulo,
-.section-2 .ofertas-balones-titulo,
-.section-3 .novedades-titulo,
-.section-3 .ultimos-fichajes-titulo,
-.titulo-mundial /*esto pertenece pag historia*/{
-    font-size: 1.5rem;
-    border: var(--borde-subtitulo);
-    background-color: var(--fondo-subtitulo);
-    border-radius: var(--borde-radius);
-    color: black;
-    padding: 0.5rem; 
-    text-align: center;
-}
-
-/*Imagenes de las Remeras y Balones en oferta*/
-.section-2 .caja-ofertas-remeras div img,
-.section-2 .caja-ofertas-balones div img{
-    width: 11.3rem;
-    height: 10rem;
-    border-radius: var(--borde-radius-img);
-}
-
 /*Caja de cada producto en oferta*/
-.section-2 .caja-ofertas-remeras div,
-.section-2 .caja-ofertas-balones div{
+main .ofertas div div{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 11.9rem;
-    height: 16.25rem;
+    height: 16.6rem;
     border: var(--borde-caja-producto);
     border-radius: var(--borde-radius);
     transition: 2s;
 }
 
-.section-2 .caja-ofertas-remeras div:hover,
-.section-2 .caja-ofertas-balones div:hover{
+main .ofertas div div:hover{
     transform: scale(1.15);
 }
 
-/*titulo general de cada producto y precio*/
-.section-2 .titulo-producto,
-.section-2 .precio-index{
-    margin: 0.25rem auto;
+/*Imagenes de las Remeras y Balones en oferta*/
+main .ofertas div div img{
+    width: 11.3rem;
+    height: 10rem;
+    border-radius: var(--borde-radius-img);
+}
+
+
+main .ofertas div div h4,
+main .ofertas div div p{
+    margin: 0.15rem auto;
     font-size: 0.9375rem;
 }
 
 /*Palabra Comprar de las cajas de los productos en la pag Index*/
-.section-2 .comprar-index {
-    margin-top: 0.75em;
+main .ofertas div div a{
+    margin-top: 0.4rem;
 }
 
 /*Enlace de "Comprar"*/
-.section-2 .comprar-index a{
+main .ofertas div div a{
     text-decoration: none;
     background-color: greenyellow;
     color: black;
@@ -333,7 +308,7 @@ iframe:hover{  /**transformacion*/
     transition: 1s;
 }
 
-.section-2 .comprar-index a:hover{
+main .ofertas div div a:hover{
     background-color: skyblue;
 }
 /**.......FIN SECCIÓN 2 -INDEX.....................................................................*/
@@ -343,68 +318,55 @@ iframe:hover{  /**transformacion*/
 
 
 /**.......INICIO SECCIÓN 3 -INDEX.....................................................................*/
-.section-3{
+
+main .noticias{
     margin: 0rem auto;
     width: 95%;
-}
-
-.section-3 .caja-subtitulo-principal-notitcias {
-    margin: 0rem auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
-/*Titulo de las secciónes del index (de las 3)*/
-.section-3 .subtitulo-principal-notitcias {
+main .noticias h2{
     font-size: var(--tamaño-de-letra-subtitulo);
-    text-decoration: none;
     border: var(--borde-subtitulo);
     border-radius: var(--borde-radius);
-    padding: 0.3rem; /*Padding adicional para texto*/
+    padding: 0.3rem;
     background-color: var(--fondo-subtitulo);
-    color: white;
+    color: var(--color-letra);
     font-weight: bold;
-    margin-bottom: 0.65rem; /**Margen estre el Subtitulo-Principal de la sección y su contenido*/
+    margin-bottom: 0.1rem;
 }
 
-/*Centrado de titulos y subtitulos de la sección Noticias*/
-.section-3 .caja-novedades-titulo,
-.section-3 .caja-fichajes-titulo {
-    margin: 0rem auto;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
 
-/*Centrado de titulos y subtitulos de la sección Noticias*/
-.section-3 .novedades-titulo,
-.section-3 .ultimos-fichajes-titulo {
-    text-align: center;
+/*Estilos a Titulos de Remeras, Balones, novedades y fichajes*/
+main .noticias h3{
+    margin: 1.5rem auto;
+    font-size: var(--tamaño-de-letra-subtitulo);
+    border: var(--borde-subtitulo);
+    background-color: var(--fondo-subtitulo);
+    border-radius:var(--borde-radius);
+    padding: 0.3rem;
 }
 
 /*Caja de la Imagen de la nueva camisa de la selección de Argentina*/
-.section-3 .caja-imagen-y-parrafo-seleccion-argentina-nueva-camisa {
+main .noticias div{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0rem auto;
 }
 
-/*Imagen de la nueva camisa de la selección de Argentina*/
-.section-3 .seleccion-argentina-nueva-camisa {
-    width: 22rem;
-    height: 11.25rem;
-    border-radius: var(--borde-radius);
-
-    transition: 2s;
+main .noticias div div{
+    transition: 1s;
 }
 
-.section-3 .seleccion-argentina-nueva-camisa:hover{
+main .noticias div div:hover{
     transform: scale(1.2);
 }
 
 /*Parrafo al lado de la Imagen de la nueva camisa de la selección de Argentina*/
-.section-3 .parrafo-seleccion-argentina-nueva-camisa {
+main .noticias p{
     text-align: justify;
     line-height: 1.6rem;
     font-size: 1rem;
@@ -413,66 +375,47 @@ iframe:hover{  /**transformacion*/
 
 
 /*Estilos a la frase "la selección Argentina"*/
-.section-3 .strong-la-seleccion-argentina-nueva-camisa {
+main .noticias p strong{
     font-size: 1.2rem;
     border: 0.0625rem solid white;
     border-radius: var(--borde-radius);
     padding: 0.3rem;
 }
 
-.section-3 .caja-tabla-de-fichajes-index{
-    width: 95%;
-    display: flex;
-    justify-content: center;
+
+main .noticias table{
+    border-spacing: 0.45rem;
 }
 
-/*Estilos a la Caja y a la tabla de Fichajes*/
-.section-3 .caja-ultimos-fichajes-titulo {
-    margin-top: 1.3rem;
-    margin-bottom: 1rem;
+main .noticias th{
     text-align: center;
-    display: flex;
-    justify-content: center;
+    background-color: #002d41;
 }
 
-/*caja de la tabla fichaje*/
-.section-3 .caja-tabla-de-fichajes-index {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.9375rem auto;
-    text-align: center;
-}
-
-/*Tabla de fichajes*/
-.section-3 .tabla-de-fichajes-index,
-.tabla-de-fichajes-index th,
-.tabla-de-fichajes-index thead tr,
-.tabla-de-fichajes-index thead tr td,
-.tabla-de-fichajes-index tbody tr td {
+main .noticias table,
+th,
+tr,
+td{
     border: var(--borde-caja-producto);
     padding: 0.3rem;
 }
 
-.section-3 .tabla-de-fichajes-index th {
-    background-color: #002d41;
-}
-
-.section-3 .tabla-de-fichajes-index {
-    border-spacing: 0.45rem;
-}
 
 /*Caja de recomendacion e Imagen ESPN*/
-.caja-links-externo {
+main .espn{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 1.25rem;
     line-height: 1.25rem;
+    text-align: center;
 }
 
+
+
 /*Imagen ESPN*/
-main div .espn {
+main .espn img{
     margin-top: 0.5rem;
     width: 10rem;
     border: 0.3125rem solid greenyellow;
@@ -481,7 +424,7 @@ main div .espn {
     transition: 1s;
 }
 
-.section-3 .espn:hover{
+main .espn img:hover{
     transform: scale(1.2);
 }
 
@@ -496,7 +439,7 @@ main div .espn {
 /**................................*/
 
 /*Caja del Footer*/
-.footer {
+footer {
     width: 100%;
     border: 0.2rem solid white;
     padding-top: 0.3125rem;
@@ -511,15 +454,18 @@ main div .espn {
     background-color: #002d41;
 }
 
-
-/*Texto en el Footer*/
-.footer .parrafo-footer {
+footer h3{
     margin-bottom: 0.625rem;
     font-size: 1.25rem;
 }
 
+
+footer div a {
+    margin-right: 1rem;
+}
+
 /*Imagenes del Footer*/
-.footer div img {
+footer div img {
     border: 0.1875rem solid greenyellow;
     border-radius: 50%;
     background-color: white;
@@ -527,22 +473,11 @@ main div .espn {
     height: 1.875rem;
     padding: 0rem;
     margin-bottom: 0.9375rem;
-}
-
-footer .caja-parrafo-texto {
-    display: flex;
-    justify-content: center;
-}
-
-footer .footer-img {
     margin-left: 1.75rem;
-    display: flex;
-    justify-content: center;
+
 }
 
-footer .footer-img a {
-    margin-right: 1rem;
-}
+
 
 
 
@@ -553,56 +488,83 @@ footer .footer-img a {
 /**.......................INDEX.........................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width: 708px) {
+@media screen and (max-width: 713px) {
     *{
         font-size: 14px;
 
     }
 }
 
-@media screen and (max-width: 619px) {
+@media screen and (max-width: 670px) {
+    *{
+        font-size: 14px;
+    }
+    footer h3,
+    footer div a{
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width: 623px) {
     *{
         font-size: 12px;
-
     }
 }
 
-@media screen and (max-width: 619px) {
+@media screen and (max-width: 534px) {
     *{
         font-size: 10px;
-
     }
 }
 
-@media screen and (max-width: 442px) {
+@media screen and (max-width: 447px) {
     *{
         font-size: 9px;
-
     }
 }
 
-@media screen and (max-width: 399px) {
-    .caja-imagen-y-parrafo-seleccion-argentina-nueva-camisa{
-        flex-direction: column;
-    }
+@media screen and (max-width: 400px) {
     *{
         font-size: 8px;
     }
-}
-
-@media screen and (max-width: 354px) {
-    *{
-        font-size: 7px;
-
+    main section h2{
+        font-size: 1.8rem;
+    }
+    main section .articulo-2{
+        background-image: none;
+        flex-direction: column;
+    }
+    main section .articulo-2 p{
+        margin-top: 1rem;
+    }
+    main .ofertas div{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main .ofertas div div{
+        margin-top: 1rem;
+    }
+    main .noticias div{
+        flex-direction: column;
+    }
+    main .noticias table{
+        border-spacing: 0.25rem;
+    }
+    main .noticias table,
+    th,
+    tr,
+    td{
+        border: var(--borde-caja-producto);
+        padding: 0.15rem;
+    }
+    footer h3,
+    footer div a{
+        font-size: 0.6rem;
     }
 }
 
-@media screen and (max-width: 354px) {
-    *{
-        font-size: 6px;
 
-    }
-}
 
 /**+++++++++++++++++++++....FIN....+++++++++++++++++++++*/
 /**..................MEDIA QUERIES......................*/
@@ -918,19 +880,18 @@ main .form-select option{
 /**..............DECLARACIONES DE GRILLAS...............*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-main .card-text,
-main .card-body p{
-    color: black;
-    text-align: center;
-}
-
 main .container-fluid{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-.container-fluid .contenido-historia img{
 
+main .card-body p{
+    color: black;
+    text-align: center;
+}
+
+.container-fluid .contenido-historia img{
     transition: 1s;
 }
 
