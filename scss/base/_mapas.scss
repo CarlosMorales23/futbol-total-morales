@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+/**Mapa*/
+/**Lo aplique en el index.scss en la linea 13aprox, 
+al ul del nav*/
+$boton:(
+    centrar-texto:center,
+    tamano-letra: 0.75rem, 
+    decoracion-texto:none,
+    bg-boton: #0D81FD,
+    color-texto: black,
+    padding-boton: 0.0225rem,
+    borde-boton:0.1875rem solid #f1ffff,
+    bradius-boton: 0.6rem,
+    grueso-letra: bold,
+);

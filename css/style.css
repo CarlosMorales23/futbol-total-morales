@@ -43,14 +43,47 @@ header nav div div div a {
   color: var(--color-letra);
   font-weight: bold; }
 
+/**Variables*/
+:root {
+  --fondo-oscuro: #0921aa;
+  --fondo-claro: #3b98fc;
+  --fondo-titulo-footer: #140f07;
+  --fondo-nav-interno: #212529;
+  --fondo-subtitulo: #0D81FD;
+  --borde-productos: 0.25rem solid #0efff9;
+  --borde-subtitulo: 0.55rem solid #140f07;
+  --borde-radius: 0.6rem;
+  --borde-radius-img:0.125rem 0.125rem 0rem 0rem;
+  --animacion-boton: yellow;
+  --tamaño-letra:16px;
+  --fuente-primaria: sans-serif, Arial, Helvetica;
+  --color-letra: white;
+  --tamaño-de-letra-subtitulo: 2.2rem;
+  --borde-de-imagen-video-y-texto: 0.25rem solid #0efff9;
+  --borde-caja-producto: 0.3125rem solid rgb(113, 208, 252); }
+
+/**Mapa*/
+/**Lo aplique en el index.scss en la linea 13aprox, 
+al ul del nav*/
+/**Extend*/
+/**Lo aplique en el index.scss en la linea 125aprox, 
+al boton de las cajitas de Ofertas*/
+main ul {
+  display: flex;
+  justify-content: center; }
+
+/**Mixin*/
+/**Lo aplique en el index.scss en la linea 160aprox, 
+al div de la seccion ofertas*/
 /**................................*/
 /**.............INDEX..............*/
 /**................................*/
 /**............NAV INTENRO...........*/
 main ul {
   background-color: var(--fondo-nav-interno);
-  display: flex;
-  justify-content: center; }
+  /*...................................*/
+  /**............. EXTEND..............*/
+  /**..................................*/ }
 
 main section {
   width: 95%;
@@ -145,14 +178,17 @@ iframe:hover {
     font-weight: bold;
     margin-bottom: 0.1rem; }
   .ofertas a {
+    /*...................................*/
+    /**................MAP...............*/
+    /**..................................*/
     text-align: center;
     font-size: 0.75rem;
     text-decoration: none;
-    background-color: var(--fondo-subtitulo);
+    background-color: #0D81FD;
     color: black;
-    padding: 0.225rem;
+    padding: 0.0225rem;
     border: 0.1875rem solid #f1ffff;
-    border-radius: var(--borde-radius);
+    border-radius: 0.6rem;
     font-weight: bold;
     transition-property: font-size;
     transition-duration: 1s;
@@ -170,10 +206,13 @@ iframe:hover {
     border-radius: var(--borde-radius);
     padding: 0.3rem; }
   .ofertas div {
-    margin: 0rem auto;
+    /*...................................*/
+    /**............. MIXIN ..............*/
+    /**..................................*/
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin: 0rem auto;
     align-items: center;
     /*Si decido colocar mas imagenes debera cambiar a around o evenly*/
     flex-wrap: wrap; }
@@ -181,25 +220,27 @@ iframe:hover {
       display: flex;
       flex-direction: column;
       text-align: center;
-      width: 11.9rem;
-      height: 16rem;
+      width: 12.5rem;
+      height: 18.4rem;
       border: var(--borde-caja-producto);
       border-radius: var(--borde-radius);
       transition: 2s; }
       .ofertas div div div:hover {
         transform: scale(1.15); }
       .ofertas div div img {
-        width: 11.3rem;
-        height: 10rem;
+        width: 11.7rem;
+        height: 12.4rem;
         border-radius: var(--borde-radius-img); }
       .ofertas div div h4 {
         margin: 0.15rem auto;
-        font-size: 0.9375rem; }
+        font-size: 0.9375rem;
+        margin-bottom: 0rem; }
       .ofertas div div p {
-        margin: 0.15rem auto;
+        margin: 0rem auto;
         font-size: 0.9375rem; }
       .ofertas div div a {
-        margin-top: 0.4rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.3rem;
         text-decoration: none;
         background-color: greenyellow;
         color: black;

@@ -1,0 +1,100 @@
+main{
+    section /**.section*/{
+        h3{
+            margin: 1.5rem auto;
+            text-align: center;
+            font-size: var(--tamaño-de-letra-subtitulo);
+            border: var(--borde-subtitulo);
+            background-color: var(--fondo-subtitulo);
+            border-radius:var(--borde-radius);
+            padding: 0.3rem;
+        }
+        .tienda /**.tienda*/{
+            margin: 1rem auto;
+            display: flex;
+            flex-wrap: wrap;
+
+            display: grid;
+            grid-gap: 3rem;
+            grid-template-columns: repeat (4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "mad-blanca     mad-azul       mad-dragon     manch-negra"
+                "mil-clasica    mil-blanca     mil-negra      manch-roja"
+                "chel-azul     chel-clasica    chel-amari    manch-blanca";
+
+            text-align: center;
+            width: 11.9rem;
+            height: 16.6rem;
+            border: var(--borde-caja-producto);
+            border-radius: var(--borde-radius);
+            transition: 2s;
+            &:hover{
+                transform: scale(1.15);
+            }
+                .madrid-blanca {
+                    grid-area: mad-blanca;
+                }                
+                .madrid-azul {
+                    grid-area: mad-azul;
+                }                
+                .chealsea-azul {
+                    grid-area: chel-azul;
+                }                
+                .chealsea-amarilla {
+                    grid-area: chel-amari;
+                }                
+                .milan-clasica {
+                    grid-area: mil-clasica;
+                }                
+                .remera-milan-blanca {
+                    grid-area: mil-blanca;
+                }
+                .manchester-negra {
+                    grid-area: manch-negra;
+                }    
+                .manchester-roja {
+                    grid-area: manch-roja;
+                }
+                .real-madrid-dragon{
+                    grid-area: mad-dragon;
+                }
+                .remera-chealsea-clasica{
+                    grid-area: chel-clasica;
+                }
+                .milan-negra{
+                    grid-area: mil-negra;
+                }
+                .manchester-blanca{
+                    grid-area: manch-blanca;
+                }
+                    img{ 
+                        width: 11.3rem;
+                        height: 10rem;
+                        border-radius: var(--borde-radius-img);
+                    }
+                    h4,
+                    p{
+                        margin: 0.15rem auto;
+                        font-size: 0.9375rem;
+                    }
+                    a{
+                        margin-top: 0.4rem;
+                        text-decoration: none;
+                        background-color: greenyellow;
+                        color: black;
+                        padding: 0.125rem;
+                        border: 0.1875rem solid white;
+                        border-radius: 0.3125rem;
+
+                        transition-property: background-color;
+                        transition: 1s;
+                        &:hover{
+                            background-color: skyblue;
+                        }
+                    }
+
+        }
+        
+    }
+}

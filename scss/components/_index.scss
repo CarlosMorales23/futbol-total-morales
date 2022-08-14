@@ -1,3 +1,7 @@
+@import "../base/mapas";
+@import "../base/extend";
+@import "../base/mixin";
+
 /**................................*/
 /**.............INDEX..............*/
 /**................................*/
@@ -7,8 +11,10 @@
 main{
     ul{
         background-color: var(--fondo-nav-interno);
-        display: flex;
-        justify-content: center;
+        /*...................................*/
+        /**............. EXTEND..............*/
+        /**..................................*/
+        @extend %flex;
     }
     section{
         width: 95%;
@@ -117,15 +123,18 @@ iframe:hover{  /**transformacion*/
         margin-bottom: 0.1rem;
     }
     a{
-        text-align: center;
-        font-size: 0.75rem;
-        text-decoration: none;
-        background-color: var(--fondo-subtitulo);
-        color: black;
-        padding: 0.225rem;
-        border: 0.1875rem solid #f1ffff;
-        border-radius: var(--borde-radius);
-        font-weight: bold;
+        /*...................................*/
+        /**................MAP...............*/
+        /**..................................*/
+        text-align: map-get($boton, centrar-texto);
+        font-size: map-get($boton, tamano-letra);
+        text-decoration: map-get($boton, decoracion-texto);
+        background-color: map-get($boton, bg-boton);
+        color: map-get($boton, color-texto);
+        padding: map-get($boton, padding-boton);
+        border: map-get($boton, borde-boton);
+        border-radius: map-get($boton, bradius-boton);
+        font-weight: map-get($boton, grueso-letra);
     
         transition-property: font-size;
         transition-duration: 1s;
@@ -148,18 +157,20 @@ iframe:hover{  /**transformacion*/
         padding: 0.3rem;
     }
     div{
+        /*...................................*/
+        /**............. MIXIN ..............*/
+        /**..................................*/
+
+        @include flex (100%, flex, space-evenly);
         margin: 0rem auto;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
         align-items: center; /*Si decido colocar mas imagenes debera cambiar a around o evenly*/
         flex-wrap: wrap;
         div{
             display: flex;
             flex-direction: column;
             text-align: center;
-            width: 11.9rem;
-            height: 16rem;
+            width: 12.5rem;
+            height: 18.4rem;
             border: var(--borde-caja-producto);
             border-radius: var(--borde-radius);
             transition: 2s;
@@ -167,20 +178,22 @@ iframe:hover{  /**transformacion*/
                 transform: scale(1.15);
             }
             img{
-                width: 11.3rem;
-                height: 10rem;
+                width: 11.7rem;
+                height: 12.4rem;
                 border-radius: var(--borde-radius-img);
             }
             h4{
                 margin: 0.15rem auto;
                 font-size: 0.9375rem;
+                margin-bottom: 0rem;
             }
             p{
-                margin: 0.15rem auto;
+                margin: 0rem auto;
                 font-size: 0.9375rem;
             }
             a{
-                margin-top: 0.4rem;
+                margin-top: 0.1rem;
+                margin-bottom: 0.3rem;
                 text-decoration: none;
                 background-color: greenyellow;
                 color: black;

@@ -583,54 +583,58 @@ footer div img {
 /**.............TIENDA..............*/
 /**................................*/
 
-/*Caja del SubTitulo remeras de la pagina tienda*/
-.caja-subtitulo-remeras{
-    padding-top: 1.25rem;
+main section .pag-tienda{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
+/*Caja del SubTitulo remeras de la pagina tienda*/
+
 
 /*SubTitulo remeras de la pagina tienda*/
-.subtitulo-remeras{
-    font-size: 1.5rem;
+main h3{
+    margin: 1.5rem auto;
+    text-align: center;
+    font-size: var(--tamaño-de-letra-subtitulo);
     border: var(--borde-subtitulo);
     background-color: var(--fondo-subtitulo);
-    border-radius: var(--borde-radius);
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem; 
+    border-radius:var(--borde-radius);
+    padding: 0.3rem;
+}
+
+
+
+/**cajita del producto*/
+main section .tienda div{ 
     text-align: center;
+    width: 11.9rem;
+    height: 16.6rem;
+    border: var(--borde-caja-producto);
+    border-radius: var(--borde-radius);
+    
+    transition: 2s;
+}
+
+.tienda div:hover{
+    transform: scale(1.15);
 }
 
 /**Imagenes de la cajita del producto*/
 .tienda div img{ 
-width: 11.25rem;
-height: 10rem;
-border-radius: 0.125rem 0.125rem 0rem 0rem;
+    width: 11.3rem;
+    height: 10rem;
+    border-radius: var(--borde-radius-img);
 }
 
-/**cajita del producto*/
-.tienda .tienda-producto{ 
-text-align: center;
-width: 11.85rem;
-height: 17.875rem;
-border: var(--borde-caja-producto);
-border-radius: 0.3125rem;
-
-transition: 1s;
-}
-
-.tienda .tienda-producto:hover{
-    transform: scale(1.15);
-}
-
-.tienda div h3{
-    margin: 0.25rem auto;
+.tienda div h4,
+.tienda div p{
+    margin: 0.15rem auto;
     font-size: 0.9375rem;
 }
 
 /**Enlace de "Comprar"*/
-.tienda div p a{
+.tienda div a{
+    margin-top: 0.4rem;
     text-decoration: none;
     background-color: greenyellow;
     color: black;
@@ -642,45 +646,44 @@ transition: 1s;
     transition: 1s;
 }
 
-.tienda div p a:hover{
+.tienda div a:hover{
     background-color: skyblue;
 }
 
-/**Caja-sección de productos*/
-.tienda {
-margin: 2rem auto;
+/**GRID*/
+.tienda{
+margin: 1rem auto;
 display: flex;
-justify-content: space-around;
 flex-wrap: wrap;
 
-
 display: grid;
-grid-gap: 1.5625rem;
+grid-gap: 3rem;
 grid-template-columns: repeat (4, 1fr);
 grid-template-rows: repeat(3, 1fr);
 grid-template-areas:
-    "mad-blanca     mad-azul       chel-azul       chel-amari"
-    "mil-clasica    mil-blanca     manch-negra     manch-roja"
-    "mad-dragon     chel-clasica   mil-negra       manch-blanca";
+    "mad-blanca     mad-azul       mad-dragon     manch-negra"
+    "mil-clasica    mil-blanca     mil-negra      manch-roja"
+    "chel-azul     chel-clasica    chel-amari    manch-blanca";
 }
 
-.remera-real-madrid-blanca {
+
+.madrid-blanca {
 grid-area: mad-blanca;
 }
 
-.remera-real-madrid-azul {
+.madrid-azul {
 grid-area: mad-azul;
 }
 
-.remera-chealsea-azul {
+.chealsea-azul {
 grid-area: chel-azul;
 }
 
-.remera-chealsea-amarilla {
+.chealsea-amarilla {
 grid-area: chel-amari;
 }
 
-.remera-milan-clasica {
+.milan-clasica {
 grid-area: mil-clasica;
 }
 
@@ -688,15 +691,15 @@ grid-area: mil-clasica;
 grid-area: mil-blanca;
 }
 
-.remera-manchester-negra {
+.manchester-negra {
 grid-area: manch-negra;
 }
 
-.remera-manchester-roja {
+.manchester-roja {
 grid-area: manch-roja;
 }
 
-.remera-real-madrid-dragon{
+.real-madrid-dragon{
     grid-area: mad-dragon;
 }
 
@@ -704,11 +707,11 @@ grid-area: manch-roja;
     grid-area: chel-clasica;
 }
 
-.remera-milan-negra{
+.milan-negra{
     grid-area: mil-negra;
 }
 
-.remera-manchester-blanca{
+.manchester-blanca{
     grid-area: manch-blanca;
 }
 
@@ -717,49 +720,43 @@ grid-area: manch-roja;
 /**......................TIENDA.........................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width: 874px) {
-.tienda {
-    padding-top: 1.25rem;
 
-    display: grid;
-    grid-gap: 1.5625rem;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: repeat (6, 1fr);
-    grid-template-areas:
-    "mad-blanca     mad-azul"
-    "chel-azul       chel-amari"
-    "mil-clasica    mil-blanca"
-    "manch-negra     manch-roja"
-    "mad-dragon     chel-clasica"
-    "mil-negra       manch-blanca";
-}
+@media screen and (max-width: 950px){
+    .tienda{
+        grid-gap: 1rem;
 }
 
-
-@media screen and (max-width: 440px) {
-.tienda {
-    padding-top: 1.25rem;
-
-    display: grid;
-    grid-gap: 1.5625rem;
-    grid-template-columns: repeat (1, 1fr);
-    grid-template-rows: repeat (6, 1fr);
-    grid-template-areas:
-    "mad-blanca mad-azul"
-    "chel-azul chel-amari"
-    "mil-clasica mil-blanca"
-    "manch-negra manch-roja"
-    "mad-dragon  chel-clasica"
-    "mil-negra   manch-blanca";
-}
-}
-
-@media screen and (max-width: 354px) {
-    body {
-        max-height: 500vh ;
-        
+@media screen and (max-width: 850px){
+    .tienda{
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "mad-blanca     mad-azul       mad-dragon"
+        "mil-clasica    mil-blanca     mil-negra "
+        "chel-azul     chel-clasica    chel-amari"
+        "manch-negra    manch-roja     manch-blanca";
     }
 }
+
+@media screen and (max-width: 330px) {
+    .tienda {
+        padding-top: 1.25rem;
+
+        display: grid;
+        grid-gap: 1.5625rem;
+        grid-template-columns: repeat (1, 1fr);
+        grid-template-rows: repeat (6, 1fr);
+        grid-template-areas:
+        "mad-blanca mad-azul"
+        "chel-azul chel-amari"
+        "mil-clasica mil-blanca"
+        "manch-negra manch-roja"
+        "mad-dragon  chel-clasica"
+        "mil-negra   manch-blanca";
+    }
+}
+
+
 
 /**+++++++++++++++++++++...FIN...+++++++++++++++++++++++*/
 /**..................MEDIA QUERIES......................*/
@@ -877,7 +874,7 @@ main .form-select option{
 }
 
 /**++++++++++++++.....HISTORIA.......+++++++++++++++++++++*/
-/**..............DECLARACIONES DE GRILLAS...............*/
+/**......................................................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 main .container-fluid{
@@ -910,5 +907,5 @@ main .card-body p{
         margin-left: 2rem;
         margin-right: 2rem;
     }
-} 
-
+}
+}/**!no entiendo porque me marca error sin colocar este corchete*/
