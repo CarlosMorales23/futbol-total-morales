@@ -98,6 +98,10 @@ iframe:hover{  /**transformacion*/
     transform: scale(1.3);
 }
 
+.link-interno{
+    @extend %link-interno;
+}
+
 /**.......FIN SECCIÓN 1 -INDEX........................................................................*/
 
 
@@ -299,21 +303,23 @@ iframe:hover{  /**transformacion*/
 
 .espn{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 1.25rem;
     line-height: 1.25rem;
     text-align: center;
+    p{
+        margin: 0rem;
+    }
     img{
-        margin-top: 0.5rem;
-        width: 10rem;
-        border: 0.3125rem solid greenyellow;
+        margin-top: 0.1rem;
+        width: 7rem;
+        border: 0.3125rem solid blue;
         border-radius: 0.650rem;
         
         transition: 1s;
         &:hover{
-            transform: scale(1.2);
+            transform: scale(1.1);
         
         }
     }

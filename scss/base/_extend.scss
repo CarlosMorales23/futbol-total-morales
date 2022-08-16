@@ -5,3 +5,19 @@ al boton de las cajitas de Ofertas*/
     display:flex;
     justify-content:center;
 }
+
+%link-interno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: white;
+    border: 0.3rem solid black;
+
+    color: black;
+
+    text-decoration: none;
+
+    margin-top: 2rem;
+}
