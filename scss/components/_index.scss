@@ -11,9 +11,7 @@
 main{
     ul{
         background-color: var(--fondo-nav-interno);
-        /*...................................*/
-        /**............. EXTEND..............*/
-        /**..................................*/
+        //*--------EXTEND FLEX---------
         @extend %flex;
     }
     section{
@@ -98,6 +96,10 @@ iframe:hover{  /**transformacion*/
     transform: scale(1.3);
 }
 
+
+
+
+//*AGREGUE VARIOS LINK INTERNOS Y LES APLIQUE EL SIGUIENTE EXTEND. 
 .link-interno{
     @extend %link-interno;
 }
@@ -127,9 +129,8 @@ iframe:hover{  /**transformacion*/
         margin-bottom: 0.1rem;
     }
     a{
-        /*...................................*/
-        /**................MAP...............*/
-        /**..................................*/
+        //*-----MAPA-------------
+        //*--Se lo aplique a los dos links que nos redirige a la pagina tienda. 
         text-align: map-get($boton, centrar-texto);
         font-size: map-get($boton, tamano-letra);
         text-decoration: map-get($boton, decoracion-texto);
@@ -161,10 +162,9 @@ iframe:hover{  /**transformacion*/
         padding: 0.3rem;
     }
     div{
-        /*...................................*/
-        /**............. MIXIN ..............*/
-        /**..................................*/
-
+        //*---------------------------
+        //*ACA APLIQUE EL MIXIN FLEX, A la caja de las cajitas de productos. 
+        //*----------------------------
         @include flex (100%, flex, space-evenly);
         margin: 0rem auto;
         align-items: center; /*Si decido colocar mas imagenes debera cambiar a around o evenly*/

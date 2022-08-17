@@ -63,7 +63,7 @@ header nav div div div a {
   --borde-caja-producto: 0.3125rem solid rgb(113, 208, 252); }
 
 /**Mapa*/
-/**Lo aplique en el index.scss en la linea 13aprox, 
+/**Lo aplique en el index.scss en la linea 132aprox, 
 al ul del nav*/
 /**Extend*/
 /**Lo aplique en el index.scss en la linea 125aprox, 
@@ -84,17 +84,14 @@ main ul {
   margin-top: 2rem; }
 
 /**Mixin*/
-/**Lo aplique en el index.scss en la linea 160aprox, 
+/**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
 /**................................*/
 /**.............INDEX..............*/
 /**................................*/
 /**............NAV INTENRO...........*/
 main ul {
-  background-color: var(--fondo-nav-interno);
-  /*...................................*/
-  /**............. EXTEND..............*/
-  /**..................................*/ }
+  background-color: var(--fondo-nav-interno); }
 
 main section {
   width: 95%;
@@ -189,16 +186,13 @@ iframe:hover {
     font-weight: bold;
     margin-bottom: 0.1rem; }
   .ofertas a {
-    /*...................................*/
-    /**................MAP...............*/
-    /**..................................*/
     text-align: center;
     font-size: 0.75rem;
     text-decoration: none;
     background-color: #0D81FD;
     color: black;
     padding: 0.0225rem;
-    border: 0.1875rem solid #f1ffff;
+    border: 0.1875rem solid orange;
     border-radius: 0.6rem;
     font-weight: bold;
     transition-property: font-size;
@@ -217,9 +211,6 @@ iframe:hover {
     border-radius: var(--borde-radius);
     padding: 0.3rem; }
   .ofertas div {
-    /*...................................*/
-    /**............. MIXIN ..............*/
-    /**..................................*/
     width: 100%;
     display: flex;
     justify-content: space-evenly;
