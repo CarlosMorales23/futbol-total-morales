@@ -7,33 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Futbol Total, sitio web donde hallaras información del futbol; encontraras una tienda con las mejores remeras y balones que podrás adquirir; registrarte y recibe información de tu equipo y jugador favorito, has un repaso de la historia de la historia de los mundiales de futbol.">
-    <meta name="keywords" content="futbol, remeras, balones, tienda, historia, registro, torneos, traspasos, mundiales, campeon, noticias, novedades, ligas, copas">
+    <meta name="keywords"
+        content="futbol, remeras, balones, tienda, historia, registro, torneos, traspasos, mundiales, campeon, noticias, novedades, ligas, copas">
     <meta property="og:type" content="web site">
     <meta property="og:title" content="SEO | Futbol Total - Noticias - Remeras - Balones">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-        
+
     <!---Bootstrap-->
     <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <!---CSS-->
     <!-- <link rel="stylesheet" href="./css/backup.css" type="text/css"> -->
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <title>Futbol Total - Sabes que es el Futbol?</title>
+
 <body>
-    <header>
-        <!--- Agregue un Complemento NAV de bootstrap, luego realice modificaciones, coloque clases: d-flex alineacion horizontal, colores, y agregue div. -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-center">
-            <div class=" text-center align-items-center">
-                <h1 class="navbar-brand fs-1" href="#">Futbol Total</h1>
-            </div>
-            <div class="container-fluid col-6">
+
+    <!------------------------Inicio del Header-hecho con Boostrap------------------------------------>
+    <header class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div container-fluid>
+                <a class="navbar-brand fs-1" href="#">Futbol Total</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse d-flex justify-content-end"  id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link" href="./pages/tienda.html">Tienda</a>
@@ -45,20 +47,12 @@
             </div>
         </nav>
     </header>
+    <!------------------------FIN del Header-hecho con Boostrap------------------------------------>
+
 
     <main>
 
-        <!--Inicio del Menu de navegación interna del Index -->
-
-
-        <!--- AL ul LE APLIQUE EXTEND %FLEX
-        %flex{
-            display:flex;
-            justify-content:center;
-        }
-    
-        SE PUEDE VERIFICAR EN LA LINEA 14 DEL INDEX SCSS -->
-
+        <!---------------Inicio del Menú Interno del Index-Tiene EXTEN FLEX------------------------->
         <ul class="nav col-12">
             <li class="nav-item">
                 <a class="nav-link text-white" href="#presentacion">Presentación</a>
@@ -70,7 +64,7 @@
                 <a class="nav-link text-white" href="#noticias">Noticias</a>
             </li>
         </ul>
-        <!--FIN del Menu de navegación interna del Index -->
+        <!--------------FIN del Menú Interno del Index-Tiene EXTEN FLEX------------------------------->
 
 
 
@@ -113,11 +107,12 @@
                     Que suene el silbato.</p>
             </article>
 
-            <a class="link-interno" href="./pages/historia-del-futbol.html">Enterate un poco mas de la historia del Futbol!</a>
+            <a class="link-interno" href="./pages/historia-del-futbol.html">Enterate un poco mas de la historia del
+                Futbol!</a>
         </section>
         <!-- FIN de la sección 1. PRESENTACIÓN -->
 
-        
+
 
         <!-- Inicio de la sección 2. OFERTAS -->
         <section class="ofertas">
@@ -200,7 +195,8 @@
             <div>
                 <div class="card col-3" style="width: 25rem;">
                     <img src="./img/seleccion-argentina-nueva-camisa.jfif"
-                        class="card-img-top seleccion-argentina-nueva-camisa" alt="Nueva remera de la selección Argentina">
+                        class="card-img-top seleccion-argentina-nueva-camisa"
+                        alt="Nueva remera de la selección Argentina">
                     <div class="card-body">
                         <p class="card-text text-dark text-center">La Selección Argentina</strong>
                             presentó
@@ -266,9 +262,12 @@
 
         <!-- Inicio de la sección 4. ESPN -->
         <section class="espn">
-            <p>Nuestros aliados ESPN <p>
-            <a target="_blank" href="https://www.espn.com.ar/"><img src="./img/espn-logo.png" alt="Logo de ESPN"></a>
-            <a  class="link-interno" href="./pages/registro.html">Recuerda registrarte para recibir mas información</a>
+            <p>Nuestros aliados ESPN
+            <p>
+                <a target="_blank" href="https://www.espn.com.ar/"><img src="./img/espn-logo.png"
+                        alt="Logo de ESPN"></a>
+                <a class="link-interno" href="./pages/registro.html">Recuerda registrarte para recibir mas
+                    información</a>
 
         </section>
     </main>
