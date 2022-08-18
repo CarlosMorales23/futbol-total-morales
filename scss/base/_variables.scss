@@ -1,13 +1,13 @@
 /**Variables*/
 :root{
-    --fondo-oscuro: #0921aa;
+    --fondo-oscuro: black;
     --fondo-claro: #3b98fc;
     --fondo-titulo-footer: #140f07;
     --fondo-nav-interno: #212529;
-    --fondo-subtitulo: #0D81FD;
+    --fondo-subtitulo: none;
 
     --borde-productos: 0.25rem solid #0efff9;
-    --borde-subtitulo: 0.55rem solid #140f07;
+    --borde-subtitulo: none;
     --borde-radius: 0.6rem;
     --borde-radius-img:0.125rem 0.125rem 0rem 0rem;
     
@@ -18,6 +18,6 @@
     --fuente-primaria: sans-serif, Arial, Helvetica;
     --color-letra: white;
     --tamaño-de-letra-subtitulo: 2.2rem;
-    --borde-de-imagen-video-y-texto: 0.25rem solid #0efff9;
+    --borde-de-imagen-video-y-texto: 0.25rem solid #0D6EFD;
     --borde-caja-producto: 0.3125rem solid rgb(113, 208, 252);
 }
