@@ -14,9 +14,9 @@
   --tamaño-letra:16px;
   --fuente-primaria: sans-serif, Arial, Helvetica;
   --color-letra: white;
-  --tamaño-de-letra-subtitulo: 2.2rem;
+  --tamaño-de-letra-subtitulo: 2.4rem;
   --borde-de-imagen-video-y-texto: 0.25rem solid #0D6EFD;
-  --borde-caja-producto: 0.3125rem solid rgb(113, 208, 252); }
+  --borde-caja-producto: 0.3125rem solid #0D6EFD; }
 
 * {
   margin: 0;
@@ -45,9 +45,9 @@ body {
   --tamaño-letra:16px;
   --fuente-primaria: sans-serif, Arial, Helvetica;
   --color-letra: white;
-  --tamaño-de-letra-subtitulo: 2.2rem;
+  --tamaño-de-letra-subtitulo: 2.4rem;
   --borde-de-imagen-video-y-texto: 0.25rem solid #0D6EFD;
-  --borde-caja-producto: 0.3125rem solid rgb(113, 208, 252); }
+  --borde-caja-producto: 0.3125rem solid #0D6EFD; }
 
 /**Mapa*/
 /**Lo aplique en el index.scss en la linea 132aprox, 
@@ -81,7 +81,6 @@ main ul {
 
 main .presentacion {
   width: 100%;
-  text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -115,7 +114,7 @@ main .presentacion {
     opacity: 0.7;
     font-size: 1.4rem;
     padding: 0.5rem;
-    margin: 0.5rem;
+    margin-top: 0.5rem;
     border-radius: var(--borde-radius);
     line-height: 1.5rem;
     text-align: center; }
@@ -135,50 +134,53 @@ iframe:hover {
 /**.......INICIO SECCIÓN 2 -INDEX.....................................................................*/
 .ofertas {
   width: 100%;
-  background-image: url(../img/cancha-noche.jpg);
+  background-image: url(../img/cancha-noche-2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 0.4rem solid white; }
+  border: 0.4rem solid black; }
   .ofertas h2 {
-    font-size: var(--tamaño-de-letra-subtitulo);
-    border: var(--borde-subtitulo);
+    opacity: 0.7;
+    color: white;
+    font-size: 3rem;
+    padding: 0.8rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     border-radius: var(--borde-radius);
-    padding: 0.3rem;
-    background-color: var(--fondo-subtitulo);
-    color: var(--color-letra);
-    font-weight: bold;
-    margin-bottom: 0.1rem; }
-  .ofertas a {
+    line-height: 1.5rem;
+    text-align: center; }
+  .ofertas botton {
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     text-decoration: none;
-    background-color: #0D81FD;
+    background-color: #0D6EFD;
     color: black;
-    padding: 0.0225rem;
-    border: 0.1875rem solid orange;
-    border-radius: 0.6rem;
-    font-weight: bold;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
     transition-property: font-size;
     transition-duration: 1s;
     transition-timing-function: steps(3, end);
     transition-property: background-color;
     transition-duration: 1s; }
-    .ofertas a:hover {
+    .ofertas botton:hover {
       font-size: 1.1rem;
       background-color: greenyellow; }
   .ofertas h3 {
-    margin: 1.5rem auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    background-color: white;
+    opacity: 0.7;
     font-size: var(--tamaño-de-letra-subtitulo);
     border: var(--borde-subtitulo);
-    background-color: var(--fondo-subtitulo);
     border-radius: var(--borde-radius);
-    padding: 0.3rem; }
+    padding: 0.3rem;
+    color: black; }
+  .ofertas .subtitulo-balones {
+    margin-top: 3.5rem; }
   .ofertas div {
     width: 100%;
     display: flex;
@@ -191,24 +193,26 @@ iframe:hover {
       display: flex;
       flex-direction: column;
       text-align: center;
-      width: 12.5rem;
-      height: 18.4rem;
+      width: 14rem;
+      height: 20rem;
       border: var(--borde-caja-producto);
+      background-color: black;
       border-radius: var(--borde-radius);
+      box-shadow: 0.6rem 0.6rem black;
       transition: 2s; }
-      .ofertas div div div:hover {
+      .ofertas div div:hover {
         transform: scale(1.15); }
       .ofertas div div img {
-        width: 11.7rem;
-        height: 12.4rem;
+        width: 13.35rem;
+        height: 13.9rem;
         border-radius: var(--borde-radius-img); }
       .ofertas div div h4 {
         margin: 0.15rem auto;
-        font-size: 0.9375rem;
+        font-size: 1rem;
         margin-bottom: 0rem; }
       .ofertas div div p {
         margin: 0rem auto;
-        font-size: 0.9375rem; }
+        font-size: 1rem; }
       .ofertas div div a {
         margin-top: 0.1rem;
         margin-bottom: 0.3rem;
@@ -221,16 +225,21 @@ iframe:hover {
         transition-property: background-color;
         transition: 1s; }
         .ofertas div div a:hover {
-          background-color: skyblue; }
+          background-color: #0D6EFD; }
 
 /**.......FIN SECCIÓN 2 -INDEX.....................................................................*/
 /**.......INICIO SECCIÓN 3 -INDEX.....................................................................*/
 .noticias {
-  margin: 0rem auto;
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  border: 0.4rem solid black;
+  background-image: url(../img/balon-noche.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
   .noticias h2 {
     font-size: var(--tamaño-de-letra-subtitulo);
     border: var(--borde-subtitulo);
@@ -239,7 +248,10 @@ iframe:hover {
     background-color: var(--fondo-subtitulo);
     color: var(--color-letra);
     font-weight: bold;
-    margin-bottom: 0.1rem; }
+    margin-bottom: 0.1rem;
+    background-color: black;
+    opacity: 0.7;
+    text-align: center; }
   .noticias h3 {
     margin: 1.5rem auto;
     font-size: var(--tamaño-de-letra-subtitulo);
