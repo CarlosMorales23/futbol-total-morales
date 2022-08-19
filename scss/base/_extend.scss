@@ -15,6 +15,12 @@ al boton de las cajitas de Ofertas*/
     justify-content:space-around;
 }
 
+%flex-ali-cent-just-between{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
 %flex-ali-cent-just-cent-column{
     display:flex;
     align-items: center;

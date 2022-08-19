@@ -55,12 +55,17 @@ al ul del nav*/
 /**Extend*/
 /**Lo aplique en el index.scss en la linea 125aprox, 
 al boton de las cajitas de Ofertas*/
-main ul {
+main ul, footer h3 {
   display: flex;
   align-items: center;
   justify-content: center; }
 
-.ofertas, .ofertas div div {
+footer section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.ofertas, .ofertas div div, footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +138,6 @@ iframe:hover {
   background-image: url(../img/cancha-noche-2.jpg);
   border: 0.4rem solid black; }
   .ofertas h2 {
-    opacity: 0.7;
     color: white;
     font-size: 3rem;
     padding: 0.8rem;
@@ -159,15 +163,8 @@ iframe:hover {
       font-size: 1.1rem;
       background-color: greenyellow; }
   .ofertas h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.2rem;
-    background-color: white;
-    opacity: 0.7;
     font-size: var(--tamaño-de-letra-subtitulo);
-    border: var(--borde-subtitulo);
-    border-radius: var(--borde-radius);
-    padding: 0.3rem;
-    color: black; }
+    color: white; }
   .ofertas .subtitulo-balones {
     margin-top: 3.5rem; }
   .ofertas div {
@@ -283,52 +280,24 @@ iframe:hover {
         border: var(--borde-caja-producto);
         padding: 0.3rem; }
 
-.espn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 1.25rem;
-  line-height: 1.25rem;
-  text-align: center; }
-  .espn p {
-    margin: 0rem; }
-  .espn img {
-    margin-top: 0.1rem;
-    width: 7rem;
-    border: 0.3125rem solid blue;
-    border-radius: 0.650rem;
-    transition: 1s; }
-    .espn img:hover {
-      transform: scale(1.1); }
-
 /**.......FIN SECCIÓN 3 -INDEX.....................................................................*/
 footer {
   width: 100%;
-  border: 0.2rem solid white;
-  padding-top: 0.3125rem;
-  margin: 1.25rem auto 0.01rem auto;
-  text-align: center;
-  border-radius: 0.625rem;
-  height: 4.6875rem;
-  font-size: 0.625rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #002d41; }
+  border: 0.4rem solid black;
+  background-color: #0D6EFD;
+  text-align: center; }
   footer h3 {
-    margin-bottom: 0.625rem;
-    font-size: 1.25rem; }
-  footer div a {
-    margin-right: 1rem; }
-    footer div a img {
-      border: 0.1875rem solid greenyellow;
-      border-radius: 50%;
-      background-color: white;
-      width: 1.875rem;
-      height: 1.875rem;
-      padding: 0rem;
-      margin-bottom: 0.9375rem;
-      margin-left: 1.75rem; }
+    margin: 0.3rem 0rem;
+    font-size: 1.5rem; }
+  footer section {
+    flex-wrap: wrap; }
+    footer section a {
+      font-size: 1rem;
+      line-height: 1rem; }
+      footer section a img {
+        margin: 0.5rem;
+        width: 2rem;
+        height: 2rem; }
 
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /**..................MEDIA QUERIES......................*/
