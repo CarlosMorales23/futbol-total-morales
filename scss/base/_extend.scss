@@ -1,21 +1,42 @@
 /**Extend*/
 /**Lo aplique en el index.scss en la linea 125aprox, 
 al boton de las cajitas de Ofertas*/
-%flex{
+
+
+%flex-ali-cent-just-cent{
     display:flex;
+    align-items: center;
     justify-content:center;
 }
 
-%link-interno{
-    display: flex;
-    justify-content: center;
+%flex-ali-cent-just-around{
+    display:flex;
     align-items: center;
+    justify-content:space-around;
+}
+
+%flex-ali-cent-just-cent-column{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+%flex-ali-cent-just-around-column{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+}
+
+%h2{
+    font-size: 3rem;
     text-align: center;
+    margin-top: 3rem;
+}
 
-    background-color: white;
-    border: 0.3rem solid black;
-
-    color: black;
-
-    text-decoration: none;
+%imagen-de-fondo{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
