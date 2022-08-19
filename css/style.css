@@ -247,10 +247,6 @@ iframe:hover {
     justify-content: center;
     align-items: center;
     margin: 0rem auto; }
-    .noticias div div {
-      transition: 1s; }
-      .noticias div div:hover {
-        transform: scale(1.2); }
     .noticias div div p {
       text-align: justify;
       line-height: 1.6rem;
@@ -261,6 +257,8 @@ iframe:hover {
         border: 0.0625rem solid white;
         border-radius: var(--borde-radius);
         padding: 0.3rem; }
+    .noticias div div .col-5 p {
+      background-color: black; }
   .noticias table {
     border-spacing: 0.45rem;
     border: var(--borde-caja-producto);

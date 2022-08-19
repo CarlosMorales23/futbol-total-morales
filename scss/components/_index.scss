@@ -214,12 +214,6 @@ iframe:hover{  /**transformacion*/
         align-items: center;
         margin: 0rem auto;
         div{
-            transition: 1s;
-            &:hover{
-                transform: scale(1.2);
-            }
-        }
-        div{
             p{
                 text-align: justify;
                 line-height: 1.6rem;
@@ -232,6 +226,11 @@ iframe:hover{  /**transformacion*/
                     padding: 0.3rem;
                 }
             }
+        .col-5{
+            p{
+                background-color: black
+            }
+        };
         }
     }
     table{
