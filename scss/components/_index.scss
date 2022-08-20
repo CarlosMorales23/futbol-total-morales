@@ -18,7 +18,7 @@ main{
         background-image: url(../img/estadio-noche.jpg);
         @extend %flex-ali-cent-just-around-column;
         @extend %imagen-de-fondo;
-        border: 0.4rem solid black;
+        @extend %borde-seccion;
         h1{
             text-align: center;
             font-size: 4.5rem;
@@ -27,39 +27,28 @@ main{
         
         }
         p{
-
-            font-size: 1.2rem;
-            margin: 0.1rem;
-            border-radius: var(--borde-radius);
-            line-height: 1.5rem;
+            width: 80%;
             text-align: center;
             strong {
                 font-size: 1.4rem;
                 }
         }
-        h2{
-            background-color: white;
-            color: black;
-            opacity: 0.7;
-            font-size: 1.4rem;
-            padding: 0.5rem;
-            margin-top: 0.5rem;
-            border-radius: var(--borde-radius);
-            line-height: 1.5rem;
-            text-align: center;
-        }
         iframe{
             border: var(--borde-de-imagen-video-y-texto);
             border-radius: var(--borde-radius);
-            width:18.5rem;
+            width: 18.5rem;
             height: 12rem;
-            margin: 0.5rem;
+            margin-bottom: 0.3rem;
             transition: 2.5s
+        }
+        h2{
+            background-color: #0D6EFD;
+            margin-top: 1rem;
         }
     }
 }
 
-iframe:hover{  /**transformacion*/
+iframe:hover{
     transform: scale(1.2);
 }
 /**.......FIN SECCIÓN 1 -INDEX........................................................................*/
@@ -73,52 +62,28 @@ iframe:hover{  /**transformacion*/
     background-image: url(../img/cancha-noche-2.jpg);
     @extend %flex-ali-cent-just-cent-column;
     @extend %imagen-de-fondo;
-    border: 0.4rem solid black;
+    border: 0.4rem solid red;
     h2{
+        @extend %subtitulo;
         color: white;
-        font-size: 3rem;
-        padding: 0.8rem;
-        margin-top: 3rem;
-        margin-bottom: 1rem;
-        border-radius: var(--borde-radius);
-        line-height: 1.5rem;
+        margin-top: 50rem;
         text-align: center;
     }
-    botton{
-        //*-----MAPA-------------
-        //*--Se lo aplique a los dos links que nos redirige a la pagina tienda. 
-        text-align: map-get($boton, centrar-texto);
-        font-size: map-get($boton, tamano-letra);
-        text-decoration: map-get($boton, decoracion-texto);
-        background-color: map-get($boton, bg-boton);
-        color: map-get($boton, color-texto);
-        padding: map-get($boton, padding-boton);
-        border: map-get($boton, borde-boton);
-        border-radius: map-get($boton, bradius-boton);
-    
-        transition-property: font-size;
-        transition-duration: 1s;
-        transition-timing-function: steps(3, end);
-    
-    
-        transition-property: background-color;
-        transition-duration: 1s;
+    a{
+        color:white;
         &:hover{
-            font-size: 1.1rem;
-            background-color: greenyellow;
+            font-size: 2rem;
+            background-color: rgb(0, 0, 0);
         }
     }
     h3{
-        font-size: var(--tamaño-de-letra-subtitulo);
+        @extend %subtitulo-2;
         color: white;
     }
     .subtitulo-balones{
         margin-top: 3.5rem;
     }
     div{
-        //*---------------------------
-        //*ACA APLIQUE EL MIXIN FLEX, A la caja de las cajitas de productos. 
-        //*----------------------------
         @include flex (100%, flex, space-evenly);
         margin: 0rem auto;
         align-items: center; /*Si decido colocar mas imagenes debera cambiar a around o evenly*/

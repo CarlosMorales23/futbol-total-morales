@@ -1,13 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    color: var(--color-letra);
-    font-family: var(--fuente-primaria);
-    font-size: var(--tamaño-letra);
-    box-sizing: border-box;    
-}
-
-body {
-    margin: 0px auto;
-    background-color: var(--fondo-oscuro);
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box; 
+    font-family: sans-serif, Arial, Helvetica;
 }

@@ -1,23 +1,8 @@
 /**Variables*/
 :root{
-    --fondo-oscuro: black;
-    --fondo-claro: #3b98fc;
-    --fondo-titulo-footer: #140f07;
     --fondo-nav-interno: #212529;
-    --fondo-subtitulo: none;
+    --fondo-contraste: black; 
 
-    --borde-productos: 0.25rem solid #0efff9;
-    --borde-subtitulo: none;
-    --borde-radius: 0.6rem;
-    --borde-radius-img:0.125rem 0.125rem 0rem 0rem;
-    
-    
-    --animacion-boton: yellow;
-
-    --tamaño-letra:16px;
-    --fuente-primaria: sans-serif, Arial, Helvetica;
-    --color-letra: white;
-    --tamaño-de-letra-subtitulo: 2.4rem;
-    --borde-de-imagen-video-y-texto: 0.25rem solid white;
+    --borde-de-imagen-y-video: 0.25rem solid white;
     --borde-caja-producto: 0.3125rem solid #0D6EFD;
 }

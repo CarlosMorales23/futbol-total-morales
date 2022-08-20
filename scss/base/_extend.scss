@@ -1,8 +1,7 @@
-/**Extend*/
-/**Lo aplique en el index.scss en la linea 125aprox, 
-al boton de las cajitas de Ofertas*/
+//!Extends
 
 
+//!Extend para flex
 %flex-ali-cent-just-cent{
     display:flex;
     align-items: center;
@@ -35,14 +34,28 @@ al boton de las cajitas de Ofertas*/
     flex-direction: column;
 }
 
-%h2{
+
+//!Extend para Subtitulos
+%subtitulo{
     font-size: 3rem;
     text-align: center;
-    margin-top: 3rem;
 }
 
+%subtitulo-2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+//!Extend para Imagen de fondo
 %imagen-de-fondo{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+//!Extend borde de sección
+%borde-seccion{
+    border: 0.2rem solid black;
+}
+
