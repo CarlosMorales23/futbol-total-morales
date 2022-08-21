@@ -143,45 +143,43 @@ iframe:hover{
     background-size: cover;
     background-repeat: no-repeat;
     h2{
-        font-size: var(--tamaño-de-letra-subtitulo);
-        border: var(--borde-subtitulo);
-        border-radius: var(--borde-radius);
-        padding: 0.3rem;
-        background-color: var(--fondo-subtitulo);
-        color: var(--color-letra);
+        @extend %subtitulo;
         font-weight: bold;
-        margin-bottom: 0.1rem;
-        background-color: black;
-        opacity: 0.7;
         text-align: center;
     }
     h3{
-        margin: 1.5rem auto;
-        font-size: var(--tamaño-de-letra-subtitulo);
-        border: var(--borde-subtitulo);
-        background-color: var(--fondo-subtitulo);
-        border-radius:var(--borde-radius);
-        padding: 0.3rem;
+        @extend %subtitulo-2;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0rem auto;
-        div{
-            p{
-                text-align: justify;
-                line-height: 1.6rem;
-                font-size: 1rem;
-                padding: 1rem; 
-                strong{
-                    font-size: 1.2rem;
-                    border: 0.0625rem solid white;
-                    border-radius: var(--borde-radius);
-                    padding: 0.3rem;
-                }
+        @extend %flex-ali-cent-just-around;
+        justify-content: space-evenly;
+        width: 95%;
+        img{
+            width: 30rem;
+            height: 20rem;
+            border: 0.3rem solid white;
+            border-radius: 0.8rem;
+        }
+        p{
+            text-align: justify;
+            line-height: 1.6rem;
+            font-size: 1rem;
+            padding: 1rem;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.447);
+            margin-left: auto;
+            strong{
+                font-size: 1.2rem;
+                border: 0.0625rem solid white;
+                border-radius: var(--borde-radius);
+                padding: 0.3rem;
             }
         }
+    }
+    .ultimos-fichajes{
+        background-color: rgba(0, 0, 0, 0.447);
     }
     table{
         border-spacing: 0.45rem;
@@ -208,36 +206,38 @@ iframe:hover{
                     padding: 0.3rem;
                     background-color: black;
                     text-align: center;
-                } 
-            }
+            } 
         }
     }
 }
+}
+
 
 /**.......FIN SECCIÓN 3 -INDEX.....................................................................*/
 
 footer {
+    @extend %flex-ali-cent-just-cent-column;
     width: 100%;
     border: 0.4rem solid black;
     background-color: #0D6EFD;
     text-align: center;
-    @extend %flex-ali-cent-just-cent-column;
     h3{
         @extend %flex-ali-cent-just-cent;
         margin: 0.3rem 0rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     section{
         @extend %flex-ali-cent-just-around;
         flex-wrap: wrap;
+        width: 95%;
         a{
-            font-size: 1rem;
-            line-height: 1rem;
+            font-size: 0.9rem;
+            line-height: 0.4rem;
 
             img{
                 margin: 0.5rem;
-                width: 2rem;
-                height: 2rem;
+                width: 2.2rem;
+                height: 2.2rem;
             }
         }
     }
@@ -248,76 +248,83 @@ footer {
 /**.......................INDEX.........................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width: 713px) {
-    *{
-        font-size: 14px;
-
+@media screen and (max-width: 812px){
+    .ofertas1 div div{
+        margin: 1rem;
     }
-}
-
-@media screen and (max-width: 670px) {
-    footer h3,
-    footer div a{
-        font-size: 0.9rem;
+    .noticias div{
+        flex-direction: column;
+        width: 95%;
     }
 }
 
 
 @media screen and (max-width: 623px) {
-    *{
-        font-size: 12px;}
-}
-
-@media screen and (max-width: 534px) {
-    *{
-        font-size: 10px;}
-}
-
-@media screen and (max-width: 447px) {
-    *{
-        font-size: 9px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    *{
-        font-size: 8px;
-    }
-    main section h2{
-        font-size: 1.8rem;
-    }
-    main section .articulo-2{
-        background-image: none;
-        flex-direction: column;
-    }
-    main section .articulo-2 p{
-        margin-top: 1rem;
-    }
-    main .ofertas div{
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    main .ofertas div div{
-        margin-top: 1rem;
-    }
-    main .noticias div{
-        flex-direction: column;
-    }
-    main .noticias table{
+    table{
         border-spacing: 0.25rem;
-    }
-    main .noticias table,
-    th,
-    tr,
-    td{
-        border: var(--borde-caja-producto);
         padding: 0.15rem;
+        font-size: 0.8rem;
     }
-    footer h3,
-    footer div a{
-        font-size: 0.6rem;
+    table tr{
+        padding: 0.15rem;
+        font-size: 0.8rem;
+    }
+    thead tr th{
+        padding: 0.15rem;
+        font-size: 0.8rem;
+    }
+    tbody tr{
+        padding: 0.15rem;
+        font-size: 0.8rem;
+    }
+    tbody tr td{
+        padding: 0.15rem;
+        font-size: 0.8rem;
     }
 }
+
+@media screen and (max-width: 490px) {
+    table{
+        border-spacing: 0.20rem;
+        padding: 0.10rem;
+        font-size: 0.65rem;
+    }
+    table tr{
+        padding: 0.10rem;
+        font-size: 0.65rem;
+    }
+    thead tr th{
+        padding: 0.10rem;
+        font-size: 0.65rem;
+    }
+    tbody tr{
+        padding: 0.10rem;
+        font-size: 0.65rem;
+    }
+    tbody tr td{
+        padding: 0.10rem;
+        font-size: 0.65rem;
+    }
+    .noticias div img{
+        width: 23rem;
+        height: 13rem;
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    *{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
