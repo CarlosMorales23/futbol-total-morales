@@ -34,7 +34,7 @@ footer section {
   align-items: center;
   justify-content: space-around; }
 
-.ofertas, .ofertas div div, footer {
+.ofertas1, footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,15 +46,21 @@ main .presentacion {
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas h2 {
+.ofertas1 div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; }
+
+.ofertas1 h2 {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas h3 {
-  font-size: 1.5rem;
+.ofertas1 h3 {
+  font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas {
+main .presentacion, .ofertas1 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -91,6 +97,7 @@ main .presentacion {
     width: 18.5rem;
     height: 12rem;
     margin-bottom: 0.3rem;
+    border-radius: 0.5rem;
     transition: 2.5s; }
   main .presentacion h2 {
     background-color: #0D6EFD;
@@ -101,65 +108,60 @@ iframe:hover {
 
 /**.......FIN SECCIÓN 1 -INDEX........................................................................*/
 /**.......INICIO SECCIÓN 2 -INDEX.....................................................................*/
-.ofertas {
+.ofertas1 {
   width: 100%;
   background-image: url(../img/cancha-noche-2.jpg);
-  border: 0.4rem solid red; }
-  .ofertas h2 {
+  border: 0.2rem solid black; }
+  .ofertas1 h2 {
     color: white;
-    margin-top: 50rem;
+    margin-top: 1.5rem;
     text-align: center; }
-  .ofertas a {
+  .ofertas1 a {
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+    background-color: #0D6EFD;
+    padding: 0.1rem;
+    border: 0.1875rem solid white;
+    border-radius: 0.3125rem;
     color: white; }
-    .ofertas a:hover {
-      font-size: 2rem;
+    .ofertas1 a:hover {
+      font-size: 1.1rem;
       background-color: black; }
-  .ofertas h3 {
+  .ofertas1 h3 {
     color: white; }
-  .ofertas .subtitulo-balones {
+  .ofertas1 .subtitulo-balones {
     margin-top: 3.5rem; }
-  .ofertas div {
-    width: 100%;
+  .ofertas1 div {
+    width: 90%;
     display: flex;
-    justify-content: space-evenly;
-    margin: 0rem auto;
-    align-items: center;
-    /*Si decido colocar mas imagenes debera cambiar a around o evenly*/
+    justify-content: space-around;
     flex-wrap: wrap; }
-    .ofertas div div {
-      width: 14rem;
-      height: 20rem;
+    .ofertas1 div div {
+      width: 15.1rem;
+      height: 22rem;
       border: var(--borde-caja-producto);
       background-color: black;
-      border-radius: var(--borde-radius);
-      box-shadow: 0.6rem 0.6rem black;
-      transition: 2s; }
-      .ofertas div div:hover {
-        transform: scale(1.15); }
-      .ofertas div div img {
-        width: 13.35rem;
+      border-radius: 0.5rem;
+      box-shadow: 0.5rem 0.5rem black;
+      text-align: center; }
+      .ofertas1 div div img {
+        width: 14.35rem;
         height: 13.9rem;
-        border-radius: var(--borde-radius-img); }
-      .ofertas div div h4 {
-        margin: 0.15rem auto;
-        font-size: 1rem;
-        margin-bottom: 0rem; }
-      .ofertas div div p {
+        border-radius: var(--borde-radius-img);
+        margin-top: 0rem auto; }
+      .ofertas1 div div p {
         margin: 0rem auto;
-        font-size: 1rem; }
-      .ofertas div div a {
-        margin-top: 0.1rem;
-        margin-bottom: 0.3rem;
+        font-size: 1.2rem; }
+      .ofertas1 div div a {
+        /**Boton Comprar*/
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         text-decoration: none;
-        background-color: greenyellow;
-        color: black;
-        padding: 0.125rem;
+        background-color: #0D6EFD;
+        padding: 0.1rem;
         border: 0.1875rem solid white;
-        border-radius: 0.3125rem;
-        transition-property: background-color;
-        transition: 1s; }
-        .ofertas div div a:hover {
-          background-color: #0D6EFD; }
+        border-radius: 0.3125rem; }
 
 /**.......FIN SECCIÓN 2 -INDEX.....................................................................*/
 /**.......INICIO SECCIÓN 3 -INDEX.....................................................................*/
@@ -208,8 +210,6 @@ iframe:hover {
         border: 0.0625rem solid white;
         border-radius: var(--borde-radius);
         padding: 0.3rem; }
-    .noticias div div .col-5 p {
-      background-color: black; }
   .noticias table {
     border-spacing: 0.45rem;
     border: var(--borde-caja-producto);
@@ -227,7 +227,9 @@ iframe:hover {
       padding: 0.3rem; }
       .noticias table tbody tr td {
         border: var(--borde-caja-producto);
-        padding: 0.3rem; }
+        padding: 0.3rem;
+        background-color: black;
+        text-align: center; }
 
 /**.......FIN SECCIÓN 3 -INDEX.....................................................................*/
 footer {
