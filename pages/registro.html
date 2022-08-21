@@ -3,13 +3,15 @@
 
 
 <!------------------------------------Inicio del HEAD------------------------------------------->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Futbol Total, sitio web donde hallaras información del futbol; encontraras una tienda con las mejores remeras y balones que podrás adquirir; registrarte y recibe información de tu equipo y jugador favorito, has un repaso de la historia de la historia de los mundiales de futbol.">
-    <meta name="keywords" content="futbol, remeras, balones, tienda, historia, registro, torneos, traspasos, mundiales, campeon, noticias, novedades, ligas, copas">
+    <meta name="keywords"
+        content="futbol, remeras, balones, tienda, historia, registro, torneos, traspasos, mundiales, campeon, noticias, novedades, ligas, copas">
     <meta property="og:type" content="web site">
     <meta property="og:title" content="SEO | Futbol Total - Noticias - Remeras - Balones">
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
@@ -19,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!---CSS-->
-    <link rel="stylesheet" href="../css/backup.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
     <title>Futbol Total | Registro | Recibe mas información.</title>
 </head>
 <!------------------------------------FIN del HEAD------------------------------------------->
@@ -64,51 +66,31 @@
         </div>
 
 
-        <!------------------------Inicio del contenedor de formulario----------------------------------->
+
         <div class="container">
-            <form class="row g-4 mt-2">
+
+            <form class="row g-3 mt-3 d-flex justify-content-space-around">
+
+                <div class="row text-center">
+                    <h3 class="col">Datos Personales</h3>
+                </div>
 
                 <div class="col-5">
-                    <label for="nombre" class="form-label">Nombre</label>
+                    <label for="nombre" class="form-label">Nombres</label>
                     <input type="text" class="form-control" id="nombre" placeholder="Escribe tu Nombre">
                 </div>
 
                 <div class="col-5">
-                    <label for="apellido" class="form-label">Apellido</label>
+                    <label for="apellido" class="form-label">Apellidos</label>
                     <input type="text" class="form-control" id="apellido" placeholder="Escribe tu Nombre">
                 </div>
 
-                <div class="col-3">
-                    <label class="edad" for="edad">Edad</label>
-                    <input type="num" maxlength="3" min="1" max="130" class="form-control" id="edad">
-                </div>
-
-                <div class="col-10">
-                    <label for="email-input" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
-                </div>
-
-                <div class="col-10">
-                    <label for="email-input" class="form-label">Confirma Email</label>
-                    <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
-                </div>
-
-                <div class="col-6">
-                    <label for="input-pass" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="input-pass" placeholder="Escribe tu contraseña">
-                </div>
-
-                <div class="col-12">
+                <div class="col-4">
                     <label for="input-addres" class="form-label">Dirección 1</label>
                     <input type="text" class="form-control" id="input-addres" placeholder="Escribe tu dirección">
                 </div>
 
-                <div class="col-12">
-                    <label for="input-addres" class="form-label">Dirección 2</label>
-                    <input type="text" class="form-control" id="input-addres" placeholder="Escribe tu dirección">
-                </div>
-
-                <div class="col-4">
+                <div class="col-2">
                     <label for="city-addres" class="form-label">Ciudad</label>
                     <input type="text" class="form-control" id="city-addres" placeholder="Escribe tu ciudad">
                 </div>
@@ -118,10 +100,185 @@
                     <input type="text" class="form-control" id="code-postal" placeholder="Escribe tu codigo postal">
                 </div>
 
-                <div class="col-3">
+                <div class="col-2">
                     <label for="country-input" class="form-label">Pais</label>
                     <input type="text" class="form-control" id="country-input" placeholder="Escribe tu Pais">
                 </div>
+            </form>
+        </div>
+
+        <br>
+        <br>
+        
+        
+            <form class="row g-3 mt-3 d-flex justify-content-space-between">
+
+                <div class="row text-center">
+                    <h3 class="col">Datos - Loguin</h3>
+                </div>
+
+                <div class="col-5">
+                    <label for="email-input" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
+                </div>
+        
+                <div class="col-5">
+                    <label for="email-input" class="form-label">Confirma tu Email</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
+                </div>
+
+                <div class="col-5">
+                    <label for="input-pass" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="input-pass" placeholder="Escribe tu contraseña">
+                </div>
+        
+                <div class="col-5">
+                    <label for="input-pass" class="form-label">Confirma tu Contraseña</label>
+                    <input type="password" class="form-control" id="input-pass" placeholder="Escribe tu contraseña">
+                </div>
+            </form>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <!------------------------Inicio del contenedor de formulario----------------------------------->
+
+        <form>
+            <fieldset>
+                <legend>Legend</legend>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control-plaintext" id="staticEmail"
+                            value="email@example.com">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleSelect1">Example select</label>
+                    <select class="form-select" id="exampleSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleSelect2">Example multiple select</label>
+                    <select multiple="" class="form-select" id="exampleSelect2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea">Example textarea</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="formFile" class="form-label">Default file input example</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <fieldset class="form-group">
+                    <legend class="mt-4">Radio buttons</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1"
+                            value="option1" checked="">
+                        <label class="form-check-label" for="optionsRadios1">
+                            Option one is this and that—be sure to include why it's great
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="optionsRadios2">
+                            Option two can be something else and selecting it will deselect option one
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios3"
+                            value="option3" disabled="">
+                        <label class="form-check-label" for="optionsRadios3">
+                            Option three is disabled
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Checkboxes</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Checked checkbox
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend class="mt-4">Switches</legend>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox
+                            input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
+                            input</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Ranges</legend>
+                    <label for="customRange1" class="form-label">Example range</label>
+                    <input type="range" class="form-range" id="customRange1">
+                    <label for="disabledRange" class="form-label">Disabled range</label>
+                    <input type="range" class="form-range" id="disabledRange" disabled="">
+                    <label for="customRange3" class="form-label">Example range</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
+
+
+
+
+
+
+        <div class="container">
+            <form class="row g-4 mt-2">
+
+
+
+
+
+
+
 
                 <br>
 
@@ -193,7 +350,7 @@
                         <option value="2">Courtuis</option>
                         <option value="3">Keylor Navas</option>
                     </select>
-                    
+
                     <div class="col-12 mt-5">
                         <label for="comentarios">Dejanos tus comentarios</label>
                         <textarea class="form-control" id="comentarios" rows="10"></textarea>

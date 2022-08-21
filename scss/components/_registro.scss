@@ -1,3 +1,39 @@
 @import "../base/mapas";
 @import "../base/extend";
 @import "../base/mixin";
+
+.datos-personales{
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    form{
+        div{
+            h3{
+                color: black;
+            }
+        }
+        div{
+            label{
+                color: black;
+            }
+        }
+    }
+}
+
+.datos-loguin{
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    form{
+        div{
+            h3{
+                color: black;
+            }
+        }
+        div{
+            label{
+                color: black;
+            }
+        }
+    }
+}
