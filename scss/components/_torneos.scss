@@ -2,40 +2,45 @@
 @import "../base/extend";
 @import "../base/mixin";
 
-.copas-ligas{
+.competiciones{
     width: 100%;
-    background-color: black;
+    background-image: url(../img/balon-noche.jpg);
     @extend %imagen-de-fondo;
     @extend %flex-ali-cent-just-cent-column;
-    h2{
-        @extend %subtitulo;
-    }
-    div{
-        width: 80%;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        div{
-            @extend %flex-ali-cent-just-between-column;
-            width: 10.7rem;
-            height: 19rem;
-            border: var(--borde-caja-producto);
-            background-color: white;
-            border-radius: 0.5rem;
-            box-shadow: 0.3rem 0.3rem black;
-            text-align: center;
-            margin: 2rem;
-            ;
-            img{
-                width: 10rem;
-                height: 12rem;
-                border: 0.3rem solid black;
+    section{
+        width: 95%;
+        height: 15rem;
+        @extend %flex-ali-cent-just-between;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: 0.1rem solid black;
+        border-radius: 0.5rem;
+        background-color: whitesmoke;
+        article{
+            @extend %flex-ali-cent-just-around-column; 
+            width: 45%;
+            h2{
+                color: black;
+                text-align: center;
+                font-weight: bold;
             }
             p{
                 color: black;
-                margin-bottom: 1.5rem;
+                text-align: justify
             }
 
-        }   
-    }
+        }
+        div{
+            @extend %flex-ali-cent-just-around;
+            flex-wrap: wrap;
+            width: 50%;
+            img{
+                width: 4.5rem;
+                height: 4.5rem;
+                border: 0.1rem solid black;
+                margin-top: 0.3rem;
+            }
+        }
+    }    
 }

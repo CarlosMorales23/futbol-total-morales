@@ -29,30 +29,35 @@ main ul, footer h3 {
   align-items: center;
   justify-content: center; }
 
-.noticias div, footer section {
+.noticias div, footer section, .competiciones section div {
   display: flex;
   align-items: center;
   justify-content: space-around; }
 
-.ofertas1, footer, .section-tienda, .copas-ligas {
+.competiciones section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.ofertas1, footer, .section-tienda, .competiciones {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
 
-main .presentacion {
+main .presentacion, .competiciones section article {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas1 div div, .section-tienda div div, .copas-ligas div div {
+.ofertas1 div div, .section-tienda div div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column; }
 
-.ofertas1 h2, .noticias h2, .copas-ligas h2 {
+.ofertas1 h2, .noticias h2 {
   font-size: 3rem;
   text-align: center; }
 
@@ -60,7 +65,7 @@ main .presentacion {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .copas-ligas {
+main .presentacion, .ofertas1, .section-tienda, .competiciones {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -319,30 +324,35 @@ main ul, footer h3 {
   align-items: center;
   justify-content: center; }
 
-.noticias div, footer section {
+.noticias div, footer section, .competiciones section div {
   display: flex;
   align-items: center;
   justify-content: space-around; }
 
-.ofertas1, footer, .section-tienda, .copas-ligas {
+.competiciones section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.ofertas1, footer, .section-tienda, .competiciones {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
 
-main .presentacion {
+main .presentacion, .competiciones section article {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas1 div div, .section-tienda div div, .copas-ligas div div {
+.ofertas1 div div, .section-tienda div div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column; }
 
-.ofertas1 h2, .noticias h2, .copas-ligas h2 {
+.ofertas1 h2, .noticias h2 {
   font-size: 3rem;
   text-align: center; }
 
@@ -350,7 +360,7 @@ main .presentacion {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .copas-ligas {
+main .presentacion, .ofertas1, .section-tienda, .competiciones {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -422,30 +432,35 @@ main ul, footer h3 {
   align-items: center;
   justify-content: center; }
 
-.noticias div, footer section {
+.noticias div, footer section, .competiciones section div {
   display: flex;
   align-items: center;
   justify-content: space-around; }
 
-.ofertas1, footer, .section-tienda, .copas-ligas {
+.competiciones section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.ofertas1, footer, .section-tienda, .competiciones {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
 
-main .presentacion {
+main .presentacion, .competiciones section article {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas1 div div, .section-tienda div div, .copas-ligas div div {
+.ofertas1 div div, .section-tienda div div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column; }
 
-.ofertas1 h2, .noticias h2, .copas-ligas h2 {
+.ofertas1 h2, .noticias h2 {
   font-size: 3rem;
   text-align: center; }
 
@@ -453,7 +468,7 @@ main .presentacion {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .copas-ligas {
+main .presentacion, .ofertas1, .section-tienda, .competiciones {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -464,27 +479,32 @@ main .presentacion {
 /**Mixin*/
 /**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
-.copas-ligas {
+.competiciones {
   width: 100%;
-  background-color: black; }
-  .copas-ligas div {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    .copas-ligas div div {
-      width: 10.7rem;
-      height: 19rem;
-      border: var(--borde-caja-producto);
-      background-color: white;
-      border-radius: 0.5rem;
-      box-shadow: 0.3rem 0.3rem black;
-      text-align: center;
-      margin: 2rem; }
-      .copas-ligas div div img {
-        width: 10rem;
-        height: 12rem;
-        border: 0.3rem solid black; }
-      .copas-ligas div div p {
+  background-image: url(../img/balon-noche.jpg); }
+  .competiciones section {
+    width: 95%;
+    height: 15rem;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    background-color: whitesmoke; }
+    .competiciones section article {
+      width: 45%; }
+      .competiciones section article h2 {
         color: black;
-        margin-bottom: 1.5rem; }
+        text-align: center;
+        font-weight: bold; }
+      .competiciones section article p {
+        color: black;
+        text-align: justify; }
+    .competiciones section div {
+      flex-wrap: wrap;
+      width: 50%; }
+      .competiciones section div img {
+        width: 4.5rem;
+        height: 4.5rem;
+        border: 0.1rem solid black;
+        margin-top: 0.3rem; }
