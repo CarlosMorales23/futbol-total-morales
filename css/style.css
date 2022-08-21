@@ -484,7 +484,6 @@ al div de la seccion ofertas*/
   background-image: url(../img/balon-noche.jpg); }
   .competiciones section {
     width: 95%;
-    height: 15rem;
     justify-content: space-evenly;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -496,7 +495,8 @@ al div de la seccion ofertas*/
       .competiciones section article h2 {
         color: black;
         text-align: center;
-        font-weight: bold; }
+        font-weight: bold;
+        margin-top: 1rem; }
       .competiciones section article p {
         color: black;
         text-align: justify; }
@@ -507,4 +507,22 @@ al div de la seccion ofertas*/
         width: 4.5rem;
         height: 4.5rem;
         border: 0.1rem solid black;
-        margin-top: 0.3rem; }
+        margin-top: 0.3rem;
+        margin-bottom: 1rem; }
+
+@media screen and (max-width: 550px) {
+  .competiciones section {
+    width: 95%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1.5rem 0.5rem; }
+  .competiciones section article {
+    width: 95%; }
+  .competiciones section article div {
+    margin-bottom: 1rem; }
+  .competiciones p {
+    text-align: center; }
+  .competiciones .concacaf {
+    flex-direction: column-reverse; }
+  .competiciones .europeas {
+    flex-direction: column-reverse; } }
