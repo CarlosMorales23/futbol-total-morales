@@ -1,0 +1,41 @@
+@import "../base/mapas";
+@import "../base/extend";
+@import "../base/mixin";
+
+.copas-ligas{
+    width: 100%;
+    background-color: black;
+    @extend %imagen-de-fondo;
+    @extend %flex-ali-cent-just-cent-column;
+    h2{
+        @extend %subtitulo;
+    }
+    div{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            @extend %flex-ali-cent-just-between-column;
+            width: 10.7rem;
+            height: 19rem;
+            border: var(--borde-caja-producto);
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0.3rem 0.3rem black;
+            text-align: center;
+            margin: 2rem;
+            ;
+            img{
+                width: 10rem;
+                height: 12rem;
+                border: 0.3rem solid black;
+            }
+            p{
+                color: black;
+                margin-bottom: 1.5rem;
+            }
+
+        }   
+    }
+}

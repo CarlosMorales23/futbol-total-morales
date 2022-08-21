@@ -34,7 +34,7 @@ main ul, footer h3 {
   align-items: center;
   justify-content: space-around; }
 
-.ofertas1, footer {
+.ofertas1, footer, .section-tienda, .copas-ligas {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,21 +46,21 @@ main .presentacion {
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas1 div div {
+.ofertas1 div div, .section-tienda div div, .copas-ligas div div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column; }
 
-.ofertas1 h2, .noticias h2 {
+.ofertas1 h2, .noticias h2, .copas-ligas h2 {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3 {
+.ofertas1 h3, .noticias h3, .section-tienda h3 {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1 {
+main .presentacion, .ofertas1, .section-tienda, .copas-ligas {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -304,3 +304,187 @@ footer {
 /**..................MEDIA QUERIES......................*/
 /**.......................INDEX.........................*/
 /**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/**Variables*/
+:root {
+  --fondo-nav-interno: #212529;
+  --fondo-contraste: black;
+  --borde-de-imagen-y-video: 0.25rem solid white;
+  --borde-caja-producto: 0.3125rem solid #0D6EFD; }
+
+/**Mapa*/
+/**Lo aplique en el index.scss en la linea 132aprox, 
+al ul del nav*/
+main ul, footer h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.noticias div, footer section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.ofertas1, footer, .section-tienda, .copas-ligas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+main .presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.ofertas1 div div, .section-tienda div div, .copas-ligas div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; }
+
+.ofertas1 h2, .noticias h2, .copas-ligas h2 {
+  font-size: 3rem;
+  text-align: center; }
+
+.ofertas1 h3, .noticias h3, .section-tienda h3 {
+  font-size: 2rem;
+  text-align: center; }
+
+main .presentacion, .ofertas1, .section-tienda, .copas-ligas {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+main .presentacion {
+  border: 0.2rem solid black; }
+
+/**Mixin*/
+/**Lo aplique en el index.scss en la linea 166aprox, 
+al div de la seccion ofertas*/
+.section-tienda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/cancha-aerea.jpg); }
+  .section-tienda h3 {
+    padding-top: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.447); }
+  .section-tienda div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .section-tienda div div {
+      width: 11.5rem;
+      height: 18.5rem;
+      border: var(--borde-caja-producto);
+      background-color: black;
+      border-radius: 0.5rem;
+      box-shadow: 0.3rem 0.3rem black;
+      text-align: center;
+      margin: 2rem; }
+      .section-tienda div div img {
+        width: 10.85rem;
+        height: 11.4rem;
+        border-radius: var(--borde-radius-img);
+        margin-top: 0rem auto; }
+      .section-tienda div div p {
+        margin: 0rem auto;
+        font-size: 1rem; }
+      .section-tienda div div a {
+        /**Boton Comprar*/
+        text-decoration: none;
+        background-color: #0D6EFD;
+        padding: 0.1rem;
+        border: 0.1875rem solid white;
+        border-radius: 0.3125rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.3rem;
+        color: white; }
+        .section-tienda div div a:hover {
+          font-size: 1rem;
+          background-color: black; }
+
+/**Variables*/
+:root {
+  --fondo-nav-interno: #212529;
+  --fondo-contraste: black;
+  --borde-de-imagen-y-video: 0.25rem solid white;
+  --borde-caja-producto: 0.3125rem solid #0D6EFD; }
+
+/**Mapa*/
+/**Lo aplique en el index.scss en la linea 132aprox, 
+al ul del nav*/
+main ul, footer h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.noticias div, footer section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.ofertas1, footer, .section-tienda, .copas-ligas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+main .presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.ofertas1 div div, .section-tienda div div, .copas-ligas div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; }
+
+.ofertas1 h2, .noticias h2, .copas-ligas h2 {
+  font-size: 3rem;
+  text-align: center; }
+
+.ofertas1 h3, .noticias h3, .section-tienda h3 {
+  font-size: 2rem;
+  text-align: center; }
+
+main .presentacion, .ofertas1, .section-tienda, .copas-ligas {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+main .presentacion {
+  border: 0.2rem solid black; }
+
+/**Mixin*/
+/**Lo aplique en el index.scss en la linea 166aprox, 
+al div de la seccion ofertas*/
+.copas-ligas {
+  width: 100%;
+  background-color: black; }
+  .copas-ligas div {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .copas-ligas div div {
+      width: 10.7rem;
+      height: 19rem;
+      border: var(--borde-caja-producto);
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0.3rem 0.3rem black;
+      text-align: center;
+      margin: 2rem; }
+      .copas-ligas div div img {
+        width: 10rem;
+        height: 12rem;
+        border: 0.3rem solid black; }
+      .copas-ligas div div p {
+        color: black;
+        margin-bottom: 1.5rem; }
