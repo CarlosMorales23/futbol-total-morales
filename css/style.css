@@ -589,6 +589,14 @@ main .presentacion {
 /**Mixin*/
 /**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
+.container-fluid form h3 {
+  color: black;
+  text-align: center;
+  margin-top: 2rem; }
+
+.container-fluid form div label {
+  color: black; }
+
 .formularios {
   background-color: darkblue;
   font-size: 0.5rem;
@@ -597,7 +605,7 @@ al div de la seccion ofertas*/
   .formularios h2 {
     margin-bottom: 2rem; }
   .formularios .datos-personales form {
-    width: 40rem;
+    width: 35rem;
     height: auto;
     border: 0.2rem solid black;
     border-radius: 0.5rem;

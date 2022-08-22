@@ -76,87 +76,188 @@
     </header>
     <!------------------------FIN del Header-hecho con Boostrap------------------------------------>
 
-
     <main>
-        <section class="formularios">
-            <div class="bg-dark text-white text-center">
-                <h2 class="subtitulo-principal">
-                    <div class="caja-subtitulo-principal bg-dark text-white h-25 text-center h2">
-                        <h2 class="subtitulo-principal m-0">Registrate</h2>
+
+        <div class="container-fluid bg-dark text-white text-center">
+            <h2 class="subtitulo-principal">
+                <div class="caja-subtitulo-principal bg-dark text-white h-25 text-center h2">
+                    <h2 class="subtitulo-principal m-0">Registrate</h2>
+                </div>
+            </h2>
+        </div>
+
+
+        <div class="container-fluid">
+            <form class="row g-4 p-4">
+
+                <h3>Datos Personales</h3>
+
+                <div class="col-sm-6">
+                    <label for="inputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="inputLastName" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Escribe tu Apellido">
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu email">
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="inputPass" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña">
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="inputAddress" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+                </div>
+
+                <div class="col-sm-4">
+                    <label for="cityInput" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="cityInput" placeholder="Ciudad">
+                </div>
+
+                <div class="col-sm-4">
+                    <label for="postalCode" class="form-label">Codigo Postal</label>
+                    <input type="text" class="form-control" id="postalCode" placeholder="Codigo Postal">
+                </div>
+
+                <div class="col-4">
+                    <label for="countryInput" class="form-label">Pais</label>
+                    <input type="text" class="form-control" id="countryInput" placeholder="Pais">
+                </div>
+
+                <div class="col-sm-3">
+                    <label for="telephoneInput" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="telephoneInput" placeholder="Telefono">
+                </div>
+
+                <div class="col-sm-3">
+                    <label for="whatsaapInput" class="form-label">Whatsapp</label>
+                    <input type="number" class="form-control" id="whatsaapInput" placeholder="Whatsapp">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleTextarea">Dejanos tus comentarios</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+
+                <div class="col-sm-6 d-flex">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="checkTerms" placeholder="Ciudad">
+                        <label for="checkTerms" class="form-check-label">Acepto los terminos</label>
                     </div>
-                </h2>
-            </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-around mb-3">
+                    <button type="submit" class="btn btn-dark">Reset</button>
+                    <button type="submit" class="btn btn-primary">Registrate</button>
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <section class="formularios">
+            
 
             <div class="container-fluid datos-personales">
 
-                <form class="row g-3 d-flex justify-content-start">
+                <form class="row g-3 d-flex justify-content-md-start justify-content-center">
 
                     <div class="text-center">
                         <h3 class="col-12">Datos Personales</h3>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <label for="nombre" class="form-label">Nombres</label>
                         <input type="text" class="form-control" id="nombre" placeholder="Escribe tu Nombre">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <label for="apellido" class="form-label">Apellidos</label>
                         <input type="text" class="form-control" id="apellido" placeholder="Escribe tu Nombre">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <label for="input-addres" class="form-label">Dirección 1</label>
                         <input type="text" class="form-control" id="input-addres" placeholder="Escribe tu dirección">
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-sm-6">
                         <label for="city-addres" class="form-label">Ciudad</label>
                         <input type="text" class="form-control" id="city-addres" placeholder="Escribe tu ciudad">
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-sm-6">
                         <label for="postalcode" class="form-label">Codigo postal</label>
                         <input type="text" class="form-control" id="code-postal" placeholder="Escribe tu codigo postal">
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-sm-6">
                         <label for="country-input" class="form-label">Pais</label>
                         <input type="text" class="form-control" id="country-input" placeholder="Escribe tu Pais">
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-sm-6">
                         <label for="country-input" class="form-label">Telefono</label>
                         <input type="number" class="form-control" id="country-input" placeholder="Escribe tu Telefono">
                     </div>
                 </form>
             </div>
 
-            <br>
-
             <div class="container-fluid datos-loguin">
-                <form class="row g-3 d-flex flex-xs-wrap">
+                <form class="row g-3 d-flex justify-content-md-end justify-content-center">
 
-                    <div class="col-12 text-center">
+                    <div class="col-md-12 text-center">
                         <h3 class="col">Datos - Loguin</h3>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <label for="email-input" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <label for="email-input" class="form-label">Confirma tu Email</label>
                         <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <label for="input-pass" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" id="input-pass" placeholder="Escribe tu contraseña">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <label for="input-pass" class="form-label">Confirma tu Contraseña</label>
                         <input type="password" class="form-control" id="input-pass" placeholder="Escribe tu contraseña">
                     </div>
@@ -164,13 +265,11 @@
             </div>
 
             <div class="container d-flex justify-content-center">
-                
                 <button type="submit" class="btn btn-dark m-5">Reset</button>
                 <button type="submit" class="btn btn-primary m-5">Enviar</button>
             </div>
-        </section>
+        </section> -->
         <!------------------------Fin del contenedor de formulario----------------------------------->
-
     </main>
     <!-------------------------------Inicio del FOOTER--------------------------------------------->
     <footer>
@@ -190,6 +289,7 @@
             <a class="text-light" href="#" target="_blank"><img src="../img/direccion.png" alt="icono-de-correo">Mare
                 Abajo, Edificio 2, Piso 1, Apartamento 2.</a>
         </section>
+
     </footer>
     <!-------------------------------FIN del FOOTER----------------------------------------------->
 

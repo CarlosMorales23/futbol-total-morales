@@ -2,6 +2,22 @@
 @import "../base/extend";
 @import "../base/mixin";
 
+.container-fluid{
+    form{
+        h3{
+            color: black;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        div{
+            label{
+                color: black;
+            }
+        }
+    }
+    
+}
+
 
 .formularios{
     background-color: darkblue;
@@ -14,7 +30,7 @@
     }
     .datos-personales{
         form{
-            width: 40rem;
+            width: 35rem;
             height: auto;
             border: 0.2rem solid black;
             border-radius: 0.5rem;
@@ -64,5 +80,6 @@
         }
     }
 }
+
 
 
