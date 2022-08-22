@@ -57,11 +57,11 @@ main .presentacion, .competiciones section article {
   justify-content: space-between;
   flex-direction: column; }
 
-.ofertas1 h2, .noticias h2 {
+.ofertas1 h2, .noticias h2, .formularios h2 {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3, .section-tienda h3 {
+.ofertas1 h3, .noticias h3, .section-tienda h3, .formularios .datos-personales form div h3, .formularios .datos-loguin form div h3 {
   font-size: 2rem;
   text-align: center; }
 
@@ -352,11 +352,11 @@ main .presentacion, .competiciones section article {
   justify-content: space-between;
   flex-direction: column; }
 
-.ofertas1 h2, .noticias h2 {
+.ofertas1 h2, .noticias h2, .formularios h2 {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3, .section-tienda h3 {
+.ofertas1 h3, .noticias h3, .section-tienda h3, .formularios .datos-personales form div h3, .formularios .datos-loguin form div h3 {
   font-size: 2rem;
   text-align: center; }
 
@@ -460,11 +460,11 @@ main .presentacion, .competiciones section article {
   justify-content: space-between;
   flex-direction: column; }
 
-.ofertas1 h2, .noticias h2 {
+.ofertas1 h2, .noticias h2, .formularios h2 {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3, .section-tienda h3 {
+.ofertas1 h3, .noticias h3, .section-tienda h3, .formularios .datos-personales form div h3, .formularios .datos-loguin form div h3 {
   font-size: 2rem;
   text-align: center; }
 
@@ -570,11 +570,11 @@ main .presentacion, .competiciones section article {
   justify-content: space-between;
   flex-direction: column; }
 
-.ofertas1 h2, .noticias h2 {
+.ofertas1 h2, .noticias h2, .formularios h2 {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3, .section-tienda h3 {
+.ofertas1 h3, .noticias h3, .section-tienda h3, .formularios .datos-personales form div h3, .formularios .datos-loguin form div h3 {
   font-size: 2rem;
   text-align: center; }
 
@@ -589,20 +589,43 @@ main .presentacion {
 /**Mixin*/
 /**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
-.datos-personales {
-  border: 0.2rem solid black;
-  border-radius: 0.5rem;
-  padding: 1rem; }
-  .datos-personales form div h3 {
-    color: black; }
-  .datos-personales form div label {
-    color: black; }
-
-.datos-loguin {
-  border: 0.2rem solid black;
-  border-radius: 0.5rem;
-  padding: 1rem; }
-  .datos-loguin form div h3 {
-    color: black; }
-  .datos-loguin form div label {
-    color: black; }
+.formularios {
+  background-color: darkblue;
+  font-size: 0.5rem;
+  width: 100%;
+  margin-bottom: 2rem; }
+  .formularios h2 {
+    margin-bottom: 2rem; }
+  .formularios .datos-personales form {
+    width: 40rem;
+    height: auto;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0.35rem 0.35rem grey;
+    background-color: white;
+    margin-left: 2rem; }
+    .formularios .datos-personales form div {
+      margin-bottom: 0.3rem; }
+      .formularios .datos-personales form div h3 {
+        color: black; }
+    .formularios .datos-personales form div label {
+      color: black; }
+  .formularios .datos-loguin {
+    display: flex;
+    justify-content: end; }
+    .formularios .datos-loguin form {
+      width: 35rem;
+      height: auto;
+      border: 0.2rem solid black;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      box-shadow: 0.35rem 0.35rem grey;
+      background-color: white;
+      margin: 2rem;
+      align-self: flex-end; }
+      .formularios .datos-loguin form div h3 {
+        margin-top: 1rem;
+        color: black; }
+      .formularios .datos-loguin form div label {
+        color: black; }

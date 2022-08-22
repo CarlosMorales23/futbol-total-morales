@@ -30,367 +30,166 @@
 <body>
     <!------------------------Inicio del Header-hecho con Boostrap------------------------------------>
     <header>
-        <!--- Agregue un Complemento NAV de bootstrap, luego realice modificaciones, coloque clases: d-flex alineacion horizontal, colores, y agregue div. -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-center">
-            <div class="contenedor-futbol-total-titulo cl-6 text-center align-items-center mt-2">
-                <h1 class="navbar-brand fs-1" href="#">Futbol Total</h1>
-            </div>
-            <div class="container-fluid col-6">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                        <a class="nav-link" href="./tienda.html">Tienda</a>
-                        <a class="nav-link" href="./torneos.html">Torneos</a>
-                        <a class="nav-link" href="./registro.html">Registro</a>
-                        <a class="nav-link" href="./historia-del-futbol.html">Historia</a>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-1 ms-3 me-3 " href="/index.html">Futbol Total</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/index.html">Inicio
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/torneos.html">Torneos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/registro.html">Registro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/historia-del-futbol.html">Historia</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Tienda</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Remeras</a>
+                                    <a class="dropdown-item" href="#">Balones</a>
+                                    <a class="dropdown-item" href="#">Botines</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-sm-2" type="text" placeholder="Buscar">
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <!------------------------FIN del Header-hecho con Boostrap------------------------------------>
+            </nav>
+        </div>
     </header>
+    <!------------------------FIN del Header-hecho con Boostrap------------------------------------>
 
 
     <main>
-        <div class="bg-dark text-white text-center">
-            <h2 class="subtitulo-principal">
-                <div class="caja-subtitulo-principal bg-dark text-white h-25 text-center">
-                    <h2 class="subtitulo-principal m-0">Registrate</h2>
-                </div>
-            </h2>
-        </div>
-
-
-
-        <div class="container">
-
-            <form class="row g-3 mt-3 d-flex justify-content-space-around">
-
-                <div class="row text-center">
-                    <h3 class="col">Datos Personales</h3>
-                </div>
-
-                <div class="col-5">
-                    <label for="nombre" class="form-label">Nombres</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Escribe tu Nombre">
-                </div>
-
-                <div class="col-5">
-                    <label for="apellido" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Escribe tu Nombre">
-                </div>
-
-                <div class="col-4">
-                    <label for="input-addres" class="form-label">Dirección 1</label>
-                    <input type="text" class="form-control" id="input-addres" placeholder="Escribe tu dirección">
-                </div>
-
-                <div class="col-2">
-                    <label for="city-addres" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="city-addres" placeholder="Escribe tu ciudad">
-                </div>
-
-                <div class="col-2">
-                    <label for="postalcode" class="form-label">Codigo postal</label>
-                    <input type="text" class="form-control" id="code-postal" placeholder="Escribe tu codigo postal">
-                </div>
-
-                <div class="col-2">
-                    <label for="country-input" class="form-label">Pais</label>
-                    <input type="text" class="form-control" id="country-input" placeholder="Escribe tu Pais">
-                </div>
-            </form>
-        </div>
-
-        <br>
-        <br>
-        
-        
-            <form class="row g-3 mt-3 d-flex justify-content-space-between">
-
-                <div class="row text-center">
-                    <h3 class="col">Datos - Loguin</h3>
-                </div>
-
-                <div class="col-5">
-                    <label for="email-input" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
-                </div>
-        
-                <div class="col-5">
-                    <label for="email-input" class="form-label">Confirma tu Email</label>
-                    <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
-                </div>
-
-                <div class="col-5">
-                    <label for="input-pass" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="input-pass" placeholder="Escribe tu contraseña">
-                </div>
-        
-                <div class="col-5">
-                    <label for="input-pass" class="form-label">Confirma tu Contraseña</label>
-                    <input type="password" class="form-control" id="input-pass" placeholder="Escribe tu contraseña">
-                </div>
-            </form>
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-        <!------------------------Inicio del contenedor de formulario----------------------------------->
-
-        <form>
-            <fieldset>
-                <legend>Legend</legend>
-                <div class="form-group row">
-                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                        <input type="text" readonly="" class="form-control-plaintext" id="staticEmail"
-                            value="email@example.com">
+        <section class="formularios">
+            <div class="bg-dark text-white text-center">
+                <h2 class="subtitulo-principal">
+                    <div class="caja-subtitulo-principal bg-dark text-white h-25 text-center h2">
+                        <h2 class="subtitulo-principal m-0">Registrate</h2>
                     </div>
-                </div>
+                </h2>
+            </div>
 
+            <div class="container-fluid datos-personales">
 
-                <div class="form-group">
-                    <label for="exampleSelect1">Example select</label>
-                    <select class="form-select" id="exampleSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleSelect2">Example multiple select</label>
-                    <select multiple="" class="form-select" id="exampleSelect2">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleTextarea">Example textarea</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="formFile" class="form-label">Default file input example</label>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
-                <fieldset class="form-group">
-                    <legend class="mt-4">Radio buttons</legend>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1"
-                            value="option1" checked="">
-                        <label class="form-check-label" for="optionsRadios1">
-                            Option one is this and that—be sure to include why it's great
-                        </label>
+                <form class="row g-3 d-flex justify-content-start">
+
+                    <div class="text-center">
+                        <h3 class="col-12">Datos Personales</h3>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2"
-                            value="option2">
-                        <label class="form-check-label" for="optionsRadios2">
-                            Option two can be something else and selecting it will deselect option one
-                        </label>
+
+                    <div class="col-6">
+                        <label for="nombre" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu Nombre">
                     </div>
-                    <div class="form-check disabled">
-                        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios3"
-                            value="option3" disabled="">
-                        <label class="form-check-label" for="optionsRadios3">
-                            Option three is disabled
-                        </label>
+
+                    <div class="col-6">
+                        <label for="apellido" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Escribe tu Nombre">
                     </div>
-                </fieldset>
-                <fieldset class="form-group">
-                    <legend>Checkboxes</legend>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Default checkbox
-                        </label>
+
+                    <div class="col-6">
+                        <label for="input-addres" class="form-label">Dirección 1</label>
+                        <input type="text" class="form-control" id="input-addres" placeholder="Escribe tu dirección">
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Checked checkbox
-                        </label>
+
+                    <div class="col-4">
+                        <label for="city-addres" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="city-addres" placeholder="Escribe tu ciudad">
                     </div>
-                </fieldset>
-                <fieldset class="form-group">
-                    <legend class="mt-4">Switches</legend>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox
-                            input</label>
+
+                    <div class="col-4">
+                        <label for="postalcode" class="form-label">Codigo postal</label>
+                        <input type="text" class="form-control" id="code-postal" placeholder="Escribe tu codigo postal">
                     </div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
-                        <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
-                            input</label>
+
+                    <div class="col-4">
+                        <label for="country-input" class="form-label">Pais</label>
+                        <input type="text" class="form-control" id="country-input" placeholder="Escribe tu Pais">
                     </div>
-                </fieldset>
-                <fieldset class="form-group">
-                    <legend>Ranges</legend>
-                    <label for="customRange1" class="form-label">Example range</label>
-                    <input type="range" class="form-range" id="customRange1">
-                    <label for="disabledRange" class="form-label">Disabled range</label>
-                    <input type="range" class="form-range" id="disabledRange" disabled="">
-                    <label for="customRange3" class="form-label">Example range</label>
-                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
-                </fieldset>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </fieldset>
-        </form>
 
-
-
-
-
-
-        <div class="container">
-            <form class="row g-4 mt-2">
-
-
-
-
-
-
-
-
-                <br>
-
-                <div class="contenedor-pack d-flex flex-column">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Jugador Favorito</option>
-                        <option value="1">Messi</option>
-                        <option value="2">Cristiano</option>
-                        <option value="3">Otro</option>
-                    </select>
-
-                    <br>
-
-                    <select class="form-select mt-3" aria-label="Default select example">
-                        <option selected>Equipo Favorito</option>
-                        <option value="1">Real Madrid</option>
-                        <option value="2">Barcelona</option>
-                        <option value="3">Otro</option>
-                    </select>
-
-                    <br>
-
-                    <select class="form-select mt-3" aria-label="Default select example">
-                        <option selected>Liga Favorita</option>
-                        <option value="1">Española</option>
-                        <option value="2">Inglaterra</option>
-                        <option value="3">Otra</option>
-                    </select>
-
-                    <br>
-                    <select class="form-select mt-3" aria-label="Default select example">
-                        <option selected>Copa Favorita</option>
-                        <option value="1">Eurocopa</option>
-                        <option value="2">Copa America</option>
-                        <option value="3">Otra</option>
-                    </select>
-
-                    <br>
-
-                    <select class="form-select mt-3" aria-label="Default select example">
-                        <option selected>Mundial Favorito</option>
-                        <option value="1">Sudafrica 2010</option>
-                        <option value="2">Alemania 2006</option>
-                        <option value="3">Brasil 2014</option>
-                    </select>
-
-                    <br>
-
-                    <select class="form-select mt-3" aria-label="Default select example">
-                        <option selected>Defensor Favorito</option>
-                        <option value="1">Sergio Ramos</option>
-                        <option value="2">Gerar Pique</option>
-                        <option value="3">Puyol</option>
-                    </select>
-
-                    <br>
-
-                    <select class="form-select mt-3" aria-label="Default select example">
-                        <option selected>Centro campista Favorito</option>
-                        <option value="1">Kaka</option>
-                        <option value="2">Modric</option>
-                        <option value="3">Kross</option>
-                    </select>
-                    <br>
-
-                    <select class="form-select mt-3" aria-label="Default select example">
-                        <option selected>Portero Favorito</option>
-                        <option value="1">Khan</option>
-                        <option value="2">Courtuis</option>
-                        <option value="3">Keylor Navas</option>
-                    </select>
-
-                    <div class="col-12 mt-5">
-                        <label for="comentarios">Dejanos tus comentarios</label>
-                        <textarea class="form-control" id="comentarios" rows="10"></textarea>
+                    <div class="col-4">
+                        <label for="country-input" class="form-label">Telefono</label>
+                        <input type="number" class="form-control" id="country-input" placeholder="Escribe tu Telefono">
                     </div>
-                </div>
+                </form>
+            </div>
 
-                <div class="col-12">
-                    <div class="form-check">
-                        <input type="checkbox" id="check-terms" class="form-check-input">
-                        <label for="check-terms" class="for-check-labels">Acepto los terminos</label>
-                    </div>
-                </div>
+            <br>
 
-                <div class="form-botones d-flex justify-content-center">
-                    <div class="col-3">
-                        <button type="Reset" class="btn btn-dark">Reiniciar Formulario</button>
+            <div class="container-fluid datos-loguin">
+                <form class="row g-3 d-flex flex-xs-wrap">
+
+                    <div class="col-12 text-center">
+                        <h3 class="col">Datos - Loguin</h3>
                     </div>
-                    <br>
-                    <div class="col-3">
-                        <button type="submit" class="btn btn-success">Registrate</button>
+
+                    <div class="col-6">
+                        <label for="email-input" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
                     </div>
-                </div>
-            </form>
-        </div>
-        <!------------------------Inicio del contenedor de formulario----------------------------------->
+
+                    <div class="col-6">
+                        <label for="email-input" class="form-label">Confirma tu Email</label>
+                        <input type="email" class="form-control" id="email-input" placeholder="Escribe tu Email">
+                    </div>
+
+                    <div class="col-6">
+                        <label for="input-pass" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="input-pass" placeholder="Escribe tu contraseña">
+                    </div>
+
+                    <div class="col-6">
+                        <label for="input-pass" class="form-label">Confirma tu Contraseña</label>
+                        <input type="password" class="form-control" id="input-pass" placeholder="Escribe tu contraseña">
+                    </div>
+                </form>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+                
+                <button type="submit" class="btn btn-dark m-5">Reset</button>
+                <button type="submit" class="btn btn-primary m-5">Enviar</button>
+            </div>
+        </section>
+        <!------------------------Fin del contenedor de formulario----------------------------------->
+
     </main>
-
-
     <!-------------------------------Inicio del FOOTER--------------------------------------------->
-    <footer class="footer" id="footer">
-        <div class="caja-parrafo-texto">
-            <p class="parrafo-footer">Futbol Total - Carlos Morales - 2022 &copy;</p>
-        </div>
-        <div class="footer-img">
-            <a class="text-light" href="#" target="_blank"><img src="../img/instagram.svg"
-                    alt="icono de instagram">Instagram</a>
-            <a class="text-light" href="#" target="_blank"><img src="../img/facebook.svg"
-                    alt="icono de facebook">Facebook</a>
-            <a class="text-light" href="#" target="_blank"><img src="../img/correo.svg" alt="icono de correo">Correo</a>
-        </div>
+    <footer>
+        <h3> Futbol Total - Carlos Morales - 2022 &copy;</h3>
+
+        <section>
+            <a class="text-light" href="#" target="_blank"><img src="../img/whatsapp.png"
+                    alt="icono de instagram">11-2251-9393</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/telefono.png"
+                    alt="icono de facebook">11-2390-4433</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/correo.png"
+                    alt="icono-de-correo">futboltotal@gmail.com</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/instagram.png"
+                    alt="icono de instagram">instagram</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/facebook.png" alt="icono de facebook">Futbol
+                Total</a>
+            <a class="text-light" href="#" target="_blank"><img src="../img/direccion.png" alt="icono-de-correo">Mare
+                Abajo, Edificio 2, Piso 1, Apartamento 2.</a>
+        </section>
     </footer>
     <!-------------------------------FIN del FOOTER----------------------------------------------->
 
