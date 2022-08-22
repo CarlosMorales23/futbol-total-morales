@@ -593,7 +593,6 @@ al div de la seccion ofertas*/
   background-color: midnightblue; }
   .container-fluid form h3 {
     color: white;
-    text-align: center;
-    margin-top: 2rem; }
+    text-align: center; }
   .container-fluid form div label {
     color: white; }
