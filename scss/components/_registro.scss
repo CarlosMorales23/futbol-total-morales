@@ -4,81 +4,19 @@
 
 .container-fluid{
     form{
+        background-color: midnightblue;
         h3{
-            color: black;
+            color: white;
             text-align: center;
             margin-top: 2rem;
         }
         div{
             label{
-                color: black;
+                color: white;
             }
         }
     }
     
-}
-
-
-.formularios{
-    background-color: darkblue;
-    font-size: 0.5rem;
-    width: 100%;
-    margin-bottom: 2rem;
-    h2{
-        margin-bottom: 2rem;
-        @extend %subtitulo;
-    }
-    .datos-personales{
-        form{
-            width: 35rem;
-            height: auto;
-            border: 0.2rem solid black;
-            border-radius: 0.5rem;
-            padding: 1rem;
-            box-shadow: 0.35rem 0.35rem grey;
-            background-color: white;
-            margin-left: 2rem;
-            div{
-                margin-bottom: 0.3rem;
-                h3{
-                    color: black;
-                    @extend %subtitulo-2;
-                }
-            }
-            div{
-                label{
-                    color: black;
-                }
-            }
-        }
-    }
-    .datos-loguin{
-        display: flex;
-        justify-content: end;
-        form{
-            width: 35rem;
-            height: auto;
-            border: 0.2rem solid black;
-            border-radius: 0.5rem;
-            padding: 1rem;
-            box-shadow: 0.35rem 0.35rem grey;
-            background-color: white;
-            margin: 2rem;
-            align-self: flex-end;
-            div{
-                h3{
-                    margin-top: 1rem;
-                    color: black;
-                    @extend %subtitulo-2;
-                }
-            }
-            div{
-                label{
-                    color: black;
-                }
-            }
-        }
-    }
 }
 
 
