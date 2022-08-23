@@ -65,7 +65,7 @@ main .presentacion, .competiciones section article {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .competiciones {
+main .presentacion, .ofertas1, .section-tienda, .competiciones, .grid-item {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -360,7 +360,7 @@ main .presentacion, .competiciones section article {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .competiciones {
+main .presentacion, .ofertas1, .section-tienda, .competiciones, .grid-item {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -468,7 +468,7 @@ main .presentacion, .competiciones section article {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .competiciones {
+main .presentacion, .ofertas1, .section-tienda, .competiciones, .grid-item {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -578,7 +578,7 @@ main .presentacion, .competiciones section article {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .competiciones {
+main .presentacion, .ofertas1, .section-tienda, .competiciones, .grid-item {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -596,3 +596,93 @@ al div de la seccion ofertas*/
     text-align: center; }
   .container-fluid form div label {
     color: white; }
+
+/**Variables*/
+:root {
+  --fondo-nav-interno: #212529;
+  --fondo-contraste: black;
+  --borde-de-imagen-y-video: 0.25rem solid white;
+  --borde-caja-producto: 0.3125rem solid #0D6EFD; }
+
+/**Mapa*/
+/**Lo aplique en el index.scss en la linea 132aprox, 
+al ul del nav*/
+main ul, footer h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.noticias div, footer section, .competiciones section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.competiciones section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.ofertas1, footer, .section-tienda, .competiciones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+main .presentacion, .competiciones section article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.ofertas1 div div, .section-tienda div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; }
+
+.ofertas1 h2, .noticias h2 {
+  font-size: 3rem;
+  text-align: center; }
+
+.ofertas1 h3, .noticias h3, .section-tienda h3 {
+  font-size: 2rem;
+  text-align: center; }
+
+main .presentacion, .ofertas1, .section-tienda, .competiciones, .grid-item {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+main .presentacion {
+  border: 0.2rem solid black; }
+
+/**Mixin*/
+/**Lo aplique en el index.scss en la linea 166aprox, 
+al div de la seccion ofertas*/
+/**................................*/
+/**.............Galeria............*/
+/**................................*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13.625rem, 1fr));
+  grid-auto-rows: minmax(10rem, auto);
+  gap: 1.25rem;
+  padding: 1.25rem;
+  grid-auto-flow: dense; }
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: skyblue;
+  border-radius: 0.25rem;
+  transition: transform 0.3s ease-in-out;
+  border: solid 1px orange; }
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
+
+.item-1 {
+  grid-column: 1 / 3;
+  grid-row: 1/3; }
