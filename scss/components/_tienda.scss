@@ -3,59 +3,64 @@
 @import "../base/mixin";
 
 
-.section-tienda{
-    @extend %flex-ali-cent-just-cent-column;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
+.main-tienda{
     background-image: url(../img/cancha-aerea.jpg);
     @extend %imagen-de-fondo;
-    h3{
-        padding-top: 1.5rem;
-        @extend %subtitulo-2;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.447);
-    }
-    div{
-        width: 100%;
+    .section-tienda{
+        @extend %flex-ali-cent-just-cent-column;
         display:flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        padding: 2rem;
+        h3{
+            margin-top: 3rem;
+            @extend %subtitulo-2;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.447);
+        }
         div{
-            @extend %flex-ali-cent-just-between-column;
-            width: 11.5rem;
-            height: 18.5rem;
-            border: var(--borde-caja-producto);
-            background-color: black;
-            border-radius: 0.5rem;
-            box-shadow: 0.3rem 0.3rem black;
-            text-align: center;
-            margin: 2rem;
-            img{
-                width: 10.85rem;
-                height: 11.4rem;
-                border-radius: var(--borde-radius-img);
-                margin-top: 0rem auto;
-            }
-            p{
-                margin: 0rem auto;
-                font-size: 1rem;
-            }
-            a{ /**Boton Comprar*/
-                text-decoration: none;
-                background-color: #0D6EFD;
-                padding: 0.1rem;
-                border: 0.1875rem solid white;
-                border-radius: 0.3125rem;
-                margin-top: 0.1rem;
-                margin-bottom: 0.3rem;
-                color:white;
-                &:hover{
+            width: 100%;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            div{
+                @extend %flex-ali-cent-just-between-column;
+                width: 11.5rem;
+                height: 18.5rem;
+                border: var(--borde-caja-producto);
+                background-color: black;
+                border-radius: 0.5rem;
+                box-shadow: 0.3rem 0.3rem black;
+                text-align: center;
+                margin: 2rem;
+                img{
+                    width: 10.85rem;
+                    height: 11.4rem;
+                    border-radius: var(--borde-radius-img);
+                    margin-top: 0rem auto;
+                }
+                p{
+                    margin: 0rem auto;
                     font-size: 1rem;
-                    background-color: rgb(0, 0, 0);
+                }
+                a{ /**Boton Comprar*/
+                    text-decoration: none;
+                    background-color: #0D6EFD;
+                    padding: 0.1rem;
+                    border: 0.1875rem solid white;
+                    border-radius: 0.3125rem;
+                    margin-top: 0.1rem;
+                    margin-bottom: 0.3rem;
+                    color:white;
+                    &:hover{
+                        font-size: 1rem;
+                        background-color: rgb(0, 0, 0);
+                    }
                 }
             }
         }
     }
 }
+
+

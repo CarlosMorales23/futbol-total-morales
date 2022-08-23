@@ -2,50 +2,53 @@
 @import "../base/extend";
 @import "../base/mixin";
 
-.competiciones{
-    width: 100%;
+.main-torneos{
     background-image: url(../img/balon-noche.jpg);
-    @extend %imagen-de-fondo;
-    @extend %flex-ali-cent-just-cent-column;
-    section{
-        width: 95%;
-        @extend %flex-ali-cent-just-between;
-        justify-content: space-evenly;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        border: 0.1rem solid black;
-        border-radius: 0.5rem;
-        background-color: whitesmoke;
-        padding: 1rem;
-        article{
-            @extend %flex-ali-cent-just-around-column; 
-            width: 45%;
-            h2{
-                color: black;
-                text-align: center;
-                font-weight: bold;
-                margin-top: 1rem;
+    .competiciones{
+        width: 100%;
+        @extend %imagen-de-fondo;
+        @extend %flex-ali-cent-just-cent-column;
+        section{
+            width: 95%;
+            @extend %flex-ali-cent-just-between;
+            justify-content: space-evenly;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border: 0.1rem solid black;
+            border-radius: 0.5rem;
+            background-color: whitesmoke;
+            padding: 1rem;
+            article{
+                @extend %flex-ali-cent-just-around-column; 
+                width: 45%;
+                h2{
+                    color: black;
+                    text-align: center;
+                    font-weight: bold;
+                    margin-top: 1rem;
+                }
+                p{
+                    color: black;
+                    text-align: justify
+                }
+    
             }
-            p{
-                color: black;
-                text-align: justify
+            div{
+                @extend %flex-ali-cent-just-around;
+                flex-wrap: wrap;
+                width: 50%;
+                img{
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    border: 0.1rem solid black;
+                    margin-top: 0.3rem;
+                    margin-bottom: 1rem;
+                }
             }
-
-        }
-        div{
-            @extend %flex-ali-cent-just-around;
-            flex-wrap: wrap;
-            width: 50%;
-            img{
-                width: 4.5rem;
-                height: 4.5rem;
-                border: 0.1rem solid black;
-                margin-top: 0.3rem;
-                margin-bottom: 1rem;
-            }
-        }
+        }    
     }    
 }
+
 
 
 @media screen and (max-width:550px) {

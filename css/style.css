@@ -29,29 +29,29 @@ main ul, footer h3 {
   align-items: center;
   justify-content: center; }
 
-.noticias div, footer section, .competiciones section div {
+.noticias div, footer section, .main-torneos .competiciones section div {
   display: flex;
   align-items: center;
   justify-content: space-around; }
 
-.competiciones section {
+.main-torneos .competiciones section {
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
-.ofertas1, footer, .section-tienda, .competiciones {
+.ofertas1, footer, .main-tienda .section-tienda, .main-torneos .competiciones {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
 
-main .presentacion, .competiciones section article {
+main .presentacion, .main-torneos .competiciones section article {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas1 div div, .section-tienda div div {
+.ofertas1 div div, .main-tienda .section-tienda div div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,11 +61,11 @@ main .presentacion, .competiciones section article {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3, .section-tienda h3 {
+.ofertas1 h3, .ofertas1 .index-balones, .noticias h3, .main-tienda .section-tienda h3 {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .competiciones {
+main .presentacion, .ofertas1, .main-tienda, .main-torneos .competiciones {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -134,9 +134,14 @@ iframe:hover {
       font-size: 1.1rem;
       background-color: black; }
   .ofertas1 h3 {
-    color: white; }
-  .ofertas1 .subtitulo-balones {
-    margin-top: 3.5rem; }
+    color: white;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem; }
+  .ofertas1 .index-balones {
+    color: white;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.596); }
   .ofertas1 div {
     width: 90%;
     display: flex;
@@ -328,29 +333,29 @@ main ul, footer h3 {
   align-items: center;
   justify-content: center; }
 
-.noticias div, footer section, .competiciones section div {
+.noticias div, footer section, .main-torneos .competiciones section div {
   display: flex;
   align-items: center;
   justify-content: space-around; }
 
-.competiciones section {
+.main-torneos .competiciones section {
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
-.ofertas1, footer, .section-tienda, .competiciones {
+.ofertas1, footer, .main-tienda .section-tienda, .main-torneos .competiciones {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
 
-main .presentacion, .competiciones section article {
+main .presentacion, .main-torneos .competiciones section article {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas1 div div, .section-tienda div div {
+.ofertas1 div div, .main-tienda .section-tienda div div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -360,11 +365,11 @@ main .presentacion, .competiciones section article {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3, .section-tienda h3 {
+.ofertas1 h3, .ofertas1 .index-balones, .noticias h3, .main-tienda .section-tienda h3 {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .competiciones {
+main .presentacion, .ofertas1, .main-tienda, .main-torneos .competiciones {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -375,51 +380,53 @@ main .presentacion {
 /**Mixin*/
 /**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
-.section-tienda {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.main-tienda {
   background-image: url(../img/cancha-aerea.jpg); }
-  .section-tienda h3 {
-    padding-top: 1.5rem;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.447); }
-  .section-tienda div {
-    width: 100%;
+  .main-tienda .section-tienda {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    .section-tienda div div {
-      width: 11.5rem;
-      height: 18.5rem;
-      border: var(--borde-caja-producto);
-      background-color: black;
-      border-radius: 0.5rem;
-      box-shadow: 0.3rem 0.3rem black;
-      text-align: center;
-      margin: 2rem; }
-      .section-tienda div div img {
-        width: 10.85rem;
-        height: 11.4rem;
-        border-radius: var(--borde-radius-img);
-        margin-top: 0rem auto; }
-      .section-tienda div div p {
-        margin: 0rem auto;
-        font-size: 1rem; }
-      .section-tienda div div a {
-        /**Boton Comprar*/
-        text-decoration: none;
-        background-color: #0D6EFD;
-        padding: 0.1rem;
-        border: 0.1875rem solid white;
-        border-radius: 0.3125rem;
-        margin-top: 0.1rem;
-        margin-bottom: 0.3rem;
-        color: white; }
-        .section-tienda div div a:hover {
-          font-size: 1rem;
-          background-color: black; }
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem; }
+    .main-tienda .section-tienda h3 {
+      margin-top: 3rem;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.447); }
+    .main-tienda .section-tienda div {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .main-tienda .section-tienda div div {
+        width: 11.5rem;
+        height: 18.5rem;
+        border: var(--borde-caja-producto);
+        background-color: black;
+        border-radius: 0.5rem;
+        box-shadow: 0.3rem 0.3rem black;
+        text-align: center;
+        margin: 2rem; }
+        .main-tienda .section-tienda div div img {
+          width: 10.85rem;
+          height: 11.4rem;
+          border-radius: var(--borde-radius-img);
+          margin-top: 0rem auto; }
+        .main-tienda .section-tienda div div p {
+          margin: 0rem auto;
+          font-size: 1rem; }
+        .main-tienda .section-tienda div div a {
+          /**Boton Comprar*/
+          text-decoration: none;
+          background-color: #0D6EFD;
+          padding: 0.1rem;
+          border: 0.1875rem solid white;
+          border-radius: 0.3125rem;
+          margin-top: 0.1rem;
+          margin-bottom: 0.3rem;
+          color: white; }
+          .main-tienda .section-tienda div div a:hover {
+            font-size: 1rem;
+            background-color: black; }
 
 /**Variables*/
 :root {
@@ -436,29 +443,29 @@ main ul, footer h3 {
   align-items: center;
   justify-content: center; }
 
-.noticias div, footer section, .competiciones section div {
+.noticias div, footer section, .main-torneos .competiciones section div {
   display: flex;
   align-items: center;
   justify-content: space-around; }
 
-.competiciones section {
+.main-torneos .competiciones section {
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
-.ofertas1, footer, .section-tienda, .competiciones {
+.ofertas1, footer, .main-tienda .section-tienda, .main-torneos .competiciones {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
 
-main .presentacion, .competiciones section article {
+main .presentacion, .main-torneos .competiciones section article {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas1 div div, .section-tienda div div {
+.ofertas1 div div, .main-tienda .section-tienda div div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -468,11 +475,11 @@ main .presentacion, .competiciones section article {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3, .section-tienda h3 {
+.ofertas1 h3, .ofertas1 .index-balones, .noticias h3, .main-tienda .section-tienda h3 {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .competiciones {
+main .presentacion, .ofertas1, .main-tienda, .main-torneos .competiciones {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -483,37 +490,38 @@ main .presentacion {
 /**Mixin*/
 /**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
-.competiciones {
-  width: 100%;
+.main-torneos {
   background-image: url(../img/balon-noche.jpg); }
-  .competiciones section {
-    width: 95%;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border: 0.1rem solid black;
-    border-radius: 0.5rem;
-    background-color: whitesmoke;
-    padding: 1rem; }
-    .competiciones section article {
-      width: 45%; }
-      .competiciones section article h2 {
-        color: black;
-        text-align: center;
-        font-weight: bold;
-        margin-top: 1rem; }
-      .competiciones section article p {
-        color: black;
-        text-align: justify; }
-    .competiciones section div {
-      flex-wrap: wrap;
-      width: 50%; }
-      .competiciones section div img {
-        width: 4.5rem;
-        height: 4.5rem;
-        border: 0.1rem solid black;
-        margin-top: 0.3rem;
-        margin-bottom: 1rem; }
+  .main-torneos .competiciones {
+    width: 100%; }
+    .main-torneos .competiciones section {
+      width: 95%;
+      justify-content: space-evenly;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border: 0.1rem solid black;
+      border-radius: 0.5rem;
+      background-color: whitesmoke;
+      padding: 1rem; }
+      .main-torneos .competiciones section article {
+        width: 45%; }
+        .main-torneos .competiciones section article h2 {
+          color: black;
+          text-align: center;
+          font-weight: bold;
+          margin-top: 1rem; }
+        .main-torneos .competiciones section article p {
+          color: black;
+          text-align: justify; }
+      .main-torneos .competiciones section div {
+        flex-wrap: wrap;
+        width: 50%; }
+        .main-torneos .competiciones section div img {
+          width: 4.5rem;
+          height: 4.5rem;
+          border: 0.1rem solid black;
+          margin-top: 0.3rem;
+          margin-bottom: 1rem; }
 
 @media screen and (max-width: 550px) {
   .competiciones section {
@@ -547,29 +555,29 @@ main ul, footer h3 {
   align-items: center;
   justify-content: center; }
 
-.noticias div, footer section, .competiciones section div {
+.noticias div, footer section, .main-torneos .competiciones section div {
   display: flex;
   align-items: center;
   justify-content: space-around; }
 
-.competiciones section {
+.main-torneos .competiciones section {
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
-.ofertas1, footer, .section-tienda, .competiciones {
+.ofertas1, footer, .main-tienda .section-tienda, .main-torneos .competiciones {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
 
-main .presentacion, .competiciones section article {
+main .presentacion, .main-torneos .competiciones section article {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas1 div div, .section-tienda div div {
+.ofertas1 div div, .main-tienda .section-tienda div div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -579,11 +587,11 @@ main .presentacion, .competiciones section article {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3, .section-tienda h3 {
+.ofertas1 h3, .ofertas1 .index-balones, .noticias h3, .main-tienda .section-tienda h3 {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .competiciones {
+main .presentacion, .ofertas1, .main-tienda, .main-torneos .competiciones {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -594,13 +602,15 @@ main .presentacion {
 /**Mixin*/
 /**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
-.container-fluid form {
+.main-formulario {
   background-color: midnightblue; }
-  .container-fluid form h3 {
-    color: white;
-    text-align: center; }
-  .container-fluid form div label {
-    color: white; }
+  .main-formulario .contenedor-formulario form {
+    background-color: midnightblue; }
+    .main-formulario .contenedor-formulario form h3 {
+      color: white;
+      text-align: center; }
+    .main-formulario .contenedor-formulario form div label {
+      color: white; }
 
 /**Variables*/
 :root {
@@ -617,29 +627,29 @@ main ul, footer h3 {
   align-items: center;
   justify-content: center; }
 
-.noticias div, footer section, .competiciones section div {
+.noticias div, footer section, .main-torneos .competiciones section div {
   display: flex;
   align-items: center;
   justify-content: space-around; }
 
-.competiciones section {
+.main-torneos .competiciones section {
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
-.ofertas1, footer, .section-tienda, .competiciones {
+.ofertas1, footer, .main-tienda .section-tienda, .main-torneos .competiciones {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
 
-main .presentacion, .competiciones section article {
+main .presentacion, .main-torneos .competiciones section article {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column; }
 
-.ofertas1 div div, .section-tienda div div {
+.ofertas1 div div, .main-tienda .section-tienda div div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -649,11 +659,11 @@ main .presentacion, .competiciones section article {
   font-size: 3rem;
   text-align: center; }
 
-.ofertas1 h3, .noticias h3, .section-tienda h3 {
+.ofertas1 h3, .ofertas1 .index-balones, .noticias h3, .main-tienda .section-tienda h3 {
   font-size: 2rem;
   text-align: center; }
 
-main .presentacion, .ofertas1, .section-tienda, .competiciones {
+main .presentacion, .ofertas1, .main-tienda, .main-torneos .competiciones {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }

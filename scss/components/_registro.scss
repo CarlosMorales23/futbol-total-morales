@@ -2,21 +2,25 @@
 @import "../base/extend";
 @import "../base/mixin";
 
-.container-fluid{
-    form{
-        background-color: midnightblue;
-        h3{
-            color: white;
-            text-align: center;
-        }
-        div{
-            label{
+.main-formulario{
+    background-color: midnightblue;
+    .contenedor-formulario{
+        form{
+            background-color: midnightblue;
+            h3{
                 color: white;
+                text-align: center;
+            }
+            div{
+                label{
+                    color: white;
+                }
             }
         }
+        
     }
-    
 }
+
 
 
 

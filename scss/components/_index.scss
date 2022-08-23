@@ -87,9 +87,15 @@ iframe:hover{
     h3{
         @extend %subtitulo-2;
         color: white;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
     }
-    .subtitulo-balones{
-        margin-top: 3.5rem;
+    .index-balones{
+        @extend %subtitulo-2;
+        color: white;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+        background-color: rgba(0, 0, 0, 0.596);
     }
     div{
         width: 90%;
