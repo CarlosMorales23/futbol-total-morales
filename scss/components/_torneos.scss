@@ -16,6 +16,7 @@
         border: 0.1rem solid black;
         border-radius: 0.5rem;
         background-color: whitesmoke;
+        padding: 1rem;
         article{
             @extend %flex-ali-cent-just-around-column; 
             width: 45%;
