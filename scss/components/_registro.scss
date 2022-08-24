@@ -2,9 +2,15 @@
 @import "../base/extend";
 @import "../base/mixin";
 
+
+/**................................*/
+/**.............REGISTRO...........*/
+/**................................*/
+
+
 .main-formulario{
     background-color: midnightblue;
-    .contenedor-formulario{
+    .contenedor-formulario{// Contenedor del FORMULARIO hecho con bootstrap
         form{
             background-color: midnightblue;
             h3{

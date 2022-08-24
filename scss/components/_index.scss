@@ -7,13 +7,13 @@
 /**................................*/
 
 
-/**............NAV INTENRO...........*/
+
 main{
-    ul{
+    ul{//............NAV INTENRO...........
         background-color: var(--fondo-nav-interno);
         @extend %flex-ali-cent-just-cent;
     }
-    .presentacion{
+    .presentacion{//............SECCIÓN 1 DEL INDEX - PRESENTACIÓN...........
         width: 100%;
         background-image: url(../img/estadio-noche.jpg);
         @extend %flex-ali-cent-just-around-column;
@@ -24,7 +24,6 @@ main{
             font-size: 4.5rem;
             font-weight: bold;
             color: white;
-        
         }
         p{
             width: 80%;
@@ -54,11 +53,8 @@ iframe:hover{
 }
 /**.......FIN SECCIÓN 1 -INDEX........................................................................*/
 
-
-
-
 /**.......INICIO SECCIÓN 2 -INDEX.....................................................................*/
-.ofertas1{
+.ofertas1{ 
     width: 100%;
     background-image: url(../img/cancha-noche-2.jpg);
     @extend %flex-ali-cent-just-cent-column;

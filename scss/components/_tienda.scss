@@ -3,10 +3,14 @@
 @import "../base/mixin";
 
 
+/**................................*/
+/**.............TIENDA.............*/
+/**................................*/
+
 .main-tienda{
     background-image: url(../img/cancha-aerea.jpg);
     @extend %imagen-de-fondo;
-    .section-tienda{
+    .section-tienda{//Contenedor de la Sección tienda
         @extend %flex-ali-cent-just-cent-column;
         display:flex;
         align-items: center;
@@ -19,12 +23,12 @@
             color: white;
             background-color: rgba(0, 0, 0, 0.447);
         }
-        div{
+        div{//Contenedor de las card
             width: 100%;
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            div{
+            div{//Caja-producto
                 @extend %flex-ali-cent-just-between-column;
                 width: 11.5rem;
                 height: 18.5rem;
