@@ -14,6 +14,68 @@
   box-sizing: border-box;
   font-family: sans-serif, Arial, Helvetica; }
 
+main ul, footer h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.noticias div, footer section, .main-torneos .competiciones section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.main-torneos .competiciones section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.ofertas1, footer, .main-tienda .section-tienda, .main-torneos .competiciones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+main .presentacion, .main-torneos .competiciones section article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.ofertas1 div div, .main-tienda .section-tienda div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; }
+
+.ofertas1 h2, .noticias h2 {
+  font-size: 3rem;
+  text-align: center; }
+
+.ofertas1 h3, .ofertas1 .index-balones, .noticias h3, .main-tienda .section-tienda h3 {
+  font-size: 2rem;
+  text-align: center; }
+
+main .presentacion, .ofertas1, .main-tienda, .main-torneos .competiciones {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+main .presentacion {
+  border: 0.2rem solid black; }
+
+/**Variables*/
+:root {
+  --fondo-nav-interno: #212529;
+  --fondo-contraste: black;
+  --borde-de-imagen-y-video: 0.25rem solid white;
+  --borde-caja-producto: 0.3125rem solid #0D6EFD; }
+
+/**Mapa*/
+/**Lo aplique en el index.scss en la linea 132aprox, 
+al ul del nav*/
+/**Mixin*/
+/**Lo aplique en el index.scss en la linea 166aprox, 
+al div de la seccion ofertas*/
 /**Variables*/
 :root {
   --fondo-nav-interno: #212529;
@@ -79,7 +141,6 @@ al div de la seccion ofertas*/
 /**................................*/
 /**.............INDEX..............*/
 /**................................*/
-/**............NAV INTENRO...........*/
 main ul {
   background-color: var(--fondo-nav-interno); }
 
@@ -117,6 +178,20 @@ iframe:hover {
   width: 100%;
   background-image: url(../img/cancha-noche-2.jpg);
   border: 0.2rem solid black; }
+  .ofertas1 .whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100; }
+  .ofertas1 .whatsapp-icon {
+    margin-top: 13px; }
   .ofertas1 h2 {
     color: white;
     margin-top: 1.5rem;
@@ -380,6 +455,9 @@ main .presentacion {
 /**Mixin*/
 /**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
+/**................................*/
+/**.............TIENDA.............*/
+/**................................*/
 .main-tienda {
   background-image: url(../img/cancha-aerea.jpg); }
   .main-tienda .section-tienda {
@@ -490,6 +568,9 @@ main .presentacion {
 /**Mixin*/
 /**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
+/**................................*/
+/**.............TORNEOS............*/
+/**................................*/
 .main-torneos {
   background-image: url(../img/balon-noche.jpg); }
   .main-torneos .competiciones {
@@ -602,6 +683,9 @@ main .presentacion {
 /**Mixin*/
 /**Lo aplique en el index.scss en la linea 166aprox, 
 al div de la seccion ofertas*/
+/**................................*/
+/**.............REGISTRO...........*/
+/**................................*/
 .main-formulario {
   background-color: midnightblue; }
   .main-formulario .contenedor-formulario form {
