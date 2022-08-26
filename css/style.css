@@ -196,7 +196,7 @@ iframe:hover {
     color: white;
     margin-top: 1.5rem;
     text-align: center; }
-  .ofertas1 a {
+  .ofertas1 .whatsapp-boton-comprar {
     margin-top: 0.1rem;
     margin-bottom: 0.3rem;
     text-decoration: none;
@@ -205,7 +205,7 @@ iframe:hover {
     border: 0.1875rem solid white;
     border-radius: 0.3125rem;
     color: white; }
-    .ofertas1 a:hover {
+    .ofertas1 .whatsapp-boton-comprar:hover {
       font-size: 1.1rem;
       background-color: black; }
   .ofertas1 h3 {
